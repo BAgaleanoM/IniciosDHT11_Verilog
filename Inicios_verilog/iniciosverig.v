@@ -62,5 +62,9 @@ module _case(W, S, f); //multiplexor usando case
         default: f = 0;
 endmodule
 
-//Casez trata todas las z en tos ítems como don't care, Casez
+//Casez trata todas las z en tos ítems como don't care, Casex trata z's y x's como don't care 
+
+// Ahora los loop for, siempre en bloque always. Recomendaron no usarlo
   
+
+
