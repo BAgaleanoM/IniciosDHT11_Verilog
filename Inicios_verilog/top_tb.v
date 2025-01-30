@@ -1,9 +1,9 @@
 /*Test bench ejemplo del half adder en "test"*/
 `timescale 1ns/1ps
 
-`include "test.v"
+`include "./top.v"
 
-module test_tb;
+module top_tb;
     // Declarar señales para conectar al DUT
     reg a, b;        // Entradas
     wire y;          // Salida
@@ -17,8 +17,8 @@ module test_tb;
 
     // Bloque para generar estímulos
     initial begin
-        $dumpfile("test_tb.vcd"); // Crear archivo VCD
-        $dumpvars(0, test_tb); // Volcar variables
+        //$dumpfile("test_tb.vcd"); // Crear archivo VCD
+        $dumpvars(0, top_tb); // Volcar variables
         // Monitorizar señales
         $monitor("Time: %0d | a: %b | b: %b | y: %b", $time, a, b, y);
 
