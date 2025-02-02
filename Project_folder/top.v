@@ -12,7 +12,7 @@ module top (
       .FREQ_IN (10),    // 10 Tikcs
       .FREQ_OUT(1)      // 1 Tikcs
 `else
-      .FREQ_IN (12e6),  // 12 MHz
+      .FREQ_IN (25e6),  // 25 MHz
       .FREQ_OUT(1)      // 1 Hz
 `endif
   ) frequencyDivider (
