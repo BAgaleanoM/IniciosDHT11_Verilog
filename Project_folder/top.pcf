@@ -1,5 +1,5 @@
 set_io clk J3 # Señal de reloj del hardware 12 MHz
-set_io rst P48 # Botón físico de reset
+#set_io rst 13 # Botón físico de reset
 
 ## UART
 # set_io ftdi_tx B12 # TX
