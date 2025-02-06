@@ -1,13 +1,9 @@
-set_io clk J3 # Señal de reloj del hardware 12 MHz
+set_io clk 60 # Señal de reloj del hardware 12 MHz
 #set_io rst 13 # Botón físico de reset
 
 ## UART
-# set_io ftdi_tx B12 # TX
-# set_io rx_pin B10 # RX
-
-## UART
- set_io ftdi_tx B12 # TX
- set_io rx_pin B10 # RX
+ set_io ftdi_tx 10 # TX
+# set_io rx_pin 8 # RX
 
 #Pin de datos
-set_io dht11_data 38 # D9
+set_io dht11_data 104

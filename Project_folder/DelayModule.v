@@ -5,6 +5,7 @@ module DelayModule (
   output reg out_delay     // Salida de delay
 );
 
+
   reg [8:0] count;          // Contador de delay
 
   always @(posedge clk or posedge rst) begin

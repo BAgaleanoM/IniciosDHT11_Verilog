@@ -5,11 +5,13 @@
 module top (
 
     input  clk,
-    input wire rst,        // Entrada de reinicio
+    //input rst;        // Entrada de reinicio
     input wire dht11_data, // Entrada de datos desde el sensor DHT11
     output ftdi_tx
 );
 
+wire rst;
+assign rst = 0;
 
 wire dataReadModule;
 reg [39:0] data;
@@ -39,7 +41,7 @@ parameter period_1 = 12500000;
       .FREQ_OUT(1)      // 1 Tikcs
 `else
       .FREQ_IN (25e6),  // 25 MHz
-      .FREQ_OUT(1e6)      // 1 MHz
+      .FREQ_OUT(1e6)    // 1 MHz
 `endif
   ) frequencyDivider (
       .CLK_IN (clk),
@@ -119,6 +121,7 @@ always @(posedge clk or posedge rst) begin
                     state <= DONE;
                 end
             end
+    
             DONE: begin
                 // Procesar los 40 bits de datos 
                 data <= shift_register;

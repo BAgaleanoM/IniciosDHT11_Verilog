@@ -1,8 +1,9 @@
 module DivisorFrecuencia (
   input wire clk,
-  input wire reset,
+  input wire rst,
   output wire out
 );
+
   reg clk_1M = 0;
   reg [31:0] cntr_1M = 32'b0;
   parameter period_1M = 25;
