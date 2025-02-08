@@ -112,7 +112,7 @@ always @(posedge clk or posedge rst) begin
             START: begin
                 state <= READ;
             end
-            READ: begin
+            READ: begin 
                 if (bit_count < 8) begin
                     shift_register[bit_count] <= dht11_data;
 		    uart_txbyte[bit_count] <= dht11_data;

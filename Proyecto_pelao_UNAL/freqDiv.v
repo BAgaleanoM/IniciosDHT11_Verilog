@@ -8,7 +8,7 @@ module freqDiv #(
     input CLK_IN,
     output reg CLK_OUT = 0
 );
-
+//asdasdasdasd
   localparam integer COUNT = (FREQ_IN / FREQ_OUT) / 2;
   localparam integer SIZE = $clog2(COUNT);
   localparam integer LIMIT = COUNT - 1;
