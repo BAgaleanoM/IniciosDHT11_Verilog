@@ -9641,7 +9641,7 @@
       "attributes": {
         "hdlname": "\\top",
         "top": "00000000000000000000000000000001",
-        "src": "top.v:5.1-134.10"
+        "src": "top.v:5.1-135.10"
       },
       "parameter_default_values": {
         "ASCII_0": "1",
@@ -9675,7 +9675,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9699,7 +9699,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9723,7 +9723,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9747,7 +9747,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9771,7 +9771,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9795,7 +9795,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9819,7 +9819,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9843,7 +9843,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -14493,7 +14493,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -15259,7 +15259,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -15283,7 +15283,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -15457,7 +15457,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -15479,7 +15479,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -15526,7 +15526,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -15573,7 +15573,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -16017,7 +16017,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -16064,7 +16064,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -16136,7 +16136,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:100.1-132.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:100.1-133.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -16884,7 +16884,7 @@
           "bits": [ 260, 264 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:0.0-0.0|top.v:106.9-130.16|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:578.19-578.22"
+            "src": "top.v:0.0-0.0|top.v:106.9-131.16|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:578.19-578.22"
           }
         },
         "state_SB_DFFESR_Q_E": {

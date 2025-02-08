@@ -1,8 +1,9 @@
-set_io clk 60 # Señal de reloj del hardware 12 MHz
-#set_io rst 13 # Botón físico de reset
+set_io hwclk 60 # Señal de reloj del hardware 12 MHz
+set_io -pullup yes b 52 # Switch S1
+
 
 ## UART
- set_io ftdi_tx 10 # TX
+#set_io ftdi_tx 10 # TX
 # set_io rx_pin 8 # RX
 
 #Pin de datos

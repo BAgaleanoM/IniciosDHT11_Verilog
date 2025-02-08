@@ -1,5 +1,5 @@
 module moduleName (
-    ports
+    input wire hwclk,
 );
 
 
@@ -12,8 +12,8 @@ module moduleName (
       .FREQ_OUT(1e6)    // 1 MHz
 `endif
   ) frequencyDivider (
-      .CLK_IN (clk),
-      .CLK_OUT(dht11_data)
+      .CLK_IN (hwclk),
+      .CLK_OUT(clk)
 )
 
 
