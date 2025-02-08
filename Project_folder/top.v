@@ -1,5 +1,7 @@
+`include "./freqDiv.v"
 module moduleName (
     input wire hwclk,
+    input wire rst, //Al inicio debe ponerse como wire rst; assign rst = 0, fuera de estas entradas 
 );
 
 
