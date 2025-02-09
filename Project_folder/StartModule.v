@@ -3,6 +3,7 @@ module StartModule (
     input wire clk,
     input wire rst,
     output reg out_delay,
+    output wire confirm_to_reciver,
 );
 
 //Ciclos de envío de datos y recepctión de datos
@@ -27,13 +28,28 @@ always @(states) begin
         A: out_delay = 1'b0;
         B: out_delay = 1'b1;
         C: out_delay = 1'b0;
-        D: out_delay = 1'b1;
-
-        default: 
+        D: out_delay = 1'b1, confirm_to_reciver = 1'b1;
+        default: out_delay = 1'b1;
     endcase
 
-
 end
+
+always @(posedge clk, posedge rst) begin
+    if (rst)
+        states <= A;
+    else begin
+        
+        case (param)
+            : 
+            default: 
+        endcase
+
+
+    end
+
+    
+end
+
 
 
 
