@@ -1,11 +1,13 @@
 `include "./freqDiv.v"
+`include "./StartModule.v"
 module moduleName (
     input wire hwclk,
-    input wire rst, //Al inicio debe ponerse como wire rst; assign rst = 0, fuera de estas entradas 
+    input wire rst, //Al inicio debe ponerse como wire rst; assign rst = 0, fuera de estas entradas
+    input reg dht11_data, 
 );
 
 
-  freqDiv #(
+freqDiv #(
 `ifdef SIM  // Macros de presíntesis
       .FREQ_IN (10),    // 10 Tikcs
       .FREQ_OUT(1)      // 1 Tikcs
@@ -17,6 +19,8 @@ module moduleName (
       .CLK_IN (hwclk),
       .CLK_OUT(clk)
 )
+
+
 
 
 
