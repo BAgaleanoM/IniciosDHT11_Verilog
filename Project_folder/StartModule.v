@@ -3,7 +3,7 @@ module StartModule (
     input wire clk,
     input wire rst,
     output reg out_delay,
-    output reg  confirm_to_reciver;
+    output reg  confirm_to_reciver
 );
 
 //Ciclos de envío de datos y recepctión de datos
@@ -20,9 +20,9 @@ parameter A=0, B=1, C=2, D=3;
 always @(states) begin
 
     case (states)
-        A: out_delay = 1'b0;
-        B: out_delay = 1'b1;
-        C: out_delay = 1'b0;
+        A: out_delay = 1'b0, confirm_to_reciver = 1'b1;
+        B: out_delay = 1'b1, confirm_to_reciver = 1'b1;
+        C: out_delay = 1'b0, confirm_to_reciver = 1'b1;
         D: out_delay = 1'b1, confirm_to_reciver = 1'b1;
         default: out_delay = 1'b0;
     endcase
@@ -37,7 +37,7 @@ end
 always @(posedge clk or posedge rst) begin
     if (rst)
         states <= A;
-        counter = 0;
+        counter <= 0;
     else begin
         
         case (states)
@@ -53,7 +53,7 @@ always @(posedge clk or posedge rst) begin
             B:begin
                 if (counter == up_to_request) begin
                     states <= C;
-                    counter = 0;
+                    counter <= 0;
                 end else begin
                     states <= B;
                     counter <= counter+1;
@@ -62,7 +62,7 @@ always @(posedge clk or posedge rst) begin
             C:begin
                 if (counter == dht11_response) begin
                     states <= D;
-                    counter = 0;
+                    counter <= 0;
                 end else begin
                     states <= C;
                     counter <= counter+1;
@@ -70,18 +70,15 @@ always @(posedge clk or posedge rst) begin
             end
             D:begin
                 if (counter == dht11_response) begin
-                    states <= D;
-                    counter = 0;
+                    states <= A;
+                    counter <= 0;
                 end else begin
+                    
                     counter <= counter+1;
                 end
             end
-            default: counter = 0; 
+            default: counter <= 0; 
         endcase
     end
 end
-
-
-
-
 endmodule
