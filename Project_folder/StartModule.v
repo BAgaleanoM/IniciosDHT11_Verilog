@@ -3,7 +3,7 @@ module StartModule (
     input wire clk,
     input wire rst,
     output reg out_delay,
-    output reg  confirm_to_reciver
+    output reg  confirm_to_reciver //Variable que debe ir a 
 );
 
 //Ciclos de envío de datos y recepctión de datos

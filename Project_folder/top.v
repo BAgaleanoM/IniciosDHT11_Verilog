@@ -1,12 +1,18 @@
 `include "./freqDiv.v"
 `include "./StartModule.v"
-module moduleName (
+module top (
     input wire hwclk,
-    input wire rst, //Al inicio debe ponerse como wire rst; assign rst = 0, fuera de estas entradas
-    input reg dht11_data, 
+    // input wire rst,
+    input wire dht11_data
 );
+wire rst; 
+assign rst = 0;
 
+// Salidas de StartModule
+reg out_data;
+reg confirm_to_reciver;
 
+//Divisor de frecuencia
 freqDiv #(
 `ifdef SIM  // Macros de presíntesis
       .FREQ_IN (10),    // 10 Tikcs
@@ -18,10 +24,14 @@ freqDiv #(
   ) frequencyDivider (
       .CLK_IN (hwclk),
       .CLK_OUT(clk)
-)
+);
 
-
-
+StartModule startModule(
+      .clk(clk),
+      .rst(rst),
+      .out_delay(dht11_data),
+      .confirm_to_reciver(confirm_to_reciver)
+);
 
 
 endmodule
