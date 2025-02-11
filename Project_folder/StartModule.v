@@ -20,11 +20,26 @@ parameter A=0, B=1, C=2, D=3;
 always @(states) begin
 
     case (states)
-        A: out_delay = 1'b0, confirm_to_reciver = 1'b1;
-        B: out_delay = 1'b1, confirm_to_reciver = 1'b1;
-        C: out_delay = 1'b0, confirm_to_reciver = 1'b1;
-        D: out_delay = 1'b1, confirm_to_reciver = 1'b1;
-        default: out_delay = 1'b0;
+        A:begin
+            out_delay = 1'b0; 
+            confirm_to_reciver = 1'b0;           
+        end 
+        B: begin 
+            out_delay = 1'b1; 
+            confirm_to_reciver = 1'b0;
+        end 
+        C: begin
+            out_delay = 1'b0; 
+            confirm_to_reciver = 1'b0;            
+        end 
+        D: begin
+            out_delay = 1'b1; 
+            confirm_to_reciver = 1'b1;            
+        end 
+        default:begin
+            out_delay = 1'b0;
+            confirm_to_reciver = 1'b0;
+        end 
     endcase
 
 end
@@ -32,19 +47,20 @@ end
 initial begin
     states <= A;
     out_delay = 1'b0;
+    confirm_to_reciver = 1'b0;
 end
 
 always @(posedge clk or posedge rst) begin
-    if (rst)
+    if (rst) begin
         states <= A;
         counter <= 0;
-    else begin
+    end else begin
         
         case (states)
             A:begin
                 if (counter == send_star_signal) begin
                     states <= B; // Para pasar al otro estado de la salida
-                    counter = 0; //Para reiniciar el contador a 0
+                    counter <= 0; //Para reiniciar el contador a 0
                 end else begin
                     states <= A;
                     counter <= counter+1;
@@ -77,7 +93,10 @@ always @(posedge clk or posedge rst) begin
                     counter <= counter+1;
                 end
             end
-            default: counter <= 0; 
+            default: begin
+                states <= A;
+                counter <= 0;
+            end  
         endcase
     end
 end
