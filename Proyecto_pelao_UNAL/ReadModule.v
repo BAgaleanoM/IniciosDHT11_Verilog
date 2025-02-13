@@ -1,3 +1,4 @@
+`include "DelayModule.v"
 module ReadModule (
   input wire clk,          // Señal de reloj
   input wire rst,          // Señal de reinicio

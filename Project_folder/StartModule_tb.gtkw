@@ -1,0 +1,18 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Wed Feb 12 20:02:06 2025
+[*]
+[dumpfile] "/home/brandon/Escritorio/Bases de Verilog/Proyecto_Digital_I/Project_folder/sim/StartModule_tb.vcd"
+[dumpfile_mtime] "Wed Feb 12 20:01:59 2025"
+[dumpfile_size] 888
+[savefile] "/home/brandon/Escritorio/Bases de Verilog/Proyecto_Digital_I/Project_folder/StartModule_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 201
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+[pattern_trace] 1
+[pattern_trace] 0

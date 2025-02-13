@@ -1,7 +1,7 @@
-`timescale 1ns/1ps
+`timescale 10us/10ns
 `include "StartModule.v"
 module StartModule_tb;
-    reg clk;
+    reg clk=0;
     reg rst;
     wire out_delay;
     wire confirm_to_reciver;
@@ -15,7 +15,7 @@ module StartModule_tb;
     );
     
     // Generación de reloj
-    always #5 clk = ~clk; // Periodo de 10ns
+    always #1 clk = ~clk; // Periodo de 10ns
     
     initial begin
         // Inicialización de señales
@@ -30,8 +30,10 @@ module StartModule_tb;
         $monitor("Time: %0t | State: %b | out_delay: %b | confirm_to_reciver: %b", $time, uut.states, out_delay, confirm_to_reciver);
         
         // Simulación por un tiempo suficiente para verificar las transiciones de estado
-        #500000;
-        
-        $finish;
+    #500000;
+
+            // $dumpfile("StartModule.vcd");
+            $dumpvars;
+    $finish;
     end
 endmodule

@@ -1,5 +1,5 @@
 `timescale 1us/1us  // Definición de la escala de tiempo
-
+`include "ReadModule.v"
 module ReadModule_tb;
 
   reg clk;

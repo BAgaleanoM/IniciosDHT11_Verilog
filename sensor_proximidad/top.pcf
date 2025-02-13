@@ -1,0 +1,3 @@
+set_io hwclk 60
+set_io pir_in  26
+set_io led_out  24
