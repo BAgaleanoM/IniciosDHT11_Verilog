@@ -3,7 +3,7 @@ module StartModule (
     input wire clk,
     input wire rst,
     output reg out_delay,
-    output reg  confirm_to_reciver //Variable que debe ir a 
+    output reg  confirm_to_reciver //Variable que debe ir al módulo 
 );
 
 //Ciclos de envío de datos y recepctión de datos
@@ -37,7 +37,7 @@ always @(states) begin
             confirm_to_reciver = 1'b1;            
         end 
         default:begin
-            out_delay = 1'b0;
+            out_delay = 1'b1;
             confirm_to_reciver = 1'b0;
         end 
     endcase

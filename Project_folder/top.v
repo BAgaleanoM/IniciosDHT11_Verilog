@@ -1,5 +1,6 @@
 `include "./freqDiv.v"
 `include "./StartModule.v"
+`include "DataReciverModule.v"
 module top (
     input wire hwclk,
     // input wire rst,
@@ -31,6 +32,9 @@ StartModule startModule(
       .rst(rst),
       .out_delay(dht11_data),
       .confirm_to_reciver(confirm_to_reciver)
+
+
+
 );
 
 

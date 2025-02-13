@@ -1,7 +1,8 @@
-`timescale 10us/10ns
+`timescale 10us/10us
 `include "StartModule.v"
+
 module StartModule_tb;
-    reg clk=0;
+    reg clk = 0;
     reg rst;
     wire out_delay;
     wire confirm_to_reciver;
@@ -30,7 +31,7 @@ module StartModule_tb;
         $monitor("Time: %0t | State: %b | out_delay: %b | confirm_to_reciver: %b", $time, uut.states, out_delay, confirm_to_reciver);
         
         // Simulación por un tiempo suficiente para verificar las transiciones de estado
-    #500000;
+        #500000;
 
             // $dumpfile("StartModule.vcd");
             $dumpvars;
