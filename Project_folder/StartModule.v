@@ -2,7 +2,7 @@
 module StartModule (
     input wire clk,
     input wire rst,
-    output reg out_delay,
+    input reg out_delay,
     output reg  confirm_to_reciver //Variable que debe ir al módulo 
 );
 
