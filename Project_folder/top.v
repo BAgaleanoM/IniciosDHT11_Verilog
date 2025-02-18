@@ -1,16 +1,16 @@
 `include "./freqDiv.v"
 `include "./StartModule.v"
-`include "DataReciverModule.v"
+`include "./DataReciverModule.v"
 module top (
     input wire hwclk,
     //input wire rst,
-    input reg dht11_data
+    inout reg dht11_data
 );
 wire rst; 
 assign rst = 0;
 
 // Salidas de StartModule
-//reg out_data;
+reg out_data;
 reg confirm_to_reciver;
 
 //Divisor de frecuencia

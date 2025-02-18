@@ -2,17 +2,23 @@
 module StartModule (
     input wire clk,
     input wire rst,
-    input reg out_delay,
+    inout wire out_delay,
     output reg  confirm_to_reciver //Variable que debe ir al módulo 
 );
+
+reg data_aux;
+reg[1:0] selector;
+
+assign out_delay = (selector) ? data_aux : 1'bz;
 
 //Ciclos de envío de datos y recepctión de datos
 parameter send_star_signal = 18000; //Para poner Pin en low por 18ms
 parameter up_to_request = 30; //Para poner Pin en alto por 30us
-parameter dht11_response = 80; // Tiempos en high y low de respuesta del DHT11
+parameter dht11_response = 160; // Tiempos en high y low de respuesta del DHT11
 
+//Variables de la máquina de estados
 reg[18:0] counter;
-reg[2:0] states;
+reg[3:0] states;
 
 parameter A=0, B=1, C=2, D=3;
 
@@ -21,39 +27,40 @@ always @(states) begin
 
     case (states)
         A:begin
-            out_delay = 1'b0; 
-            confirm_to_reciver = 1'b0;           
-        end 
+            selector = 1'b1;
+            data_aux = 1'b0;
+            confirm_to_reciver = 1'b0;
+        end
         B: begin 
-            out_delay = 1'b1; 
+            selector = 1'b1;
+            data_aux = 1'b1; 
             confirm_to_reciver = 1'b0;
         end 
         C: begin
-            out_delay = 1'b0; 
-            confirm_to_reciver = 1'b0;            
-        end 
+            selector = 1'b0;
+            data_aux = 1'b0;
+            confirm_to_reciver = 1'b0;
+        end
         D: begin
-            out_delay = 1'b1; 
-            confirm_to_reciver = 1'b1;            
-        end 
+            selector = 1'b0;
+            data_aux = 1'b0;
+            confirm_to_reciver = 1'b1;
+        end
         default:begin
-            out_delay = 1'b1;
+            selector = 1'b1;
+            data_aux = 1'b1;
             confirm_to_reciver = 1'b0;
         end 
     endcase
 
 end
 
-initial begin
-    states <= A;
-    out_delay = 1'b0;
-    confirm_to_reciver = 1'b0;
-end
-
 always @(posedge clk or posedge rst) begin
     if (rst) begin
         states <= A;
         counter <= 0;
+        data_aux <= 1'b0;
+        confirm_to_reciver <= 1'b0;
     end else begin
         
         case (states)
@@ -77,7 +84,7 @@ always @(posedge clk or posedge rst) begin
             end
             C:begin
                 if (counter == dht11_response) begin
-                    states <= D;
+                    state <= D;
                     counter <= 0;
                 end else begin
                     states <= C;
@@ -86,10 +93,9 @@ always @(posedge clk or posedge rst) begin
             end
             D:begin
                 if (counter == dht11_response) begin
-                    states <= A;
                     counter <= 0;
                 end else begin
-                    
+                    state <= D;
                     counter <= counter+1;
                 end
             end

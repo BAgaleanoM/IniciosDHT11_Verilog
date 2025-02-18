@@ -3,7 +3,7 @@ clean: clean-syn clean-sim
 top=top
 #test bench del proyecto para la simulación
 tb?=StartModule.v
-MACROS_SIM=
+MACROS_SIM=-DSIM
 MACROS_SYN=
 MORE_SRC2SIM?=
 DESIGN=top.v
