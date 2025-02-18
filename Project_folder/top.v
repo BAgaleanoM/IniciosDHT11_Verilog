@@ -28,13 +28,10 @@ freqDiv #(
 );
 
 StartModule startModule(
-      .clk(clk),
+      .clk(hwclk),
       .rst(rst),
       .out_delay(dht11_data),
       .confirm_to_reciver(confirm_to_reciver)
-
-
-
 );
 
 

@@ -1,5 +1,5 @@
 set_io hwclk 60 # Señal de reloj del hardware 12 MHz
-set_io -pullup yes rst 52 # Switch S1
+# set_io -pullup yes rst 52 # Switch S1
 
 
 ## UART
@@ -7,4 +7,4 @@ set_io -pullup yes rst 52 # Switch S1
 # set_io rx_pin 8 # RX
 
 #Pin de datos
-set_io dht11_data 104
+set_io dht11_data 24
