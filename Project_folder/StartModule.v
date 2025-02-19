@@ -84,7 +84,7 @@ always @(posedge clk or posedge rst) begin
             end
             C:begin
                 if (counter == dht11_response) begin
-                    state <= D;
+                    states <= D;
                     counter <= 0;
                 end else begin
                     states <= C;
@@ -95,7 +95,7 @@ always @(posedge clk or posedge rst) begin
                 if (counter == dht11_response) begin
                     counter <= 0;
                 end else begin
-                    state <= D;
+                    states <= D;
                     counter <= counter+1;
                 end
             end

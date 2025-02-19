@@ -1,0 +1,503 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33+6 (git sha1 41b34a193, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1694128612374/work=/usr/local/src/conda/yosys-0.33_7_g41b34a193 -fdebug-prefix-map=/home/brandon/miniconda3/envs/digital=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
+
+
+-- Parsing `top.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: top.v
+Parsing Verilog input from `top.v' to AST representation.
+Warning: Yosys has only limited support for tri-state logic at the moment. (./StartModule.v:12)
+Storing AST representation for module `$abstract\freqDiv'.
+Storing AST representation for module `$abstract\StartModule'.
+Storing AST representation for module `$abstract\DataReciverModule'.
+Storing AST representation for module `$abstract\top'.
+Successfully finished Verilog frontend.
+
+-- Running command `prep -top top; hierarchy -check; proc; write_json sim/top.json' --
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\top'.
+Generating RTLIL representation for module `\top'.
+top.v:26: Warning: Replacing floating point parameter frequencyDivider.FREQ_IN = 25000000.000000 with string.
+top.v:26: Warning: Replacing floating point parameter frequencyDivider.FREQ_OUT = 1000000.000000 with string.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \top
+
+2.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\StartModule'.
+Generating RTLIL representation for module `\StartModule'.
+Note: Assuming pure combinatorial block at ./StartModule.v:26.1-56.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Parameter \FREQ_IN = 120'001100100011010100110000001100000011000000110000001100000011000000101110001100000011000000110000001100000011000000110000
+Parameter \FREQ_OUT = 112'0011000100110000001100000011000000110000001100000011000000101110001100000011000000110000001100000011000000110000
+
+2.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\freqDiv'.
+Parameter \FREQ_IN = 120'001100100011010100110000001100000011000000110000001100000011000000101110001100000011000000110000001100000011000000110000
+Parameter \FREQ_OUT = 112'0011000100110000001100000011000000110000001100000011000000101110001100000011000000110000001100000011000000110000
+Generating RTLIL representation for module `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv'.
+./freqDiv.v:3: Warning: converting real value 2.500000e+07 to binary 25000000.
+./freqDiv.v:4: Warning: converting real value 1.000000e+06 to binary 1000000.
+
+2.2.4. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \StartModule
+Used module:     $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv
+
+2.2.5. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \StartModule
+Used module:     $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv
+Removing unused module `$abstract\top'.
+Removing unused module `$abstract\DataReciverModule'.
+Removing unused module `$abstract\StartModule'.
+Removing unused module `$abstract\freqDiv'.
+Removed 4 unused modules.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 6 switch rules as full_case in process $proc$./StartModule.v:58$4 in module StartModule.
+Marked 1 switch rules as full_case in process $proc$./StartModule.v:26$3 in module StartModule.
+Marked 1 switch rules as full_case in process $proc$./freqDiv.v:20$13 in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 5 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$18'.
+  Set init value: \count = 4'0000
+Found init rule in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$17'.
+  Set init value: \CLK_OUT = 1'0
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\StartModule.$proc$./StartModule.v:58$4'.
+
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\StartModule.$proc$./StartModule.v:58$4'.
+     1/4: $0\counter[18:0]
+     2/4: $0\states[3:0]
+     3/4: $2\data_aux[0:0]
+     4/4: $2\confirm_to_reciver[0:0]
+Creating decoders for process `\StartModule.$proc$./StartModule.v:26$3'.
+     1/3: $1\confirm_to_reciver[0:0]
+     2/3: $1\data_aux[0:0]
+     3/3: $1\selector[1:0]
+Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$18'.
+Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$17'.
+Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$13'.
+     1/2: $0\count[3:0]
+     2/2: $0\CLK_OUT[0:0]
+
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\StartModule.\confirm_to_reciver' from process `\StartModule.$proc$./StartModule.v:26$3'.
+No latch inferred for signal `\StartModule.\data_aux' from process `\StartModule.$proc$./StartModule.v:26$3'.
+No latch inferred for signal `\StartModule.\selector' from process `\StartModule.$proc$./StartModule.v:26$3'.
+
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\StartModule.\confirm_to_reciver' using process `\StartModule.$proc$./StartModule.v:58$4'.
+  created $adff cell `$procdff$73' with positive edge clock and positive level reset.
+Creating register for signal `\StartModule.\data_aux' using process `\StartModule.$proc$./StartModule.v:58$4'.
+  created $adff cell `$procdff$74' with positive edge clock and positive level reset.
+Creating register for signal `\StartModule.\counter' using process `\StartModule.$proc$./StartModule.v:58$4'.
+  created $adff cell `$procdff$75' with positive edge clock and positive level reset.
+Creating register for signal `\StartModule.\states' using process `\StartModule.$proc$./StartModule.v:58$4'.
+  created $adff cell `$procdff$76' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.\CLK_OUT' using process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$13'.
+  created $dff cell `$procdff$77' with positive edge clock.
+Creating register for signal `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.\count' using process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$13'.
+  created $dff cell `$procdff$78' with positive edge clock.
+
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 5 empty switches in `\StartModule.$proc$./StartModule.v:58$4'.
+Removing empty process `StartModule.$proc$./StartModule.v:58$4'.
+Found and cleaned up 1 empty switch in `\StartModule.$proc$./StartModule.v:26$3'.
+Removing empty process `StartModule.$proc$./StartModule.v:26$3'.
+Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$18'.
+Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$17'.
+Found and cleaned up 1 empty switch in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$13'.
+Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$13'.
+Cleaned up 7 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module StartModule.
+Optimizing module top.
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module StartModule.
+Optimizing module top.
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \StartModule..
+Finding unused cells or wires in module \top..
+Finding unused cells or wires in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+Removed 0 unused cells and 29 unused wires.
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv...
+Checking module StartModule...
+Warning: multiple conflicting drivers for StartModule.\data_aux:
+    port Q[0] of cell $procdff$74 ($adff)
+    port Y[0] of cell $procmux$59 ($pmux)
+Warning: multiple conflicting drivers for StartModule.\confirm_to_reciver:
+    port Q[0] of cell $procdff$73 ($adff)
+    port Y[0] of cell $procmux$56 ($mux)
+Checking module top...
+Found and reported 2 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Optimizing module StartModule.
+Optimizing module top.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv'.
+Finding identical cells in module `\StartModule'.
+Finding identical cells in module `\top'.
+Removed a total of 14 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \StartModule..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+  Optimizing cells in module \StartModule.
+    New ctrl vector for $pmux cell $procmux$59: $auto$opt_reduce.cc:134:opt_pmux$80
+    New ctrl vector for $pmux cell $procmux$64: $auto$opt_reduce.cc:134:opt_pmux$82
+  Optimizing cells in module \StartModule.
+  Optimizing cells in module \top.
+Performed a total of 2 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv'.
+Finding identical cells in module `\StartModule'.
+Finding identical cells in module `\top'.
+Removed a total of 1 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+Finding unused cells or wires in module \StartModule..
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 15 unused wires.
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Optimizing module StartModule.
+Optimizing module top.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \StartModule..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+  Optimizing cells in module \StartModule.
+    New ctrl vector for $pmux cell $procmux$23: { $procmux$36_CMP $procmux$32_CMP $auto$opt_reduce.cc:134:opt_pmux$84 }
+  Optimizing cells in module \StartModule.
+  Optimizing cells in module \top.
+Performed a total of 1 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv'.
+Finding identical cells in module `\StartModule'.
+Finding identical cells in module `\top'.
+Removed a total of 1 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+Finding unused cells or wires in module \StartModule..
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 1 unused wires.
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Optimizing module StartModule.
+Optimizing module top.
+
+2.7.14. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.15. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \StartModule..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.7.16. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+  Optimizing cells in module \StartModule.
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.7.17. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv'.
+Finding identical cells in module `\StartModule'.
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.7.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+Finding unused cells or wires in module \StartModule..
+Finding unused cells or wires in module \top..
+
+2.7.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Optimizing module StartModule.
+Optimizing module top.
+
+2.7.20. Finished OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$add$./freqDiv.v:25$16 ($add).
+Removed top 28 bits (of 32) from port Y of cell $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$add$./freqDiv.v:25$16 ($add).
+Removed top 28 bits (of 32) from wire $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$add$./freqDiv.v:25$16_Y.
+Removed top 2 bits (of 4) from port B of cell StartModule.$procmux$24_CMP0 ($eq).
+Removed top 4 bits (of 19) from port B of cell StartModule.$eq$./StartModule.v:68$5 ($eq).
+Removed top 31 bits (of 32) from port B of cell StartModule.$add$./StartModule.v:73$6 ($add).
+Removed top 13 bits (of 32) from port Y of cell StartModule.$add$./StartModule.v:73$6 ($add).
+Removed top 14 bits (of 19) from port B of cell StartModule.$eq$./StartModule.v:77$7 ($eq).
+Removed top 11 bits (of 19) from port B of cell StartModule.$eq$./StartModule.v:86$9 ($eq).
+Removed top 2 bits (of 4) from port B of cell StartModule.$procmux$28_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell StartModule.$procmux$32_CMP0 ($eq).
+Removed top 3 bits (of 4) from mux cell StartModule.$procmux$44 ($mux).
+Removed top 2 bits (of 4) from mux cell StartModule.$procmux$48 ($mux).
+Removed top 3 bits (of 4) from mux cell StartModule.$procmux$52 ($mux).
+Removed top 1 bits (of 2) from mux cell StartModule.$procmux$64 ($mux).
+Removed top 13 bits (of 32) from wire StartModule.$add$./StartModule.v:73$6_Y.
+Removed top 1 bits (of 2) from wire StartModule.selector.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+Finding unused cells or wires in module \StartModule..
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 3 unused wires.
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Optimizing module StartModule.
+Optimizing module top.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv'.
+Finding identical cells in module `\StartModule'.
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv..
+Finding unused cells or wires in module \StartModule..
+Finding unused cells or wires in module \top..
+Removed 1 unused cells and 2 unused wires.
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Printing statistics.
+
+=== $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            2
+     $eq                             1
+     $mux                            2
+     $not                            1
+
+=== StartModule ===
+
+   Number of wires:                 26
+   Number of wire bits:            152
+   Number of public wires:           7
+   Number of public wire bits:      28
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $add                            1
+     $adff                           4
+     $eq                             6
+     $logic_not                      1
+     $mux                           10
+     $pmux                           2
+     $reduce_or                      2
+
+=== top ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv      1
+     StartModule                     1
+
+=== design hierarchy ===
+
+   top                               1
+     $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv      1
+     StartModule                     1
+
+   Number of wires:                 39
+   Number of wire bits:            174
+   Number of public wires:          15
+   Number of public wire bits:      39
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $add                            2
+     $adff                           4
+     $dff                            2
+     $eq                             7
+     $logic_not                      1
+     $mux                           12
+     $not                            1
+     $pmux                           2
+     $reduce_or                      2
+
+2.13. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv...
+Checking module StartModule...
+Warning: multiple conflicting drivers for StartModule.\data_aux:
+    port Q[0] of cell $procdff$74 ($adff)
+    port Y[0] of cell $procmux$59 ($mux)
+Warning: multiple conflicting drivers for StartModule.\confirm_to_reciver:
+    port Q[0] of cell $procdff$73 ($adff)
+    port Y[0] of cell $procmux$56 ($mux)
+Checking module top...
+Found and reported 2 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv
+Used module:     \StartModule
+
+3.2. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv
+Used module:     \StartModule
+Removed 0 unused modules.
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Optimizing module StartModule.
+Optimizing module top.
+
+5. Executing JSON backend.
+
+Warnings: 8 unique messages, 9 total
+End of script. Logfile hash: c1afd1419f, CPU: user 0.11s system 0.02s, MEM: 11.38 MB peak
+Yosys 0.33+6 (git sha1 41b34a193, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1694128612374/work=/usr/local/src/conda/yosys-0.33_7_g41b34a193 -fdebug-prefix-map=/home/brandon/miniconda3/envs/digital=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
+Time spent: 25% 8x opt_expr (0 sec), 17% 6x opt_clean (0 sec), ...

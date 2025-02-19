@@ -8,6 +8,7 @@ module top (
 );
 wire rst; 
 assign rst = 0;
+wire clk;
 
 // Salidas de StartModule
 reg out_data;
@@ -28,11 +29,9 @@ freqDiv #(
 );
 
 StartModule startModule(
-      .clk(hwclk),
+      .clk(clk),
       .rst(rst),
       .out_delay(dht11_data),
       .confirm_to_reciver(confirm_to_reciver)
 );
-
-
 endmodule
