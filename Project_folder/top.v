@@ -34,4 +34,12 @@ StartModule startModule(
       .out_delay(dht11_data),
       .confirm_to_reciver(confirm_to_reciver)
 );
+
+DataReciverModule dataReciverModule(
+      .clk(clk),
+      .rst(rst),
+      .confirm_to_reciver(confirm_to_reciver),
+      .dht11_data(dht11_data),
+);
+
 endmodule
