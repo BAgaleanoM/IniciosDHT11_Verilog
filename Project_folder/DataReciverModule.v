@@ -6,6 +6,4 @@ module DataReciverModule (
     output reg[15:0] hum_data
 );
 
-
-
 endmodule

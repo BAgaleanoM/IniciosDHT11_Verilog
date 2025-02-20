@@ -86,7 +86,7 @@ Info:     at iteration #15, type SB_GB: wirelen solved = 214, spread = 214, lega
 Info:     at iteration #15, type ALL: wirelen solved = 33, spread = 141, legal = 162; time = 0.00s
 Info:     at iteration #16, type ICESTORM_LC: wirelen solved = 44, spread = 203, legal = 216; time = 0.00s
 Info:     at iteration #16, type SB_GB: wirelen solved = 211, spread = 212, legal = 216; time = 0.00s
-Info:     at iteration #16, type ALL: wirelen solved = 41, spread = 141, legal = 175; time = 0.00s
+Info:     at iteration #16, type ALL: wirelen solved = 41, spread = 141, legal = 175; time = 0.01s
 Info:     at iteration #17, type ICESTORM_LC: wirelen solved = 47, spread = 213, legal = 216; time = 0.00s
 Info:     at iteration #17, type SB_GB: wirelen solved = 210, spread = 210, legal = 215; time = 0.00s
 Info:     at iteration #17, type ALL: wirelen solved = 38, spread = 165, legal = 188; time = 0.00s
@@ -99,8 +99,8 @@ Info:     at iteration #19, type ALL: wirelen solved = 34, spread = 183, legal =
 Info:     at iteration #20, type ICESTORM_LC: wirelen solved = 40, spread = 206, legal = 230; time = 0.00s
 Info:     at iteration #20, type SB_GB: wirelen solved = 224, spread = 224, legal = 231; time = 0.00s
 Info:     at iteration #20, type ALL: wirelen solved = 38, spread = 182, legal = 187; time = 0.00s
-Info: HeAP Placer Time: 0.15s
-Info:   of which solving equations: 0.11s
+Info: HeAP Placer Time: 0.16s
+Info:   of which solving equations: 0.12s
 Info:   of which spreading cells: 0.01s
 Info:   of which strict legalisation: 0.01s
 
@@ -122,9 +122,9 @@ Info: Setting up routing queue.
 Info: Routing 251 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:        301 |       41        243 |   41   243 |         0|       0.04       0.04|
+Info:        301 |       41        243 |   41   243 |         0|       0.36       0.36|
 Info: Routing complete.
-Info: Router1 time 0.04s
+Info: Router1 time 0.36s
 Info: Checksum: 0xee9ca2a0
 
 Info: Critical path report for clock 'hwclk$SB_IO_IN_$glb_clk' (posedge -> posedge):
