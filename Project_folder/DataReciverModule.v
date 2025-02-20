@@ -1,7 +1,7 @@
 module DataReciverModule (
     input wire clk,
     input wire rst,
-    input reg confirm_to_reciver,
+    input wire confirm_to_reciver,
     inout reg dht11_data
 );
 reg[15:0] temp_data;

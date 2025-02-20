@@ -12,7 +12,7 @@ wire clk;
 
 // Salidas de StartModule
 reg out_data;
-reg confirm_to_reciver;
+wire confirm_to_reciver;
 
 //Divisor de frecuencia
 freqDiv #(

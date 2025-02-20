@@ -1273,7 +1273,7 @@
           "hide_name": 0,
           "bits": [ 5 ],
           "attributes": {
-            "src": "top.v:15.5-15.23"
+            "src": "top.v:15.6-15.24"
           }
         },
         "dht11_data": {

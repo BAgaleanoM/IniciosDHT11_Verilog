@@ -55,6 +55,12 @@ Generating RTLIL representation for module `\DataReciverModule'.
 2.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\StartModule'.
 Generating RTLIL representation for module `\StartModule'.
 Warning: reg '\out_delay' is assigned in a continuous assignment at ./StartModule.v:11.8-11.48.
+Warning: wire '\confirm_to_reciver' is assigned in a block at ./StartModule.v:30.9-30.35.
+Warning: wire '\confirm_to_reciver' is assigned in a block at ./StartModule.v:37.17-37.43.
+Warning: wire '\confirm_to_reciver' is assigned in a block at ./StartModule.v:49.17-49.43.
+Warning: wire '\confirm_to_reciver' is assigned in a block at ./StartModule.v:61.17-61.43.
+Warning: wire '\confirm_to_reciver' is assigned in a block at ./StartModule.v:73.17-73.43.
+Warning: wire '\confirm_to_reciver' is assigned in a block at ./StartModule.v:85.17-85.43.
 Parameter \FREQ_IN = 120'001100100011010100110000001100000011000000110000001100000011000000101110001100000011000000110000001100000011000000110000
 Parameter \FREQ_OUT = 112'0011000100110000001100000011000000110000001100000011000000101110001100000011000000110000001100000011000000110000
 
@@ -529,7 +535,7 @@ Optimizing module top.
 
 5. Executing JSON backend.
 
-Warnings: 8 unique messages, 8 total
-End of script. Logfile hash: ed840de35b, CPU: user 0.09s system 0.01s, MEM: 11.88 MB peak
+Warnings: 14 unique messages, 14 total
+End of script. Logfile hash: 47bafedf71, CPU: user 0.09s system 0.01s, MEM: 12.12 MB peak
 Yosys 0.33+6 (git sha1 41b34a193, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1694128612374/work=/usr/local/src/conda/yosys-0.33_7_g41b34a193 -fdebug-prefix-map=/home/brandon/miniconda3/envs/digital=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
-Time spent: 29% 8x opt_expr (0 sec), 18% 6x opt_clean (0 sec), ...
+Time spent: 24% 8x opt_expr (0 sec), 19% 5x opt_merge (0 sec), ...
