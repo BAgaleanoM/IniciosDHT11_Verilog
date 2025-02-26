@@ -14,6 +14,7 @@ wire clk;
 reg out_data;
 wire confirm_to_reciver;
 
+
 //Divisor de frecuencia
 freqDiv #(
 `ifdef SIM  // Macros de presíntesis

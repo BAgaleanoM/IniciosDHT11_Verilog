@@ -27,7 +27,6 @@
 1. Executing Verilog-2005 frontend: top.v
 Parsing Verilog input from `top.v' to AST representation.
 Warning: Yosys has only limited support for tri-state logic at the moment. (./StartModule.v:11)
-Warning: Yosys has only limited support for tri-state logic at the moment. (./DataReciverModule.v:15)
 Storing AST representation for module `$abstract\freqDiv'.
 Storing AST representation for module `$abstract\StartModule'.
 Storing AST representation for module `$abstract\DataReciverModule'.
@@ -104,7 +103,6 @@ Top module:  \top
 
 2.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\DataReciverModule'.
 Generating RTLIL representation for module `\DataReciverModule'.
-./DataReciverModule.v:15: Warning: Identifier `\out_delay' is implicitly declared.
 
 2.3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\StartModule'.
 Generating RTLIL representation for module `\StartModule'.
@@ -164,8 +162,8 @@ Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/env
 Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179 in module SB_DFFSS.
 Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176 in module SB_DFFR.
 Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173 in module SB_DFFSR.
-Marked 1 switch rules as full_case in process $proc$./freqDiv.v:20$394 in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
-Marked 6 switch rules as full_case in process $proc$./StartModule.v:25$385 in module StartModule.
+Marked 1 switch rules as full_case in process $proc$./freqDiv.v:20$392 in module $paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.
+Marked 6 switch rules as full_case in process $proc$./StartModule.v:25$383 in module StartModule.
 Removed a total of 0 dead cases.
 
 2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -213,9 +211,9 @@ Found init rule in `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../
   Set init value: \Q = 1'0
 Found init rule in `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$170'.
   Set init value: \Q = 1'0
-Found init rule in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$399'.
+Found init rule in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$397'.
   Set init value: \count = 4'0000
-Found init rule in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$398'.
+Found init rule in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$396'.
   Set init value: \CLK_OUT = 1'0
 
 2.4.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -227,7 +225,7 @@ Found async reset \S in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/b
 Found async reset \R in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
 Found async reset \S in `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182'.
 Found async reset \R in `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176'.
-Found async reset \rst in `\StartModule.$proc$./StartModule.v:25$385'.
+Found async reset \rst in `\StartModule.$proc$./StartModule.v:25$383'.
 
 2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
@@ -291,12 +289,12 @@ Creating decoders for process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digi
      1/1: $0\Q[0:0]
 Creating decoders for process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$170'.
 Creating decoders for process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$169'.
-Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$399'.
-Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$398'.
-Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$394'.
+Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$397'.
+Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$396'.
+Creating decoders for process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$392'.
      1/2: $0\count[3:0]
      2/2: $0\CLK_OUT[0:0]
-Creating decoders for process `\StartModule.$proc$./StartModule.v:25$385'.
+Creating decoders for process `\StartModule.$proc$./StartModule.v:25$383'.
      1/5: $0\counter[18:0]
      2/5: $0\confirm_to_reciver[0:0]
      3/5: $0\data_aux[0:0]
@@ -307,59 +305,59 @@ Creating decoders for process `\StartModule.$proc$./StartModule.v:25$385'.
 
 2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\SB_DFFNES.\Q' using process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241'.
-  created $adff cell `$procdff$495' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$493' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNESS.\Q' using process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$234'.
-  created $dff cell `$procdff$496' with negative edge clock.
+  created $dff cell `$procdff$494' with negative edge clock.
 Creating register for signal `\SB_DFFNER.\Q' using process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230'.
-  created $adff cell `$procdff$497' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$495' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNESR.\Q' using process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$223'.
-  created $dff cell `$procdff$498' with negative edge clock.
+  created $dff cell `$procdff$496' with negative edge clock.
 Creating register for signal `\SB_DFFNS.\Q' using process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$220'.
-  created $adff cell `$procdff$499' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$497' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNSS.\Q' using process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$217'.
-  created $dff cell `$procdff$500' with negative edge clock.
+  created $dff cell `$procdff$498' with negative edge clock.
 Creating register for signal `\SB_DFFNR.\Q' using process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$214'.
-  created $adff cell `$procdff$501' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$499' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNSR.\Q' using process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$211'.
-  created $dff cell `$procdff$502' with negative edge clock.
+  created $dff cell `$procdff$500' with negative edge clock.
 Creating register for signal `\SB_DFFNE.\Q' using process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$209'.
-  created $dff cell `$procdff$503' with negative edge clock.
+  created $dff cell `$procdff$501' with negative edge clock.
 Creating register for signal `\SB_DFFN.\Q' using process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$207'.
-  created $dff cell `$procdff$504' with negative edge clock.
+  created $dff cell `$procdff$502' with negative edge clock.
 Creating register for signal `\SB_DFFES.\Q' using process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203'.
-  created $adff cell `$procdff$505' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$503' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$196'.
-  created $dff cell `$procdff$506' with positive edge clock.
+  created $dff cell `$procdff$504' with positive edge clock.
 Creating register for signal `\SB_DFFER.\Q' using process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
-  created $adff cell `$procdff$507' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$505' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$185'.
-  created $dff cell `$procdff$508' with positive edge clock.
+  created $dff cell `$procdff$506' with positive edge clock.
 Creating register for signal `\SB_DFFS.\Q' using process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182'.
-  created $adff cell `$procdff$509' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$507' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFSS.\Q' using process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179'.
-  created $dff cell `$procdff$510' with positive edge clock.
+  created $dff cell `$procdff$508' with positive edge clock.
 Creating register for signal `\SB_DFFR.\Q' using process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176'.
-  created $adff cell `$procdff$511' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$509' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173'.
-  created $dff cell `$procdff$512' with positive edge clock.
+  created $dff cell `$procdff$510' with positive edge clock.
 Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$171'.
-  created $dff cell `$procdff$513' with positive edge clock.
+  created $dff cell `$procdff$511' with positive edge clock.
 Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$169'.
+  created $dff cell `$procdff$512' with positive edge clock.
+Creating register for signal `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.\CLK_OUT' using process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$392'.
+  created $dff cell `$procdff$513' with positive edge clock.
+Creating register for signal `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.\count' using process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$392'.
   created $dff cell `$procdff$514' with positive edge clock.
-Creating register for signal `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.\CLK_OUT' using process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$394'.
-  created $dff cell `$procdff$515' with positive edge clock.
-Creating register for signal `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.\count' using process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$394'.
-  created $dff cell `$procdff$516' with positive edge clock.
-Creating register for signal `\StartModule.\confirm_to_reciver' using process `\StartModule.$proc$./StartModule.v:25$385'.
+Creating register for signal `\StartModule.\confirm_to_reciver' using process `\StartModule.$proc$./StartModule.v:25$383'.
+  created $adff cell `$procdff$515' with positive edge clock and positive level reset.
+Creating register for signal `\StartModule.\data_aux' using process `\StartModule.$proc$./StartModule.v:25$383'.
+  created $adff cell `$procdff$516' with positive edge clock and positive level reset.
+Creating register for signal `\StartModule.\selector' using process `\StartModule.$proc$./StartModule.v:25$383'.
   created $adff cell `$procdff$517' with positive edge clock and positive level reset.
-Creating register for signal `\StartModule.\data_aux' using process `\StartModule.$proc$./StartModule.v:25$385'.
+Creating register for signal `\StartModule.\counter' using process `\StartModule.$proc$./StartModule.v:25$383'.
   created $adff cell `$procdff$518' with positive edge clock and positive level reset.
-Creating register for signal `\StartModule.\selector' using process `\StartModule.$proc$./StartModule.v:25$385'.
+Creating register for signal `\StartModule.\states' using process `\StartModule.$proc$./StartModule.v:25$383'.
   created $adff cell `$procdff$519' with positive edge clock and positive level reset.
-Creating register for signal `\StartModule.\counter' using process `\StartModule.$proc$./StartModule.v:25$385'.
-  created $adff cell `$procdff$520' with positive edge clock and positive level reset.
-Creating register for signal `\StartModule.\states' using process `\StartModule.$proc$./StartModule.v:25$385'.
-  created $adff cell `$procdff$521' with positive edge clock and positive level reset.
 
 2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
@@ -418,12 +416,12 @@ Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$/home/brandon/miniconda3/
 Removing empty process `SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$171'.
 Removing empty process `SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$170'.
 Removing empty process `SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$169'.
-Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$399'.
-Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$398'.
-Found and cleaned up 1 empty switch in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$394'.
-Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$394'.
-Found and cleaned up 5 empty switches in `\StartModule.$proc$./StartModule.v:25$385'.
-Removing empty process `StartModule.$proc$./StartModule.v:25$385'.
+Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:17$397'.
+Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:0$396'.
+Found and cleaned up 1 empty switch in `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$392'.
+Removing empty process `$paramod$91ec1c5dbd44b87e4dc5467dd1e28f606bf2604e\freqDiv.$proc$./freqDiv.v:20$392'.
+Found and cleaned up 5 empty switches in `\StartModule.$proc$./StartModule.v:25$383'.
+Removing empty process `StartModule.$proc$./StartModule.v:25$383'.
 Cleaned up 24 empty switches.
 
 2.4.12. Executing OPT_EXPR pass (perform const folding).
@@ -446,7 +444,7 @@ Optimizing module top.
 
 2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
-Removed 4 unused cells and 33 unused wires.
+Removed 3 unused cells and 30 unused wires.
 
 2.10. Executing CHECK pass (checking for obvious problems).
 Checking module top...
@@ -470,8 +468,8 @@ Removed 0 multiplexer ports.
 
 2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    New ctrl vector for $pmux cell $flatten\startModule.$procmux$472: $auto$opt_reduce.cc:134:opt_pmux$523
-    New ctrl vector for $pmux cell $flatten\startModule.$procmux$477: $auto$opt_reduce.cc:134:opt_pmux$525
+    New ctrl vector for $pmux cell $flatten\startModule.$procmux$470: $auto$opt_reduce.cc:134:opt_pmux$521
+    New ctrl vector for $pmux cell $flatten\startModule.$procmux$475: $auto$opt_reduce.cc:134:opt_pmux$523
   Optimizing cells in module \top.
 Performed a total of 2 changes.
 
@@ -480,10 +478,10 @@ Finding identical cells in module `\top'.
 Removed a total of 1 cells.
 
 2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
-Removing never-active ARST on $flatten\startModule.$procdff$521 ($adff) from module top.
-Removing never-active ARST on $flatten\startModule.$procdff$520 ($adff) from module top.
 Removing never-active ARST on $flatten\startModule.$procdff$519 ($adff) from module top.
 Removing never-active ARST on $flatten\startModule.$procdff$518 ($adff) from module top.
+Removing never-active ARST on $flatten\startModule.$procdff$517 ($adff) from module top.
+Removing never-active ARST on $flatten\startModule.$procdff$516 ($adff) from module top.
 
 2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -503,7 +501,7 @@ Removed 0 multiplexer ports.
 
 2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    New ctrl vector for $pmux cell $flatten\startModule.$procmux$454: { $flatten\startModule.$procmux$467_CMP $flatten\startModule.$procmux$463_CMP $auto$opt_reduce.cc:134:opt_pmux$527 }
+    New ctrl vector for $pmux cell $flatten\startModule.$procmux$452: { $flatten\startModule.$procmux$465_CMP $flatten\startModule.$procmux$461_CMP $auto$opt_reduce.cc:134:opt_pmux$525 }
   Optimizing cells in module \top.
 Performed a total of 1 changes.
 
@@ -595,9 +593,9 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $flatten\startModule.$procdff$521 ($dff) from module top (D = $flatten\startModule.$0\states[3:0], Q = \startModule.states).
-Adding SRST signal on $flatten\frequencyDivider.$procdff$516 ($dff) from module top (D = $flatten\frequencyDivider.$add$./freqDiv.v:25$397_Y [3:0], Q = \frequencyDivider.count, rval = 4'0000).
-Adding EN signal on $flatten\frequencyDivider.$procdff$515 ($dff) from module top (D = $flatten\frequencyDivider.$not$./freqDiv.v:23$396_Y, Q = \frequencyDivider.CLK_OUT).
+Adding EN signal on $flatten\startModule.$procdff$519 ($dff) from module top (D = $flatten\startModule.$0\states[3:0], Q = \startModule.states).
+Adding SRST signal on $flatten\frequencyDivider.$procdff$514 ($dff) from module top (D = $flatten\frequencyDivider.$add$./freqDiv.v:25$395_Y [3:0], Q = \frequencyDivider.count, rval = 4'0000).
+Adding EN signal on $flatten\frequencyDivider.$procdff$513 ($dff) from module top (D = $flatten\frequencyDivider.$not$./freqDiv.v:23$394_Y, Q = \frequencyDivider.CLK_OUT).
 
 2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -634,23 +632,23 @@ Optimizing module top.
 2.13.16. Finished OPT passes. (There is nothing left to do.)
 
 2.14. Executing WREDUCE pass (reducing word size of cells).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\frequencyDivider.$add$./freqDiv.v:25$397 ($add).
-Removed top 28 bits (of 32) from port Y of cell top.$flatten\frequencyDivider.$add$./freqDiv.v:25$397 ($add).
-Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$534 ($ne).
+Removed top 31 bits (of 32) from port B of cell top.$flatten\frequencyDivider.$add$./freqDiv.v:25$395 ($add).
+Removed top 28 bits (of 32) from port Y of cell top.$flatten\frequencyDivider.$add$./freqDiv.v:25$395 ($add).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$532 ($ne).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$530 ($ne).
-Removed top 1 bits (of 2) from mux cell top.$flatten\startModule.$procmux$477 ($mux).
-Removed top 3 bits (of 4) from port B of cell top.$flatten\startModule.$procmux$463_CMP0 ($eq).
-Removed top 2 bits (of 4) from port B of cell top.$flatten\startModule.$procmux$459_CMP0 ($eq).
-Removed top 2 bits (of 4) from port B of cell top.$flatten\startModule.$procmux$455_CMP0 ($eq).
-Removed top 11 bits (of 19) from port B of cell top.$flatten\startModule.$eq$./StartModule.v:63$390 ($eq).
-Removed top 14 bits (of 19) from port B of cell top.$flatten\startModule.$eq$./StartModule.v:51$388 ($eq).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\startModule.$add$./StartModule.v:43$387 ($add).
-Removed top 13 bits (of 32) from port Y of cell top.$flatten\startModule.$add$./StartModule.v:43$387 ($add).
-Removed top 4 bits (of 19) from port B of cell top.$flatten\startModule.$eq$./StartModule.v:39$386 ($eq).
-Removed top 28 bits (of 32) from wire top.$flatten\frequencyDivider.$add$./freqDiv.v:25$397_Y.
+Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$528 ($ne).
+Removed top 1 bits (of 2) from mux cell top.$flatten\startModule.$procmux$475 ($mux).
+Removed top 3 bits (of 4) from port B of cell top.$flatten\startModule.$procmux$461_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell top.$flatten\startModule.$procmux$457_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell top.$flatten\startModule.$procmux$453_CMP0 ($eq).
+Removed top 11 bits (of 19) from port B of cell top.$flatten\startModule.$eq$./StartModule.v:63$388 ($eq).
+Removed top 14 bits (of 19) from port B of cell top.$flatten\startModule.$eq$./StartModule.v:51$386 ($eq).
+Removed top 31 bits (of 32) from port B of cell top.$flatten\startModule.$add$./StartModule.v:43$385 ($add).
+Removed top 13 bits (of 32) from port Y of cell top.$flatten\startModule.$add$./StartModule.v:43$385 ($add).
+Removed top 4 bits (of 19) from port B of cell top.$flatten\startModule.$eq$./StartModule.v:39$384 ($eq).
+Removed top 28 bits (of 32) from wire top.$flatten\frequencyDivider.$add$./freqDiv.v:25$395_Y.
 Removed top 1 bits (of 2) from wire top.$flatten\startModule.$0\selector[1:0].
-Removed top 13 bits (of 32) from wire top.$flatten\startModule.$add$./StartModule.v:43$387_Y.
+Removed top 13 bits (of 32) from wire top.$flatten\startModule.$add$./StartModule.v:43$385_Y.
 
 2.15. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -678,12 +676,12 @@ Finding unused cells or wires in module \top..
 
 2.21. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module top:
-  creating $macc model for $flatten\frequencyDivider.$add$./freqDiv.v:25$397 ($add).
-  creating $macc model for $flatten\startModule.$add$./StartModule.v:43$387 ($add).
-  creating $alu model for $macc $flatten\startModule.$add$./StartModule.v:43$387.
-  creating $alu model for $macc $flatten\frequencyDivider.$add$./freqDiv.v:25$397.
-  creating $alu cell for $flatten\frequencyDivider.$add$./freqDiv.v:25$397: $auto$alumacc.cc:485:replace_alu$545
-  creating $alu cell for $flatten\startModule.$add$./StartModule.v:43$387: $auto$alumacc.cc:485:replace_alu$548
+  creating $macc model for $flatten\frequencyDivider.$add$./freqDiv.v:25$395 ($add).
+  creating $macc model for $flatten\startModule.$add$./StartModule.v:43$385 ($add).
+  creating $alu model for $macc $flatten\startModule.$add$./StartModule.v:43$385.
+  creating $alu model for $macc $flatten\frequencyDivider.$add$./freqDiv.v:25$395.
+  creating $alu cell for $flatten\frequencyDivider.$add$./freqDiv.v:25$395: $auto$alumacc.cc:485:replace_alu$543
+  creating $alu cell for $flatten\startModule.$add$./StartModule.v:43$385: $auto$alumacc.cc:485:replace_alu$546
   created 2 $alu and 0 $macc cells.
 
 2.22. Executing OPT pass (performing simple optimizations).
@@ -711,7 +709,7 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 2.22.6. Executing OPT_DFF pass (perform DFF optimizations).
-Setting constant 0-bit at position 1 on $flatten\startModule.$procdff$519 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\startModule.$procdff$517 ($dff) from module top.
 
 2.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -858,7 +856,7 @@ Removed 0 multiplexer ports.
 
 2.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    Consolidated identical input bits for $pmux cell $flatten\startModule.$procmux$481:
+    Consolidated identical input bits for $pmux cell $flatten\startModule.$procmux$479:
       Old ports: A=4'0000, B=12'000100100011, Y=$flatten\startModule.$0\states[3:0]
       New ports: A=2'00, B=6'011011, Y=$flatten\startModule.$0\states[3:0] [1:0]
       New connections: $flatten\startModule.$0\states[3:0] [3:2] = 2'00
@@ -895,8 +893,8 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 2.30.13. Executing OPT_DFF pass (perform DFF optimizations).
-Setting constant 0-bit at position 2 on $auto$ff.cc:266:slice$528 ($dffe) from module top.
-Setting constant 0-bit at position 3 on $auto$ff.cc:266:slice$528 ($dffe) from module top.
+Setting constant 0-bit at position 2 on $auto$ff.cc:266:slice$526 ($dffe) from module top.
+Setting constant 0-bit at position 3 on $auto$ff.cc:266:slice$526 ($dffe) from module top.
 
 2.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -1009,8 +1007,8 @@ Removed 11 unused cells and 155 unused wires.
 2.34. Executing ICE40_OPT pass (performing simple optimizations).
 
 2.34.1. Running ICE40 specific optimizations.
-Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$545.slice[0].carry: CO=\frequencyDivider.count [0]
-Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$548.slice[0].carry: CO=\startModule.counter [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$543.slice[0].carry: CO=\frequencyDivider.count [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$546.slice[0].carry: CO=\startModule.counter [0]
 
 2.34.2. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
@@ -1020,27 +1018,27 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 2.34.4. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $auto$ff.cc:266:slice$729 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [18], Q = \startModule.counter [18], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$728 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [17], Q = \startModule.counter [17], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$727 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [16], Q = \startModule.counter [16], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$726 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [15], Q = \startModule.counter [15], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$725 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [14], Q = \startModule.counter [14], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$724 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [13], Q = \startModule.counter [13], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$723 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [12], Q = \startModule.counter [12], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$722 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [11], Q = \startModule.counter [11], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$721 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [10], Q = \startModule.counter [10], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$720 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [9], Q = \startModule.counter [9], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$719 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [8], Q = \startModule.counter [8], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$718 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [7], Q = \startModule.counter [7], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$717 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [6], Q = \startModule.counter [6], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$716 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [5], Q = \startModule.counter [5], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$715 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [4], Q = \startModule.counter [4], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$714 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [3], Q = \startModule.counter [3], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$713 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [2], Q = \startModule.counter [2], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$712 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [1], Q = \startModule.counter [1], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$711 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$454.Y_B [0], Q = \startModule.counter [0], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$674 ($_DFFE_PP_) from module top (D = $flatten\startModule.$procmux$481.Y_B [1], Q = \startModule.states [1], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$673 ($_DFFE_PP_) from module top (D = $flatten\startModule.$procmux$481.Y_B [0], Q = \startModule.states [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$727 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [18], Q = \startModule.counter [18], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$726 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [17], Q = \startModule.counter [17], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$725 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [16], Q = \startModule.counter [16], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$724 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [15], Q = \startModule.counter [15], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$723 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [14], Q = \startModule.counter [14], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$722 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [13], Q = \startModule.counter [13], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$721 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [12], Q = \startModule.counter [12], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$720 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [11], Q = \startModule.counter [11], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$719 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [10], Q = \startModule.counter [10], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$718 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [9], Q = \startModule.counter [9], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$717 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [8], Q = \startModule.counter [8], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$716 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [7], Q = \startModule.counter [7], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$715 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [6], Q = \startModule.counter [6], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$714 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [5], Q = \startModule.counter [5], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$713 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [4], Q = \startModule.counter [4], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$712 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [3], Q = \startModule.counter [3], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$711 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [2], Q = \startModule.counter [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$710 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [1], Q = \startModule.counter [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$709 ($_DFF_P_) from module top (D = $flatten\startModule.$procmux$452.Y_B [0], Q = \startModule.counter [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$672 ($_DFFE_PP_) from module top (D = $flatten\startModule.$procmux$479.Y_B [1], Q = \startModule.states [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$671 ($_DFFE_PP_) from module top (D = $flatten\startModule.$procmux$479.Y_B [0], Q = \startModule.states [0], rval = 1'0).
 
 2.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -1103,8 +1101,8 @@ No more expansions possible.
 Optimizing module top.
 
 2.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
-Mapping top.$auto$alumacc.cc:485:replace_alu$545.slice[0].carry ($lut).
-Mapping top.$auto$alumacc.cc:485:replace_alu$548.slice[0].carry ($lut).
+Mapping top.$auto$alumacc.cc:485:replace_alu$543.slice[0].carry ($lut).
+Mapping top.$auto$alumacc.cc:485:replace_alu$546.slice[0].carry ($lut).
 
 2.39. Executing ICE40_OPT pass (performing simple optimizations).
 
@@ -1183,7 +1181,7 @@ ABC: Participating nodes from the first network   =      35. (  77.78 % of nodes
 ABC: Participating nodes from the second network  =      44. (  97.78 % of nodes)
 ABC: Node pairs (any polarity)                    =      34. (  75.56 % of names can be moved)
 ABC: Node pairs (same polarity)                   =      28. (  62.22 % of names can be moved)
-ABC: Total runtime =     0.07 sec
+ABC: Total runtime =     0.05 sec
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 2.41.1.2. Re-integrating ABC results.
@@ -1323,7 +1321,7 @@ Found and reported 0 problems.
 
 2.50. Executing JSON backend.
 
-Warnings: 14 unique messages, 14 total
-End of script. Logfile hash: 9e7b505c5f, CPU: user 1.00s system 0.03s, MEM: 21.25 MB peak
+Warnings: 12 unique messages, 12 total
+End of script. Logfile hash: 7733e6b0d3, CPU: user 0.79s system 0.02s, MEM: 21.25 MB peak
 Yosys 0.33+6 (git sha1 41b34a193, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1694128612374/work=/usr/local/src/conda/yosys-0.33_7_g41b34a193 -fdebug-prefix-map=/home/brandon/miniconda3/envs/digital=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
-Time spent: 41% 13x read_verilog (0 sec), 18% 1x abc (0 sec), ...
+Time spent: 48% 13x read_verilog (0 sec), 15% 1x abc (0 sec), ...

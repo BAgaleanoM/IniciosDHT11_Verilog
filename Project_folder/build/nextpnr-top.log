@@ -84,8 +84,8 @@ Info:     at iteration #14, type ALL: wirelen solved = 32, spread = 172, legal =
 Info:     at iteration #15, type ICESTORM_LC: wirelen solved = 38, spread = 180, legal = 190; time = 0.00s
 Info:     at iteration #15, type SB_GB: wirelen solved = 182, spread = 182, legal = 190; time = 0.00s
 Info:     at iteration #15, type ALL: wirelen solved = 36, spread = 171, legal = 186; time = 0.00s
-Info: HeAP Placer Time: 0.11s
-Info:   of which solving equations: 0.08s
+Info: HeAP Placer Time: 0.07s
+Info:   of which solving equations: 0.05s
 Info:   of which spreading cells: 0.01s
 Info:   of which strict legalisation: 0.00s
 
@@ -95,7 +95,7 @@ Info:   at iteration #5: temp = 0.000000, timing cost = 40, wirelen = 120
 Info:   at iteration #10: temp = 0.000000, timing cost = 51, wirelen = 103
 Info:   at iteration #15: temp = 0.000000, timing cost = 49, wirelen = 97
 Info:   at iteration #17: temp = 0.000000, timing cost = 45, wirelen = 99 
-Info: SA placement time 0.05s
+Info: SA placement time 0.03s
 
 Info: Max frequency for clock 'hwclk$SB_IO_IN_$glb_clk': 441.70 MHz (PASS at 12.00 MHz)
 Info: Max frequency for clock            'clk_$glb_clk': 189.43 MHz (PASS at 12.00 MHz)
@@ -109,9 +109,9 @@ Info: Setting up routing queue.
 Info: Routing 238 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:        252 |       14        221 |   14   221 |         0|       0.04       0.04|
+Info:        252 |       14        221 |   14   221 |         0|       0.02       0.02|
 Info: Routing complete.
-Info: Router1 time 0.04s
+Info: Router1 time 0.02s
 Info: Checksum: 0x5610cd4e
 
 Info: Critical path report for clock 'hwclk$SB_IO_IN_$glb_clk' (posedge -> posedge):
