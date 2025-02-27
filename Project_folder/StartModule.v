@@ -2,7 +2,8 @@ module StartModule (
     input wire clk,
     input wire rst,
     inout reg out_delay,
-    output wire confirm_to_reciver //Variable que debe ir al módulo de lectura
+    output reg confirm_to_reciver //Variable que debe ir al módulo de lectura
+
 );
 
 reg data_aux;
@@ -26,9 +27,9 @@ always @(posedge clk or posedge rst) begin
     if (rst) begin
         states <= A;
         counter <= 0;
-        data_aux <= 1'b0;
-        confirm_to_reciver <= 1'b0;
-        selector <= 1'b1;
+        //data_aux <= 1'b0;
+        //confirm_to_reciver <= 1'b0;
+        //selector <= 1'b1;
     end else begin
         case (states)
             A:begin
@@ -44,8 +45,8 @@ always @(posedge clk or posedge rst) begin
                 end
             end
             B:begin
-                selector <= 1'b1;
-                data_aux <= 1'b1; 
+                selector <= 1'b0;
+                data_aux <= 1'bz;
                 confirm_to_reciver <= 1'b0;
                 
                 if (counter == up_to_request) begin
@@ -57,7 +58,7 @@ always @(posedge clk or posedge rst) begin
             end
             C:begin
                 selector <= 1'b0;
-                data_aux <= 1'b0;
+                data_aux <= 1'bz;
                 confirm_to_reciver <= 1'b0;
                 
                 if (counter == dht11_response) begin
@@ -69,21 +70,22 @@ always @(posedge clk or posedge rst) begin
             end
             D:begin
                 selector <= 1'b0;
-                data_aux <= 1'b0;
+                data_aux <= 1'bz;
                 confirm_to_reciver <= 1'b1;
-                
+
+                /*
                 if (counter == dht11_response) begin
                     counter <= 0;
                 end else begin
                     counter <= counter+1;
-                end
+                end*/
             end
             default: begin
-                states <= A;
+                states <= D;
                 counter <= 0;
-                data_aux <= 1'b1;
-                confirm_to_reciver <= 1'b0;
-                selector <= 1'b1;
+                //data_aux <= 1'b1;
+                //confirm_to_reciver <= 1'b0;
+                //selector <= 1'b0;
             end  
         endcase
     end

@@ -19,7 +19,7 @@ reg data_aux;
 reg[1:0] selector; 
 reg[18:0] counter;
 
-
+/*
 assign dht11_data = (selector) ? data_aux :  1'bz; 
 
 reg[3:0] states;
@@ -45,6 +45,6 @@ always @(confirm_to_reciver) begin
 
 end
 
-
+*/
 
 endmodule

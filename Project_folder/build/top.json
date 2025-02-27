@@ -2253,8 +2253,9 @@
     },
     "SB_DFF": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:265.1-300.10"
       },
       "ports": {
@@ -2571,9 +2572,8 @@
     },
     "SB_DFFESS": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_flop": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:733.1-791.10"
       },
       "ports": {
@@ -9640,7 +9640,7 @@
       "attributes": {
         "hdlname": "\\top",
         "top": "00000000000000000000000000000001",
-        "src": "top.v:4.1-45.10"
+        "src": "top.v:4.1-46.10"
       },
       "ports": {
         "hwclk": {
@@ -9659,7 +9659,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:11.20-11.48"
+            "src": "top.v:32.13-37.2|./StartModule.v:12.20-12.48"
           },
           "port_directions": {
             "A": "input",
@@ -9667,8 +9667,8 @@
             "Y": "output"
           },
           "connections": {
-            "A": [ 4 ],
-            "E": [ 5 ],
+            "A": [ "0" ],
+            "E": [ 4 ],
             "Y": [ 3 ]
           }
         },
@@ -9679,7 +9679,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.v:27.5-30.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -9689,9 +9689,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 6 ],
-            "E": [ 7 ],
-            "Q": [ 8 ]
+            "D": [ 5 ],
+            "E": [ 6 ],
+            "Q": [ 7 ]
           }
         },
         "frequencyDivider.CLK_OUT_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -9715,8 +9715,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 8 ],
-            "O": [ 6 ]
+            "I3": [ 7 ],
+            "O": [ 5 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q": {
@@ -9726,7 +9726,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:27.5-30.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9736,9 +9736,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 9 ],
-            "Q": [ 10 ],
-            "R": [ 7 ]
+            "D": [ 8 ],
+            "Q": [ 9 ],
+            "R": [ 6 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_1": {
@@ -9748,7 +9748,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:27.5-30.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9758,9 +9758,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 11 ],
-            "Q": [ 12 ],
-            "R": [ 7 ]
+            "D": [ 10 ],
+            "Q": [ 11 ],
+            "R": [ 6 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_2": {
@@ -9770,7 +9770,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:27.5-30.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9780,9 +9780,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 13 ],
-            "Q": [ 14 ],
-            "R": [ 7 ]
+            "D": [ 12 ],
+            "Q": [ 13 ],
+            "R": [ 6 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_3": {
@@ -9792,7 +9792,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:27.5-30.2|./freqDiv.v:20.3-27.6|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9802,9 +9802,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 15 ],
-            "Q": [ 16 ],
-            "R": [ 7 ]
+            "D": [ 14 ],
+            "Q": [ 15 ],
+            "R": [ 6 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_3_D_SB_LUT4_O": {
@@ -9828,8 +9828,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 16 ],
-            "O": [ 15 ]
+            "I3": [ 15 ],
+            "O": [ 14 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O": {
@@ -9840,7 +9840,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9852,9 +9852,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 10 ],
-            "I3": [ 17 ],
-            "O": [ 9 ]
+            "I2": [ 9 ],
+            "I3": [ 16 ],
+            "O": [ 8 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O_1": {
@@ -9865,7 +9865,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9877,9 +9877,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 12 ],
-            "I3": [ 18 ],
-            "O": [ 11 ]
+            "I2": [ 11 ],
+            "I3": [ 17 ],
+            "O": [ 10 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O_2": {
@@ -9890,7 +9890,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9902,9 +9902,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 14 ],
-            "I3": [ 16 ],
-            "O": [ 13 ]
+            "I2": [ 13 ],
+            "I3": [ 15 ],
+            "O": [ 12 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -9913,7 +9913,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -9922,10 +9922,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 18 ],
-            "CO": [ 17 ],
+            "CI": [ 17 ],
+            "CO": [ 16 ],
             "I0": [ "0" ],
-            "I1": [ 12 ]
+            "I1": [ 11 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_1": {
@@ -9934,7 +9934,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -9943,10 +9943,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 16 ],
-            "CO": [ 18 ],
+            "CI": [ 15 ],
+            "CO": [ 17 ],
             "I0": [ "0" ],
-            "I1": [ 14 ]
+            "I1": [ 13 ]
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_R_SB_LUT4_O": {
@@ -9967,11 +9967,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 12 ],
-            "I1": [ 14 ],
-            "I2": [ 16 ],
-            "I3": [ 10 ],
-            "O": [ 7 ]
+            "I0": [ 11 ],
+            "I1": [ 13 ],
+            "I2": [ 15 ],
+            "I3": [ 9 ],
+            "O": [ 6 ]
           }
         },
         "startModule.counter_SB_CARRY_CI": {
@@ -9980,7 +9980,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -9989,10 +9989,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 19 ],
-            "CO": [ 20 ],
+            "CI": [ 18 ],
+            "CO": [ 19 ],
             "I0": [ "0" ],
-            "I1": [ 21 ]
+            "I1": [ 20 ]
           }
         },
         "startModule.counter_SB_CARRY_I1": {
@@ -10001,7 +10001,154 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 21 ],
+            "CO": [ 22 ],
+            "I0": [ "0" ],
+            "I1": [ 23 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_1": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 24 ],
+            "CO": [ 21 ],
+            "I0": [ "0" ],
+            "I1": [ 25 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_10": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 26 ],
+            "CO": [ 27 ],
+            "I0": [ "0" ],
+            "I1": [ 28 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_11": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 29 ],
+            "CO": [ 26 ],
+            "I0": [ "0" ],
+            "I1": [ 30 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_12": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 31 ],
+            "CO": [ 29 ],
+            "I0": [ "0" ],
+            "I1": [ 32 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_13": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 33 ],
+            "CO": [ 31 ],
+            "I0": [ "0" ],
+            "I1": [ 34 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_14": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 35 ],
+            "CO": [ 33 ],
+            "I0": [ "0" ],
+            "I1": [ 36 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_15": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10011,18 +10158,18 @@
           },
           "connections": {
             "CI": [ 22 ],
-            "CO": [ 23 ],
+            "CO": [ 35 ],
             "I0": [ "0" ],
-            "I1": [ 24 ]
+            "I1": [ 37 ]
           }
         },
-        "startModule.counter_SB_CARRY_I1_1": {
+        "startModule.counter_SB_CARRY_I1_2": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10031,19 +10178,145 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 25 ],
-            "CO": [ 22 ],
+            "CI": [ 38 ],
+            "CO": [ 24 ],
             "I0": [ "0" ],
-            "I1": [ 26 ]
+            "I1": [ 39 ]
           }
         },
-        "startModule.counter_SB_CARRY_I1_10": {
+        "startModule.counter_SB_CARRY_I1_3": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 40 ],
+            "CO": [ 38 ],
+            "I0": [ "0" ],
+            "I1": [ 41 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_4": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 42 ],
+            "CO": [ 40 ],
+            "I0": [ "0" ],
+            "I1": [ 43 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_5": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 44 ],
+            "CO": [ 42 ],
+            "I0": [ "0" ],
+            "I1": [ 45 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_6": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 46 ],
+            "CO": [ 44 ],
+            "I0": [ "0" ],
+            "I1": [ 47 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_7": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 19 ],
+            "CO": [ 46 ],
+            "I0": [ "0" ],
+            "I1": [ 48 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_8": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 49 ],
+            "CO": [ 50 ],
+            "I0": [ "0" ],
+            "I1": [ 51 ]
+          }
+        },
+        "startModule.counter_SB_CARRY_I1_9": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10053,723 +10326,1863 @@
           },
           "connections": {
             "CI": [ 27 ],
-            "CO": [ 28 ],
-            "I0": [ "0" ],
-            "I1": [ 29 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_11": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 30 ],
-            "CO": [ 27 ],
-            "I0": [ "0" ],
-            "I1": [ 31 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_12": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 32 ],
-            "CO": [ 30 ],
-            "I0": [ "0" ],
-            "I1": [ 33 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_13": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 34 ],
-            "CO": [ 32 ],
-            "I0": [ "0" ],
-            "I1": [ 35 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_14": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 36 ],
-            "CO": [ 34 ],
-            "I0": [ "0" ],
-            "I1": [ 37 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_15": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 23 ],
-            "CO": [ 36 ],
-            "I0": [ "0" ],
-            "I1": [ 38 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_2": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 39 ],
-            "CO": [ 25 ],
-            "I0": [ "0" ],
-            "I1": [ 40 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_3": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 41 ],
-            "CO": [ 39 ],
-            "I0": [ "0" ],
-            "I1": [ 42 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_4": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 43 ],
-            "CO": [ 41 ],
-            "I0": [ "0" ],
-            "I1": [ 44 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_5": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 45 ],
-            "CO": [ 43 ],
-            "I0": [ "0" ],
-            "I1": [ 46 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_6": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 47 ],
-            "CO": [ 45 ],
-            "I0": [ "0" ],
-            "I1": [ 48 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_7": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 20 ],
-            "CO": [ 47 ],
-            "I0": [ "0" ],
-            "I1": [ 49 ]
-          }
-        },
-        "startModule.counter_SB_CARRY_I1_8": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 50 ],
-            "CO": [ 51 ],
+            "CO": [ 49 ],
             "I0": [ "0" ],
             "I1": [ 52 ]
           }
         },
-        "startModule.counter_SB_CARRY_I1_9": {
+        "startModule.counter_SB_DFFESR_Q": {
           "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 28 ],
-            "CO": [ 50 ],
-            "I0": [ "0" ],
-            "I1": [ 53 ]
-          }
-        },
-        "startModule.counter_SB_DFFSR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
-            "D": [ 54 ],
-            "Q": [ 19 ],
-            "R": [ "0" ]
+            "C": [ 7 ],
+            "D": [ 53 ],
+            "E": [ 54 ],
+            "Q": [ 18 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_1": {
+        "startModule.counter_SB_DFFESR_Q_1": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
-            "D": [ 55 ],
-            "Q": [ 21 ],
-            "R": [ "0" ]
-          }
-        },
-        "startModule.counter_SB_DFFSR_Q_10": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 56 ],
-            "Q": [ 38 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 20 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_11": {
+        "startModule.counter_SB_DFFESR_Q_10": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 57 ],
+            "E": [ 54 ],
             "Q": [ 37 ],
-            "R": [ "0" ]
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_12": {
+        "startModule.counter_SB_DFFESR_Q_11": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 58 ],
-            "Q": [ 35 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 36 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_13": {
+        "startModule.counter_SB_DFFESR_Q_12": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 59 ],
-            "Q": [ 33 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 34 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_14": {
+        "startModule.counter_SB_DFFESR_Q_13": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 60 ],
-            "Q": [ 31 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 32 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_15": {
+        "startModule.counter_SB_DFFESR_Q_14": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 61 ],
-            "Q": [ 29 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 30 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_16": {
+        "startModule.counter_SB_DFFESR_Q_15": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 62 ],
-            "Q": [ 53 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 28 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_17": {
+        "startModule.counter_SB_DFFESR_Q_16": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 63 ],
+            "E": [ 54 ],
             "Q": [ 52 ],
-            "R": [ "0" ]
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_18": {
+        "startModule.counter_SB_DFFESR_Q_17": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 64 ],
-            "Q": [ 65 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 51 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_2": {
+        "startModule.counter_SB_DFFESR_Q_18": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
-            "D": [ 66 ],
-            "Q": [ 49 ],
-            "R": [ "0" ]
+            "C": [ 7 ],
+            "D": [ 65 ],
+            "E": [ 54 ],
+            "Q": [ 66 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_3": {
+        "startModule.counter_SB_DFFESR_Q_2": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 67 ],
+            "E": [ 54 ],
             "Q": [ 48 ],
-            "R": [ "0" ]
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_4": {
+        "startModule.counter_SB_DFFESR_Q_3": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 68 ],
-            "Q": [ 46 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 47 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_5": {
+        "startModule.counter_SB_DFFESR_Q_4": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 69 ],
-            "Q": [ 44 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 45 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_6": {
+        "startModule.counter_SB_DFFESR_Q_5": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 70 ],
-            "Q": [ 42 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 43 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_7": {
+        "startModule.counter_SB_DFFESR_Q_6": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 71 ],
-            "Q": [ 40 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 41 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_8": {
+        "startModule.counter_SB_DFFESR_Q_7": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 72 ],
-            "Q": [ 26 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 39 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.counter_SB_DFFSR_Q_9": {
+        "startModule.counter_SB_DFFESR_Q_8": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
-            "C": [ 8 ],
+            "C": [ 7 ],
             "D": [ 73 ],
-            "Q": [ 24 ],
-            "R": [ "0" ]
+            "E": [ 54 ],
+            "Q": [ 25 ],
+            "R": [ 55 ]
           }
         },
-        "startModule.data_aux_SB_DFF_Q": {
+        "startModule.counter_SB_DFFESR_Q_9": {
           "hide_name": 0,
-          "type": "SB_DFF",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 7 ],
+            "D": [ 74 ],
+            "E": [ 54 ],
+            "Q": [ 23 ],
+            "R": [ 55 ]
+          }
+        },
+        "startModule.counter_SB_DFFESR_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ "0" ],
+            "I3": [ 55 ],
+            "O": [ 54 ]
+          }
+        },
+        "startModule.selector_SB_DFFE_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
             "Q": "output"
           },
           "connections": {
-            "C": [ 8 ],
-            "D": [ 74 ],
+            "C": [ 7 ],
+            "D": [ 75 ],
+            "E": [ "1" ],
             "Q": [ 4 ]
           }
         },
-        "startModule.data_aux_SB_DFF_Q_D_SB_LUT4_O": {
+        "startModule.states_SB_DFFESS_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFESS",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:25.66-25.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 7 ],
+            "D": [ 75 ],
+            "E": [ 76 ],
+            "Q": [ 77 ],
+            "S": [ 78 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_1": {
+          "hide_name": 0,
+          "type": "SB_DFFESS",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:25.66-25.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 7 ],
+            "D": [ 79 ],
+            "E": [ 76 ],
+            "Q": [ 78 ],
+            "S": [ 78 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 80 ],
+            "I2": [ 81 ],
+            "I3": [ 75 ],
+            "O": [ 82 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 83 ],
+            "I1": [ 84 ],
+            "I2": [ 85 ],
+            "I3": [ 86 ],
+            "O": [ 80 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 18 ],
+            "I1": [ 20 ],
+            "I2": [ 48 ],
+            "I3": [ 47 ],
+            "O": [ 86 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 66 ],
+            "I2": [ 52 ],
+            "I3": [ 51 ],
+            "O": [ 85 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 43 ],
+            "I1": [ 45 ],
+            "I2": [ 41 ],
+            "I3": [ 30 ],
+            "O": [ 84 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 39 ],
+            "I2": [ 23 ],
+            "I3": [ 37 ],
+            "O": [ 83 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 85 ],
+            "I3": [ 87 ],
+            "O": [ 88 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 25 ],
+            "I2": [ 36 ],
+            "I3": [ 89 ],
+            "O": [ 81 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_1_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 28 ],
+            "I2": [ 34 ],
+            "I3": [ 32 ],
+            "O": [ 89 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 30 ],
+            "I1": [ 41 ],
+            "I2": [ 23 ],
+            "I3": [ 37 ],
+            "O": [ 87 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011101111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 18 ],
+            "O": [ 53 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 92 ],
+            "O": [ 56 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_10": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 93 ],
+            "O": [ 57 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_11": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 94 ],
+            "O": [ 58 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_12": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 95 ],
+            "O": [ 59 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_13": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 96 ],
+            "O": [ 60 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_14": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 97 ],
+            "O": [ 61 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_15": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 98 ],
+            "O": [ 62 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_16": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 99 ],
+            "O": [ 63 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_17": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 100 ],
+            "O": [ 64 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_18": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 101 ],
+            "O": [ 65 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 102 ],
+            "O": [ 67 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 103 ],
+            "O": [ 68 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_4": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 104 ],
+            "O": [ 69 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_5": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 105 ],
+            "O": [ 70 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_6": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 106 ],
+            "O": [ 71 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_7": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 107 ],
+            "O": [ 72 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_8": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 108 ],
+            "O": [ 73 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 82 ],
+            "I2": [ 91 ],
+            "I3": [ 109 ],
+            "O": [ 74 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 23 ],
+            "I3": [ 21 ],
+            "O": [ 109 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 25 ],
+            "I3": [ 24 ],
+            "O": [ 108 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_10": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 51 ],
+            "I3": [ 49 ],
+            "O": [ 100 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_11": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 52 ],
+            "I3": [ 27 ],
+            "O": [ 99 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_12": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 28 ],
+            "I3": [ 26 ],
+            "O": [ 98 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_13": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 30 ],
+            "I3": [ 29 ],
+            "O": [ 97 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_14": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 32 ],
+            "I3": [ 31 ],
+            "O": [ 96 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_15": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 34 ],
+            "I3": [ 33 ],
+            "O": [ 95 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_16": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 36 ],
+            "I3": [ 35 ],
+            "O": [ 94 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_17": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 37 ],
+            "I3": [ 22 ],
+            "O": [ 93 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 39 ],
+            "I3": [ 38 ],
+            "O": [ 107 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 41 ],
+            "I3": [ 40 ],
+            "O": [ 106 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_4": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 43 ],
+            "I3": [ 42 ],
+            "O": [ 105 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_5": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 45 ],
+            "I3": [ 44 ],
+            "O": [ 104 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_6": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 47 ],
+            "I3": [ 46 ],
+            "O": [ 103 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_7": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 48 ],
+            "I3": [ 19 ],
+            "O": [ 102 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_8": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 20 ],
+            "I3": [ 18 ],
+            "O": [ 92 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_9": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 66 ],
+            "I3": [ 50 ],
+            "O": [ 101 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111101011001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 110 ],
+            "I1": [ 111 ],
+            "I2": [ 77 ],
+            "I3": [ 78 ],
+            "O": [ 91 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000011101110000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 81 ],
+            "I1": [ 88 ],
+            "I2": [ 78 ],
+            "I3": [ 77 ],
+            "O": [ 90 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 45 ],
+            "I1": [ 86 ],
+            "I2": [ 39 ],
+            "I3": [ 43 ],
+            "O": [ 110 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 112 ],
+            "I1": [ 20 ],
+            "I2": [ 48 ],
+            "I3": [ 47 ],
+            "O": [ 111 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 18 ],
+            "I1": [ 39 ],
+            "I2": [ 43 ],
+            "I3": [ 45 ],
+            "O": [ 112 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10789,209 +12202,16 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 75 ],
-            "I3": [ 76 ],
-            "O": [ 74 ]
-          }
-        },
-        "startModule.selector_SB_DFF_Q": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 8 ],
-            "D": [ 77 ],
-            "Q": [ 5 ]
-          }
-        },
-        "startModule.selector_SB_DFF_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 75 ],
-            "O": [ 77 ]
-          }
-        },
-        "startModule.states_SB_DFFESR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 8 ],
-            "D": [ 78 ],
-            "E": [ 79 ],
-            "Q": [ 76 ],
-            "R": [ 80 ]
-          }
-        },
-        "startModule.states_SB_DFFESR_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 8 ],
-            "D": [ 81 ],
-            "E": [ 79 ],
-            "Q": [ 75 ],
-            "R": [ 80 ]
-          }
-        },
-        "startModule.states_SB_DFFESR_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 76 ],
-            "O": [ 78 ]
-          }
-        },
-        "startModule.states_SB_DFFESR_Q_D_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111111110000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 75 ],
-            "I3": [ 76 ],
-            "O": [ 81 ]
-          }
-        },
-        "startModule.states_SB_DFFESR_Q_E_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0101110000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 76 ],
-            "I1": [ 82 ],
-            "I2": [ 75 ],
-            "I3": [ 83 ],
+            "I2": [ 78 ],
+            "I3": [ 77 ],
             "O": [ 79 ]
           }
         },
-        "startModule.states_SB_DFFESR_Q_E_SB_LUT4_O_I1_SB_LUT4_O": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 84 ],
-            "I2": [ 85 ],
-            "I3": [ 86 ],
-            "O": [ 82 ]
-          }
-        },
-        "startModule.states_SB_DFFESR_Q_R_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
+            "LUT_INIT": "0000000000001111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -11007,41 +12227,16 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 75 ],
-            "I3": [ 76 ],
-            "O": [ 80 ]
+            "I2": [ 78 ],
+            "I3": [ 77 ],
+            "O": [ 75 ]
           }
         },
-        "startModule.states_SB_LUT4_I0": {
+        "startModule.states_SB_DFFESS_Q_E_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0100000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 76 ],
-            "I1": [ 42 ],
-            "I2": [ 24 ],
-            "I3": [ 38 ],
-            "O": [ 85 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000011111"
+            "LUT_INIT": "0000000100000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -11056,991 +12251,16 @@
           },
           "connections": {
             "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 19 ],
-            "O": [ 54 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 87 ],
-            "O": [ 55 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_10": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 88 ],
-            "O": [ 56 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_11": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 89 ],
-            "O": [ 57 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_12": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 90 ],
-            "O": [ 58 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_13": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
+            "I1": [ 90 ],
+            "I2": [ 55 ],
             "I3": [ 91 ],
-            "O": [ 59 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_14": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 92 ],
-            "O": [ 60 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_15": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 93 ],
-            "O": [ 61 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_16": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 94 ],
-            "O": [ 62 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_17": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 95 ],
-            "O": [ 63 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_18": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 96 ],
-            "O": [ 64 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 97 ],
-            "O": [ 66 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 98 ],
-            "O": [ 67 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_4": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 99 ],
-            "O": [ 68 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_5": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 100 ],
-            "O": [ 69 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_6": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 101 ],
-            "O": [ 70 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_7": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 102 ],
-            "O": [ 71 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_8": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 103 ],
-            "O": [ 72 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 75 ],
-            "I2": [ 83 ],
-            "I3": [ 104 ],
-            "O": [ 73 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 24 ],
-            "I3": [ 22 ],
-            "O": [ 104 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 26 ],
-            "I3": [ 25 ],
-            "O": [ 103 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_10": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 52 ],
-            "I3": [ 50 ],
-            "O": [ 95 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_11": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 53 ],
-            "I3": [ 28 ],
-            "O": [ 94 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_12": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 29 ],
-            "I3": [ 27 ],
-            "O": [ 93 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_13": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 31 ],
-            "I3": [ 30 ],
-            "O": [ 92 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_14": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 33 ],
-            "I3": [ 32 ],
-            "O": [ 91 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_15": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 35 ],
-            "I3": [ 34 ],
-            "O": [ 90 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_16": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 37 ],
-            "I3": [ 36 ],
-            "O": [ 89 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_17": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 38 ],
-            "I3": [ 23 ],
-            "O": [ 88 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 40 ],
-            "I3": [ 39 ],
-            "O": [ 102 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 42 ],
-            "I3": [ 41 ],
-            "O": [ 101 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_4": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 44 ],
-            "I3": [ 43 ],
-            "O": [ 100 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_5": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 46 ],
-            "I3": [ 45 ],
-            "O": [ 99 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_6": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 48 ],
-            "I3": [ 47 ],
-            "O": [ 98 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_7": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 49 ],
-            "I3": [ 20 ],
-            "O": [ 97 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_8": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 21 ],
-            "I3": [ 19 ],
-            "O": [ 87 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_9": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 65 ],
-            "I3": [ 51 ],
-            "O": [ 96 ]
+            "O": [ 76 ]
           }
         },
         "startModule.states_SB_LUT4_I2": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000101011000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 105 ],
-            "I1": [ 106 ],
-            "I2": [ 76 ],
-            "I3": [ 31 ],
-            "O": [ 84 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 107 ],
-            "I1": [ 108 ],
-            "I2": [ 75 ],
-            "I3": [ 109 ],
-            "O": [ 83 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_1_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000011"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 53 ],
-            "I2": [ 52 ],
-            "I3": [ 65 ],
-            "O": [ 109 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_1_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
             "LUT_INIT": "1111000000000000"
           },
           "attributes": {
@@ -12057,268 +12277,18 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 105 ],
-            "I3": [ 110 ],
-            "O": [ 107 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_1_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 111 ],
-            "I3": [ 112 ],
-            "O": [ 108 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_1_I0_SB_LUT4_O_2_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 24 ],
-            "I1": [ 38 ],
-            "I2": [ 37 ],
-            "I3": [ 29 ],
-            "O": [ 112 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_1_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 31 ],
-            "I1": [ 26 ],
-            "I2": [ 35 ],
-            "I3": [ 33 ],
-            "O": [ 111 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 46 ],
-            "I1": [ 42 ],
-            "I2": [ 40 ],
-            "I3": [ 44 ],
-            "O": [ 110 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 19 ],
-            "I1": [ 21 ],
-            "I2": [ 49 ],
-            "I3": [ 48 ],
-            "O": [ 105 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 19 ],
-            "I1": [ 21 ],
-            "I2": [ 49 ],
-            "I3": [ 48 ],
-            "O": [ 106 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 26 ],
-            "I2": [ 113 ],
-            "I3": [ 114 ],
-            "O": [ 86 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 37 ],
-            "I1": [ 29 ],
-            "I2": [ 35 ],
-            "I3": [ 33 ],
-            "O": [ 113 ]
-          }
-        },
-        "startModule.states_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000001100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 40 ],
-            "I2": [ 44 ],
-            "I3": [ 46 ],
-            "O": [ 114 ]
+            "I2": [ 78 ],
+            "I3": [ 77 ],
+            "O": [ 55 ]
           }
         }
       },
       "netnames": {
         "clk": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "src": "top.v:11.6-11.9"
-          }
-        },
-        "dataReciverModule.clk": {
-          "hide_name": 0,
-          "bits": [ 8 ],
-          "attributes": {
-            "hdlname": "dataReciverModule clk",
-            "src": "top.v:38.19-43.2|./DataReciverModule.v:2.16-2.19"
-          }
-        },
-        "dataReciverModule.dht11_data": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "hdlname": "dataReciverModule dht11_data",
-            "src": "top.v:38.19-43.2|./DataReciverModule.v:5.15-5.25",
-            "unused_bits": "0 "
-          }
-        },
-        "dataReciverModule.rst": {
-          "hide_name": 0,
-          "bits": [ "0" ],
-          "attributes": {
-            "hdlname": "dataReciverModule rst",
-            "src": "top.v:38.19-43.2|./DataReciverModule.v:3.16-3.19"
           }
         },
         "dht11_data": {
@@ -12333,59 +12303,59 @@
           "bits": [ 2 ],
           "attributes": {
             "hdlname": "frequencyDivider CLK_IN",
-            "src": "top.v:26.5-29.2|./freqDiv.v:8.11-8.17"
+            "src": "top.v:27.5-30.2|./freqDiv.v:8.11-8.17"
           }
         },
         "frequencyDivider.CLK_OUT": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "frequencyDivider CLK_OUT",
-            "src": "top.v:26.5-29.2|./freqDiv.v:9.16-9.23"
+            "src": "top.v:27.5-30.2|./freqDiv.v:9.16-9.23"
           }
         },
         "frequencyDivider.CLK_OUT_SB_DFFE_Q_D": {
           "hide_name": 0,
-          "bits": [ 6 ],
+          "bits": [ 5 ],
           "attributes": {
-            "src": "top.v:26.5-29.2|./freqDiv.v:23.18-23.26"
+            "src": "top.v:27.5-30.2|./freqDiv.v:23.18-23.26"
           }
         },
         "frequencyDivider.count": {
           "hide_name": 0,
-          "bits": [ 16, 14, 12, 10 ],
+          "bits": [ 15, 13, 11, 9 ],
           "attributes": {
             "hdlname": "frequencyDivider count",
-            "src": "top.v:26.5-29.2|./freqDiv.v:17.18-17.23"
+            "src": "top.v:27.5-30.2|./freqDiv.v:17.18-17.23"
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 15, 14, 12, 10 ],
+          "bits": [ 14, 13, 11, 9 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.23-33.24"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.23-33.24"
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D": {
           "hide_name": 0,
-          "bits": [ 15, 13, 11, 9 ],
+          "bits": [ 14, 12, 10, 8 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 16, 18, 17 ],
+          "bits": [ "0", 15, 17, 16 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:26.5-29.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "top.v:27.5-30.2|./freqDiv.v:25.16-25.25|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "frequencyDivider.count_SB_DFFSR_Q_R": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ 6 ],
           "attributes": {
           }
         },
@@ -12405,41 +12375,48 @@
         },
         "startModule.clk": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "startModule clk",
-            "src": "top.v:31.13-36.2|./StartModule.v:2.16-2.19"
+            "src": "top.v:32.13-37.2|./StartModule.v:2.16-2.19"
           }
         },
         "startModule.counter": {
           "hide_name": 0,
-          "bits": [ 19, 21, 49, 48, 46, 44, 42, 40, 26, 24, 38, 37, 35, 33, 31, 29, 53, 52, 65 ],
+          "bits": [ 18, 20, 48, 47, 45, 43, 41, 39, 25, 23, 37, 36, 34, 32, 30, 28, 52, 51, 66 ],
           "attributes": {
             "hdlname": "startModule counter",
-            "src": "top.v:31.13-36.2|./StartModule.v:19.11-19.18"
+            "src": "top.v:32.13-37.2|./StartModule.v:20.11-20.18"
           }
         },
-        "startModule.counter_SB_DFFSR_Q_D": {
+        "startModule.counter_SB_DFFESR_Q_D": {
           "hide_name": 0,
-          "bits": [ 54, 55, 66, 67, 68, 69, 70, 71, 72, 73, 56, 57, 58, 59, 60, 61, 62, 63, 64 ],
+          "bits": [ 53, 56, 67, 68, 69, 70, 71, 72, 73, 74, 57, 58, 59, 60, 61, 62, 63, 64, 65 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:33.9-88.16|./StartModule.v:0.0-0.0|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:578.19-578.22"
+            "src": "top.v:32.13-37.2|./StartModule.v:34.9-90.16|./StartModule.v:0.0-0.0|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:578.19-578.22"
+          }
+        },
+        "startModule.counter_SB_DFFESR_Q_E": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "startModule.counter_SB_DFFESR_Q_R": {
+          "hide_name": 0,
+          "bits": [ 82, 90, 55, 91 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "startModule.data_aux": {
           "hide_name": 0,
-          "bits": [ 4 ],
+          "bits": [ "0" ],
           "attributes": {
             "hdlname": "startModule data_aux",
-            "src": "top.v:31.13-36.2|./StartModule.v:8.5-8.13"
-          }
-        },
-        "startModule.data_aux_SB_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 74 ],
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4"
+            "src": "top.v:32.13-37.2|./StartModule.v:9.5-9.13"
           }
         },
         "startModule.out_delay": {
@@ -12447,7 +12424,7 @@
           "bits": [ 3 ],
           "attributes": {
             "hdlname": "startModule out_delay",
-            "src": "top.v:31.13-36.2|./StartModule.v:4.15-4.24",
+            "src": "top.v:32.13-37.2|./StartModule.v:4.15-4.24",
             "unused_bits": "0 "
           }
         },
@@ -12456,123 +12433,118 @@
           "bits": [ "0" ],
           "attributes": {
             "hdlname": "startModule rst",
-            "src": "top.v:31.13-36.2|./StartModule.v:3.16-3.19"
+            "src": "top.v:32.13-37.2|./StartModule.v:3.16-3.19"
           }
         },
         "startModule.selector": {
           "hide_name": 0,
-          "bits": [ 5, "0" ],
+          "bits": [ 4, "0" ],
           "attributes": {
             "hdlname": "startModule selector",
-            "src": "top.v:31.13-36.2|./StartModule.v:9.10-9.18"
-          }
-        },
-        "startModule.selector_SB_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 77 ],
-          "attributes": {
-            "src": "top.v:31.13-36.2|./StartModule.v:25.1-90.4"
+            "src": "top.v:32.13-37.2|./StartModule.v:10.10-10.18"
           }
         },
         "startModule.states": {
           "hide_name": 0,
-          "bits": [ 76, 75, "0", "0" ],
+          "bits": [ 77, 78, "0", "0" ],
           "attributes": {
             "hdlname": "startModule states",
-            "src": "top.v:31.13-36.2|./StartModule.v:20.10-20.16"
+            "src": "top.v:32.13-37.2|./StartModule.v:21.10-21.16"
           }
         },
-        "startModule.states_SB_DFFESR_Q_D": {
+        "startModule.states_SB_DFFESS_Q_D": {
           "hide_name": 0,
-          "bits": [ 78, 81 ],
+          "bits": [ "0", 79, 75, "0" ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:33.9-88.16|./StartModule.v:0.0-0.0|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:578.19-578.22"
+            "src": "top.v:32.13-37.2|./StartModule.v:34.9-90.16|./StartModule.v:0.0-0.0|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:583.28-583.35"
           }
         },
-        "startModule.states_SB_DFFESR_Q_E": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1": {
           "hide_name": 0,
-          "bits": [ 79 ],
-          "attributes": {
-          }
-        },
-        "startModule.states_SB_DFFESR_Q_E_SB_LUT4_O_I1": {
-          "hide_name": 0,
-          "bits": [ 82, 75, 83, 96 ],
+          "bits": [ 80, 81, 75 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "startModule.states_SB_DFFESR_Q_R": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 80 ],
-          "attributes": {
-          }
-        },
-        "startModule.states_SB_LUT4_I1_9_I3": {
-          "hide_name": 0,
-          "bits": [ 115, 87, 97, 98, 99, 100, 101, 102, 103, 104, 88, 89, 90, 91, 92, 93, 94, 95, 96 ],
+          "bits": [ 83, 84, 85, 86 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2": {
+          "hide_name": 0,
+          "bits": [ 81, 88, 78, 77 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_1_I3": {
+          "hide_name": 0,
+          "bits": [ 25, 36, 89 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 85, 87 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 90, 82, 91, 98 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3": {
+          "hide_name": 0,
+          "bits": [ 113, 92, 102, 103, 104, 105, 106, 107, 108, 109, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27",
             "unused_bits": "0 "
           }
         },
-        "startModule.states_SB_LUT4_I1_9_I3_SB_LUT4_O_I3": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 19, 20, 47, 45, 43, 41, 39, 25, 22, 23, 36, 34, 32, 30, 27, 28, 50, 51 ],
+          "bits": [ "0", 18, 19, 46, 44, 42, 40, 38, 24, 21, 22, 35, 33, 31, 29, 26, 27, 49, 50 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:31.13-36.2|./StartModule.v:43.32-43.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
-        "startModule.states_SB_LUT4_I2_1_I0": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 107, 108, 75, 109 ],
+          "bits": [ 110, 111, 77, 78 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "startModule.states_SB_LUT4_I2_1_I0_SB_LUT4_O_2_I2": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_1_I0": {
           "hide_name": 0,
-          "bits": [ 111, 112 ],
+          "bits": [ 112, 20, 48, 47 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "startModule.states_SB_LUT4_I2_I0": {
+        "startModule.states_SB_DFFESS_Q_E": {
           "hide_name": 0,
-          "bits": [ 105, 110 ],
+          "bits": [ 76 ],
           "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "startModule.states_SB_LUT4_I2_I1": {
-          "hide_name": 0,
-          "bits": [ 105, 106, 76, 31 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "startModule.states_SB_LUT4_I2_O": {
-          "hide_name": 0,
-          "bits": [ 84, 85, 86 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "startModule.states_SB_LUT4_I2_O_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 26, 113, 114 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         }
       }
