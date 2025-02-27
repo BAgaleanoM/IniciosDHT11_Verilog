@@ -10834,6 +10834,31 @@
             "Q": [ 4 ]
           }
         },
+        "startModule.selector_SB_DFFE_Q_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ "0" ],
+            "I3": [ 76 ],
+            "O": [ 75 ]
+          }
+        },
         "startModule.states_SB_DFFESS_Q": {
           "hide_name": 0,
           "type": "SB_DFFESS",
@@ -10852,10 +10877,10 @@
           },
           "connections": {
             "C": [ 7 ],
-            "D": [ 75 ],
-            "E": [ 76 ],
-            "Q": [ 77 ],
-            "S": [ 78 ]
+            "D": [ 77 ],
+            "E": [ 78 ],
+            "Q": [ 79 ],
+            "S": [ 76 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_1": {
@@ -10876,10 +10901,10 @@
           },
           "connections": {
             "C": [ 7 ],
-            "D": [ 79 ],
-            "E": [ 76 ],
-            "Q": [ 78 ],
-            "S": [ 78 ]
+            "D": [ 80 ],
+            "E": [ 78 ],
+            "Q": [ 76 ],
+            "S": [ 76 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3": {
@@ -10901,10 +10926,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 80 ],
-            "I2": [ 81 ],
-            "I3": [ 75 ],
-            "O": [ 82 ]
+            "I1": [ 81 ],
+            "I2": [ 82 ],
+            "I3": [ 77 ],
+            "O": [ 83 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O": {
@@ -10925,139 +10950,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 83 ],
-            "I1": [ 84 ],
-            "I2": [ 85 ],
-            "I3": [ 86 ],
-            "O": [ 80 ]
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 18 ],
-            "I1": [ 20 ],
-            "I2": [ 48 ],
-            "I3": [ 47 ],
-            "O": [ 86 ]
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000011"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 66 ],
-            "I2": [ 52 ],
-            "I3": [ 51 ],
-            "O": [ 85 ]
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 43 ],
-            "I1": [ 45 ],
-            "I2": [ 41 ],
-            "I3": [ 30 ],
-            "O": [ 84 ]
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 39 ],
-            "I2": [ 23 ],
-            "I3": [ 37 ],
-            "O": [ 83 ]
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 85 ],
+            "I0": [ 84 ],
+            "I1": [ 85 ],
+            "I2": [ 86 ],
             "I3": [ 87 ],
-            "O": [ 88 ]
+            "O": [ 81 ]
           }
         },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_1": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11078,11 +10978,11 @@
             "I0": [ "0" ],
             "I1": [ 25 ],
             "I2": [ 36 ],
-            "I3": [ 89 ],
-            "O": [ 81 ]
+            "I3": [ 88 ],
+            "O": [ 82 ]
           }
         },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_1_I3_SB_LUT4_O": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_1_I3_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11104,32 +11004,7 @@
             "I1": [ 28 ],
             "I2": [ 34 ],
             "I3": [ 32 ],
-            "O": [ 89 ]
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 30 ],
-            "I1": [ 41 ],
-            "I2": [ 23 ],
-            "I3": [ 37 ],
-            "O": [ 87 ]
+            "O": [ 88 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0": {
@@ -11150,9 +11025,9 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
             "I3": [ 18 ],
             "O": [ 53 ]
           }
@@ -11175,10 +11050,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 92 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 91 ],
             "O": [ 56 ]
           }
         },
@@ -11200,10 +11075,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 93 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 92 ],
             "O": [ 57 ]
           }
         },
@@ -11225,10 +11100,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 94 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 93 ],
             "O": [ 58 ]
           }
         },
@@ -11250,10 +11125,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 95 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 94 ],
             "O": [ 59 ]
           }
         },
@@ -11275,10 +11150,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 96 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 95 ],
             "O": [ 60 ]
           }
         },
@@ -11300,10 +11175,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 97 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 96 ],
             "O": [ 61 ]
           }
         },
@@ -11325,10 +11200,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 98 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 97 ],
             "O": [ 62 ]
           }
         },
@@ -11350,10 +11225,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 99 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 98 ],
             "O": [ 63 ]
           }
         },
@@ -11375,10 +11250,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 100 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 99 ],
             "O": [ 64 ]
           }
         },
@@ -11400,10 +11275,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 101 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 100 ],
             "O": [ 65 ]
           }
         },
@@ -11425,10 +11300,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 102 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 101 ],
             "O": [ 67 ]
           }
         },
@@ -11450,10 +11325,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 103 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 102 ],
             "O": [ 68 ]
           }
         },
@@ -11475,10 +11350,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 104 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 103 ],
             "O": [ 69 ]
           }
         },
@@ -11500,10 +11375,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 105 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 104 ],
             "O": [ 70 ]
           }
         },
@@ -11525,10 +11400,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 106 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 105 ],
             "O": [ 71 ]
           }
         },
@@ -11550,10 +11425,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 107 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 106 ],
             "O": [ 72 ]
           }
         },
@@ -11575,10 +11450,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 108 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 107 ],
             "O": [ 73 ]
           }
         },
@@ -11600,10 +11475,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 91 ],
-            "I3": [ 109 ],
+            "I0": [ 89 ],
+            "I1": [ 83 ],
+            "I2": [ 90 ],
+            "I3": [ 108 ],
             "O": [ 74 ]
           }
         },
@@ -11629,7 +11504,7 @@
             "I1": [ "0" ],
             "I2": [ 23 ],
             "I3": [ 21 ],
-            "O": [ 109 ]
+            "O": [ 108 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_1": {
@@ -11654,7 +11529,7 @@
             "I1": [ "0" ],
             "I2": [ 25 ],
             "I3": [ 24 ],
-            "O": [ 108 ]
+            "O": [ 107 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_10": {
@@ -11679,7 +11554,7 @@
             "I1": [ "0" ],
             "I2": [ 51 ],
             "I3": [ 49 ],
-            "O": [ 100 ]
+            "O": [ 99 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_11": {
@@ -11704,7 +11579,7 @@
             "I1": [ "0" ],
             "I2": [ 52 ],
             "I3": [ 27 ],
-            "O": [ 99 ]
+            "O": [ 98 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_12": {
@@ -11729,7 +11604,7 @@
             "I1": [ "0" ],
             "I2": [ 28 ],
             "I3": [ 26 ],
-            "O": [ 98 ]
+            "O": [ 97 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_13": {
@@ -11754,7 +11629,7 @@
             "I1": [ "0" ],
             "I2": [ 30 ],
             "I3": [ 29 ],
-            "O": [ 97 ]
+            "O": [ 96 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_14": {
@@ -11779,7 +11654,7 @@
             "I1": [ "0" ],
             "I2": [ 32 ],
             "I3": [ 31 ],
-            "O": [ 96 ]
+            "O": [ 95 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_15": {
@@ -11804,7 +11679,7 @@
             "I1": [ "0" ],
             "I2": [ 34 ],
             "I3": [ 33 ],
-            "O": [ 95 ]
+            "O": [ 94 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_16": {
@@ -11829,7 +11704,7 @@
             "I1": [ "0" ],
             "I2": [ 36 ],
             "I3": [ 35 ],
-            "O": [ 94 ]
+            "O": [ 93 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_17": {
@@ -11854,7 +11729,7 @@
             "I1": [ "0" ],
             "I2": [ 37 ],
             "I3": [ 22 ],
-            "O": [ 93 ]
+            "O": [ 92 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_2": {
@@ -11879,7 +11754,7 @@
             "I1": [ "0" ],
             "I2": [ 39 ],
             "I3": [ 38 ],
-            "O": [ 107 ]
+            "O": [ 106 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_3": {
@@ -11904,7 +11779,7 @@
             "I1": [ "0" ],
             "I2": [ 41 ],
             "I3": [ 40 ],
-            "O": [ 106 ]
+            "O": [ 105 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_4": {
@@ -11929,7 +11804,7 @@
             "I1": [ "0" ],
             "I2": [ 43 ],
             "I3": [ 42 ],
-            "O": [ 105 ]
+            "O": [ 104 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_5": {
@@ -11954,7 +11829,7 @@
             "I1": [ "0" ],
             "I2": [ 45 ],
             "I3": [ 44 ],
-            "O": [ 104 ]
+            "O": [ 103 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_6": {
@@ -11979,7 +11854,7 @@
             "I1": [ "0" ],
             "I2": [ 47 ],
             "I3": [ 46 ],
-            "O": [ 103 ]
+            "O": [ 102 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_7": {
@@ -12004,7 +11879,7 @@
             "I1": [ "0" ],
             "I2": [ 48 ],
             "I3": [ 19 ],
-            "O": [ 102 ]
+            "O": [ 101 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_8": {
@@ -12029,7 +11904,7 @@
             "I1": [ "0" ],
             "I2": [ 20 ],
             "I3": [ 18 ],
-            "O": [ 92 ]
+            "O": [ 91 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3_SB_LUT4_O_9": {
@@ -12054,7 +11929,7 @@
             "I1": [ "0" ],
             "I2": [ 66 ],
             "I3": [ 50 ],
-            "O": [ 101 ]
+            "O": [ 100 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O": {
@@ -12075,11 +11950,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 110 ],
-            "I1": [ 111 ],
-            "I2": [ 77 ],
-            "I3": [ 78 ],
-            "O": [ 91 ]
+            "I0": [ 109 ],
+            "I1": [ 110 ],
+            "I2": [ 79 ],
+            "I3": [ 76 ],
+            "O": [ 90 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_1": {
@@ -12100,11 +11975,61 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 81 ],
-            "I1": [ 88 ],
-            "I2": [ 78 ],
-            "I3": [ 77 ],
-            "O": [ 90 ]
+            "I0": [ 82 ],
+            "I1": [ 111 ],
+            "I2": [ 76 ],
+            "I3": [ 79 ],
+            "O": [ 89 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 86 ],
+            "I3": [ 112 ],
+            "O": [ 111 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 30 ],
+            "I1": [ 41 ],
+            "I2": [ 23 ],
+            "I3": [ 37 ],
+            "O": [ 112 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O": {
@@ -12126,10 +12051,10 @@
           },
           "connections": {
             "I0": [ 45 ],
-            "I1": [ 86 ],
+            "I1": [ 87 ],
             "I2": [ 39 ],
             "I3": [ 43 ],
-            "O": [ 110 ]
+            "O": [ 109 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_1": {
@@ -12150,11 +12075,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 112 ],
+            "I0": [ 113 ],
             "I1": [ 20 ],
             "I2": [ 48 ],
             "I3": [ 47 ],
-            "O": [ 111 ]
+            "O": [ 110 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O": {
@@ -12179,7 +12104,107 @@
             "I1": [ 39 ],
             "I2": [ 43 ],
             "I3": [ 45 ],
-            "O": [ 112 ]
+            "O": [ 113 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 18 ],
+            "I1": [ 20 ],
+            "I2": [ 48 ],
+            "I3": [ 47 ],
+            "O": [ 87 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 66 ],
+            "I2": [ 52 ],
+            "I3": [ 51 ],
+            "O": [ 86 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 43 ],
+            "I1": [ 45 ],
+            "I2": [ 41 ],
+            "I3": [ 30 ],
+            "O": [ 85 ]
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 39 ],
+            "I2": [ 23 ],
+            "I3": [ 37 ],
+            "O": [ 84 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_O": {
@@ -12202,9 +12227,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 78 ],
-            "I3": [ 77 ],
-            "O": [ 79 ]
+            "I2": [ 76 ],
+            "I3": [ 79 ],
+            "O": [ 80 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_O_1": {
@@ -12227,9 +12252,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 78 ],
-            "I3": [ 77 ],
-            "O": [ 75 ]
+            "I2": [ 76 ],
+            "I3": [ 79 ],
+            "O": [ 77 ]
           }
         },
         "startModule.states_SB_DFFESS_Q_E_SB_LUT4_O": {
@@ -12250,11 +12275,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 82 ],
-            "I1": [ 90 ],
+            "I0": [ 83 ],
+            "I1": [ 89 ],
             "I2": [ 55 ],
-            "I3": [ 91 ],
-            "O": [ 76 ]
+            "I3": [ 90 ],
+            "O": [ 78 ]
           }
         },
         "startModule.states_SB_LUT4_I2": {
@@ -12277,8 +12302,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 78 ],
-            "I3": [ 77 ],
+            "I2": [ 76 ],
+            "I3": [ 79 ],
             "O": [ 55 ]
           }
         }
@@ -12405,7 +12430,7 @@
         },
         "startModule.counter_SB_DFFESR_Q_R": {
           "hide_name": 0,
-          "bits": [ 82, 90, 55, 91 ],
+          "bits": [ 83, 89, 55, 90 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -12444,9 +12469,16 @@
             "src": "top.v:32.13-37.2|./StartModule.v:10.10-10.18"
           }
         },
+        "startModule.selector_SB_DFFE_Q_D": {
+          "hide_name": 0,
+          "bits": [ 75 ],
+          "attributes": {
+            "src": "top.v:32.13-37.2|./StartModule.v:26.1-92.4"
+          }
+        },
         "startModule.states": {
           "hide_name": 0,
-          "bits": [ 77, 78, "0", "0" ],
+          "bits": [ 79, 76, "0", "0" ],
           "attributes": {
             "hdlname": "startModule states",
             "src": "top.v:32.13-37.2|./StartModule.v:21.10-21.16"
@@ -12454,7 +12486,7 @@
         },
         "startModule.states_SB_DFFESS_Q_D": {
           "hide_name": 0,
-          "bits": [ "0", 79, 75, "0" ],
+          "bits": [ "0", 80, 77, "0" ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "top.v:32.13-37.2|./StartModule.v:34.9-90.16|./StartModule.v:0.0-0.0|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/techmap.v:583.28-583.35"
@@ -12462,39 +12494,15 @@
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1": {
           "hide_name": 0,
-          "bits": [ 80, 81, 75 ],
+          "bits": [ 81, 82, 77 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_I0": {
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I1_SB_LUT4_O_1_I3": {
           "hide_name": 0,
-          "bits": [ 83, 84, 85, 86 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2": {
-          "hide_name": 0,
-          "bits": [ 81, 88, 78, 77 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_1_I3": {
-          "hide_name": 0,
-          "bits": [ 25, 36, 89 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 85, 87 ],
+          "bits": [ 25, 36, 88 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -12502,7 +12510,7 @@
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 90, 82, 91, 98 ],
+          "bits": [ 89, 83, 90, 91 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -12510,7 +12518,7 @@
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_I0_9_I3": {
           "hide_name": 0,
-          "bits": [ 113, 92, 102, 103, 104, 105, 106, 107, 108, 109, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+          "bits": [ 114, 91, 101, 102, 103, 104, 105, 106, 107, 108, 92, 93, 94, 95, 96, 97, 98, 99, 100 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27",
@@ -12525,9 +12533,25 @@
             "src": "top.v:32.13-37.2|./StartModule.v:44.32-44.41|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_1_I1": {
+          "hide_name": 0,
+          "bits": [ 82, 111, 76, 79 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 86, 112 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 110, 111, 77, 78 ],
+          "bits": [ 109, 110, 79, 76 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -12535,7 +12559,15 @@
         },
         "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_1_I0": {
           "hide_name": 0,
-          "bits": [ 112, 20, 48, 47 ],
+          "bits": [ 113, 20, 48, 47 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "startModule.states_SB_DFFESS_Q_D_SB_LUT4_I3_O_SB_LUT4_O_I0_SB_LUT4_O_I1": {
+          "hide_name": 0,
+          "bits": [ 84, 85, 86, 87 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -12543,7 +12575,7 @@
         },
         "startModule.states_SB_DFFESS_Q_E": {
           "hide_name": 0,
-          "bits": [ 76 ],
+          "bits": [ 78 ],
           "attributes": {
           }
         }

@@ -45,8 +45,8 @@ always @(posedge clk or posedge rst) begin
                 end
             end
             B:begin
-                selector <= 1'b0;
-                data_aux <= 1'bz;
+                selector <= 1'b1;
+                data_aux <= 1'b0;
                 confirm_to_reciver <= 1'b0;
                 
                 if (counter == up_to_request) begin
