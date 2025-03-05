@@ -1,9 +1,9 @@
-module dht11_controller #(parameter WAIT_READ=25000000, 
-                                    INIT_PULSE_DOWN=2250000, 
-                                    INIT_PULSE_UP=3750,
-                                    WAIT_RESPONSE_INIT=20000, 
-                                    WAIT_50u = 6250,
-                                    ZERO_26u=3000, 
+module dht11_controller #(parameter WAIT_READ=25000000,         //25MHz (?) o ciclos de reloj
+                                    INIT_PULSE_DOWN=2250000,    //Inicio del impulso "0"
+                                    INIT_PULSE_UP=3750,         //Inicio impulso "1"
+                                    WAIT_RESPONSE_INIT=20000,   //Tiempo de espera de respuesta del sensor 
+                                    WAIT_50u = 6250,            //Espera de 50u pero porque 6.25kHz
+                                    ZERO_26u=3000,              
                                     ONE_70u=8750)(
     input wire clk,               
     input wire rst,               
@@ -14,11 +14,11 @@ module dht11_controller #(parameter WAIT_READ=25000000,
     output reg [2:0] state
 );
 
-    reg [2:0] fsm_state;
-    reg [2:0] next_state;
-    reg [39:0] shift_reg;
-    reg [5:0] bit_count;
-    reg [$clog2(WAIT_READ)-1:0] timer_init; 
+    reg [2:0] fsm_state;                                    //registro del estado maquina de estado
+    reg [2:0] next_state;                                   //regsitro siguiente estado
+    reg [39:0] shift_reg;                                   //bus de datos de 40bits
+    reg [5:0] bit_count;                                    //contador de bits
+    reg [$clog2(WAIT_READ)-1:0] timer_init;                 //en este pasa el tiempo de espera a cantidad de bits 
     reg [$clog2(INIT_PULSE_UP)-1:0] timer_start_up;
     reg [$clog2(INIT_PULSE_DOWN)-1:0] timer_start_down; 
     reg [$clog2(WAIT_RESPONSE_INIT)-1:0] timer_response; 
@@ -26,7 +26,7 @@ module dht11_controller #(parameter WAIT_READ=25000000,
     reg [$clog2(ONE_70u)-1:0] timer_bits;
     reg bit_done;                       
 
-    reg dht11_out;
+    reg dht11_out;                                          
     wire dht11_dir;
     
     
@@ -48,9 +48,9 @@ module dht11_controller #(parameter WAIT_READ=25000000,
     end
       
 
-    assign dht11_io = dht11_dir ? dht11_out : 1'bz;
+    assign dht11_io = dht11_dir ? dht11_out : 1'bz;     //alterna el como actua dht11_io por alta impedancia
 
-    localparam IDLE          = 3'b000;
+    localparam IDLE          = 3'b000;          //define los S0 al S6 de los estados de la maquina
     localparam START_DOWN    = 3'b001;
     localparam START_UP      = 3'b010;
     localparam WAIT_RESPONSE = 3'b011;
@@ -59,7 +59,7 @@ module dht11_controller #(parameter WAIT_READ=25000000,
     localparam CHECKSUM      = 3'b110;
 
     initial begin
-        dht11_out <= 1'b1;
+        dht11_out <= 1'b1;              //estados iniciales
         humidity <= 'b0;
         temperature <= 'b0;
         valid <= 1'b0;
@@ -80,16 +80,16 @@ module dht11_controller #(parameter WAIT_READ=25000000,
 
     always @(posedge clk) begin
         if (rst) begin
-            fsm_state <= IDLE;
+            fsm_state <= IDLE;          //1er estado donde se mantiene en 0's
         end else begin
             fsm_state <= next_state;
         end
     end
 
     always @(*) begin
-        // next_state = fsm_state;
+        // next_state = fsm_state;      // se especifica las condiciones para las transiciones entre los estados
         case(fsm_state)
-            IDLE: begin 
+            IDLE: begin                   
                 next_state = (timer_init == WAIT_READ)? START_DOWN : IDLE;
             end
             START_DOWN: begin
@@ -114,7 +114,7 @@ module dht11_controller #(parameter WAIT_READ=25000000,
     end
 
     always @(posedge clk) begin
-        if (rst) begin
+        if (rst) begin                  //aca empieza la magia, donde se mantienen en 0 varios de lso registros
             dht11_out <= 1'b1;
             valid <= 1'b0;
             timer_init <= 'b0;
@@ -130,25 +130,25 @@ module dht11_controller #(parameter WAIT_READ=25000000,
             case (next_state)
                 IDLE: begin
                     valid <= 1'b0;
-                    timer_init <= timer_init + 1;
+                    timer_init <= timer_init + 1;       //se le empieza a sumar al registro de inicio que entregamos
                 end
                 START_DOWN: begin
-                    dht11_out <= 1'b0;
+                    dht11_out <= 1'b0;                  //se empieza a sumar al tiempo de impulso "0"
                     timer_start_down <= timer_start_down + 1;
                 end
                 START_UP: begin
                     dht11_out <= 1'b1;
-                    timer_start_up <= timer_start_up + 1;
+                    timer_start_up <= timer_start_up + 1; //se empieza a con el impulso "1"
                 end
-                WAIT_RESPONSE: begin
-                    // if (dht11_io == 1'b0 & timer_response < 8750) begin  
-                    //     timer_response <= timer_response + 1;
-                    // end
-                    // if (timer_response == 8750)begin
-                    //     if (dht11_io == 1'b1) begin
-                    //         timer_response <= timer_response + 1;
-                    //     end
-                    // end
+                WAIT_RESPONSE: begin        //aca esta el punto importante
+                    if (dht11_io == 1'b0 & timer_response < 8750) begin  //podriamos estar hablando de no darle tiempo a dht a sacar las respuestar y pueda pasar a transmitir los datos
+                         timer_response <= timer_response + 1;
+                    end
+                    if (timer_response == 8750)begin
+                         if (dht11_io == 1'b1) begin
+                             timer_response <= timer_response + 1;
+                         end
+                    end
                     timer_response <= timer_response + 1;
                 end
                 WAIT_DATA:begin
