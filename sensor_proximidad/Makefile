@@ -4,6 +4,7 @@ top=top
 #test bench del proyecto para la simulación
 tb?=$(top)_tb.v
 MACROS_SIM=
+MACROS_RTL=
 MACROS_SYN=
 MORE_SRC2SIM?=
 DESIGN=top.v
@@ -13,11 +14,16 @@ DEVSERIAL=/dev/ttyACM0
 Z=template
 
 top_NAME=$(basename $(notdir $(DESIGN)))
+########################################
+###--- Rules from blackice-syn.mk ---###
+########################################
 top?=$(top_NAME)
 PCF?=$(top).pcf
 JSON?=$(DIR_BUILD)/$(top).json
 ASC?=$(DIR_BUILD)/$(top).asc
 BISTREAM?=$(DIR_BUILD)/$(top).bin
+LOG_YOSYS?=$(DIR_BUILD)/yosys-$(top).log
+LOG_NEXTPNR?=$(DIR_BUILD)/nextpnr-$(top).log
 
 # MACRO_SYN sirve para indicar definiciones de preprocesamiento en la sintesis
 MACRO_SYN?=
@@ -27,6 +33,8 @@ help-syn:
 	@echo "\n## SINTESIS Y CONFIGURACIÓN ##"
 	@echo "\tmake syn\t-> Sintetizar diseño"
 	@echo "\tmake config\t-> Configurar fpga"
+	@echo "\tmake log-syn\t\t-> Ver el log de la síntesis con Yosys. Comandos: /palabra -> buscar, n -> próxima palabra, q -> salir, h -> salir"
+	@echo "\tmake log-pnr\t\t-> Ver el log del place&route con nextpnr. Comandos: /palabra -> buscar, n -> próxima palabra, q -> salir, h -> salir"
 	@echo "\tmake clean\t-> Limipiar síntesis si ha modificado el diseño"
 
 syn: json asc bitstream
@@ -35,10 +43,16 @@ OBJS+=$(DESIGN)
 
 $(JSON): $(OBJS)
 	mkdir -p $(DIR_BUILD)
-	yosys $(MACRO_SYN) -p "synth_ice40 -top $(top) -json $(JSON)" $(OBJS)
+	yosys $(MACRO_SYN) -p "synth_ice40 -top $(top) -json $(JSON)" $(OBJS) -l $(LOG_YOSYS)
+
+log-syn:
+	less $(LOG_YOSYS)
 
 $(ASC): $(JSON)
-	nextpnr-ice40 --hx4k --package tq144 --json $(JSON) --pcf $(PCF) --asc $(ASC)
+	nextpnr-ice40 --hx4k --package tq144 --json $(JSON) --pcf $(PCF) --asc $(ASC) --log $(LOG_NEXTPNR)
+
+log-pnr:
+	less $(LOG_NEXTPNR)
 
 $(BISTREAM): $(ASC)
 	icepack $(ASC) $(BISTREAM)
@@ -56,10 +70,13 @@ zip:
 	$(RM) $Z $Z.zip
 	mkdir -p $Z
 	head -n -3 Makefile > $Z/Makefile
-	# Copia el Makefile de syn desde la línea 4
+	# Copia el Makefile de syn después de la línea 4
 	sed -n '4,$$p' $(MK_SYN) >> $Z/Makefile
 	sed -n '7,$$p' $(MK_SIM) >> $Z/Makefile
 	cp -var *.v *.md *.pcf .gitignore $Z
+ifneq ($(wildcard *.pdf),) # Si existe un archivo .pdf
+	cp -var *.pdf $Z
+endif
 ifneq ($(wildcard *.mem),) # Si existe un archivo .mem
 	cp -var *.mem $Z
 endif
@@ -87,16 +104,21 @@ clean-syn:
 
 .PHONY: clean
 # .PHONY: upload clean $(top).json $(top).bin $(top).asc init_dir_build
+###############################
+###--- Rules from syn.mk ---###
+###############################
 tb?=$(top_NAME)_tb.v
 TBN=$(basename $(notdir $(tb)))
 
 S=sim
+LOG_YOSYS_RTL?=$(S)/yosys-$(top).log
 
 help-sim:
 	@echo "\n## SIMULACIÓN Y RTL##"
 	@echo "\tmake rtl \t-> Crear el RTL desde el TOP"
 	@echo "\tmake sim \t-> Simular diseño"
 	@echo "\tmake wave \t-> Ver simulación en gtkwave"
+	@echo "\tmake log-rtl \t-> Ver el log del RTL. Comandos: /palabra -> buscar, n -> próxima palabra, q -> salir, h -> salir"
 	@echo "\nEjemplos de simulaciones con más argumentos:"
 	@echo "\tmake sim VVP_ARG=+inputs=5\t\t:Agregar un argumento a la simulación"
 	@echo "\tmake sim VVP_ARG=+a=5\ +b=6\t\t:Agregar varios argumentos a la simulación"
@@ -104,7 +126,7 @@ help-sim:
 	@echo "\tmake rtl TOP=modulo1\t\t\t:Obtiene el RTL de otros modulos (submodulos)"
 	@echo "\tmake rtl rtl2png\t\t\t:Convertir el RTL del TOP desde formato svg a png"
 	@echo "\tmake rtl rtl2png TOP=modulo1\t\t:Además de convertir, obtiene el RTL de otros modulos (submodulos)"
-	@echo "\tmake ConvertOneVerilogFile\t\t\t:Crear un único verilog del diseño"
+	@echo "\tmake ConvertOneVerilogFile\t\t:Crear un único verilog del diseño"
 
 rtl: rtl-from-json view-svg
 
@@ -128,9 +150,13 @@ vpp-simulate:
 wave:
 	@gtkwave $S/$(TBN).vcd $(TBN).gtkw || (echo "No hay un forma de onda que mostrar en gtkwave, posiblemente no fue solicitada en la simulación")
 
-json-yosys:
+MACROS_RTL := $(foreach macro,$(MACROS_RTL),"$(macro)")
+json-yosys: ## Generar json para el rtl de netlistsvg
 	mkdir -p $S
-	yosys $(MACROS_SIM) -p 'prep -top $(top); hierarchy -check; proc; write_json $S/$(top).json' $(DESIGN)
+	yosys $(MACROS_RTL) -p 'prep -top $(top); hierarchy -check; proc; write_json $S/$(top).json' $(DESIGN) -l $(LOG_YOSYS_RTL)
+
+log-rtl:
+	less $(LOG_YOSYS_RTL)
 
 # Convertir el diseño en un solo archivo de verilog
 ConvertOneVerilogFile:
@@ -140,6 +166,8 @@ ConvertOneVerilogFile:
 	# yosys -p 'read_verilog $(DESIGN); prep -top $(TOP); hierarchy -check; proc; flatten; synth; write_verilog -noattr -noexpr $S/$(TOP).v'
 
 rtl-from-json: json-yosys
+	cp $S/$(top).json $S/$(top)_origin.json # Hacer una copia desde el archivo origen
+	sed -E 's/"\$$paramod\$$[^\\]+\\\\([^"]+)"/"\1"/g' $S/$(top)_origin.json > $S/$(top).json # Quitar parametros en el nombre del módulo para que sea legible.
 	netlistsvg $S/$(top).json -o $S/$(top).svg
 
 view-svg:
@@ -164,7 +192,7 @@ zip-sim:
 	mkdir -p $Z
 	# Quitar las últimas dos líneas del Makefile y crear copia en el directorio $Z
 	head -n -2 Makefile > $Z/Makefile
-	# Agregar desde la línea 7 en adelante en el Makefile
+	# Agregar el contenido de sim.mk después de la línea 6
 	sed -n '6,$$p' $(MK_SIM) >> $Z/Makefile
 	cp -var *.v *.md .gitignore $Z
 ifneq ($(wildcard *.mem),) # Si existe un archivo .png

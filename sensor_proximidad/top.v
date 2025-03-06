@@ -3,33 +3,27 @@
 module top(
     input wire hwclk,
     input wire pir_in,
-    //output reg motion_detected,
-    output reg led_out
+    output wire led_out
 );
 
-  freqDiv #(
-`ifdef SIM  // Macros de presíntesis
-      .FREQ_IN (10),    // 10 Tikcs
-      .FREQ_OUT(1)      // 1 Tikcs
-`else
-      .FREQ_IN (25e6),  // 25 MHz
-      .FREQ_OUT(10)    // 1 Hz
-`endif
-  ) frequencyDivider (
-      .CLK_IN (hwclk),
-      .CLK_OUT(clk)
-);
 
-    always @(posedge clk) begin
-        led_out <= pir_in;
-/*
+//reg [7:0] duty_cycle = 8'd20; 
+reg [7:0] counter = 0;
+// reg duty_cycle_20 = 
+// reg duty_cycle_100 = 
 
-        if (pir_in <= 1'b1) begin
-                led_out <= pir_in;
-        end else begin
-                led_out <= pir_in; 
-            end      
-    */
+always @(posedge hwclk) begin
+    
+    if (counter < 100) begin
+        counter <= counter+1;
+    end else begin
+        counter <= 0;
     end
+
+end
+
+// 20% duty cycle
+assign led_out = pir_in ? 1 : (counter < 20);
+
 
 endmodule
