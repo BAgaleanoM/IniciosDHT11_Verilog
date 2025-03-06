@@ -1,3 +1,19 @@
-set_io hwclk 60
-set_io pir_in  8
-set_io led_out 4
+set_io hclk 60
+
+##Pines de led y PIR
+set_io pir_in  26
+set_io led_out 24
+
+##Pines LCD
+set_io  D0 143
+set_io  D1 1
+set_io  D2 144
+set_io  D3 2
+set_io  D4 3
+set_io  D5 7
+set_io  D6 4
+set_io  D7 8
+
+set_io RS 141
+set_io RW 136
+set_io E 142
