@@ -1,0 +1,8 @@
+set_io hclk 60
+
+
+##Pines de led y PIR
+set_io pir_in  26
+set_io led_out 24
+
+

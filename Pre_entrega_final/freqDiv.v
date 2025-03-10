@@ -1,7 +1,7 @@
 // filename: freqDiv.v
 module freqDiv #(
-    parameter integer FREQ_IN = 1000,
-    parameter integer FREQ_OUT = 100,
+    parameter integer FREQ_IN = 25000000,
+    parameter integer FREQ_OUT = 8000000,
     parameter integer INIT = 0
 ) (
     // Inputs and output ports
