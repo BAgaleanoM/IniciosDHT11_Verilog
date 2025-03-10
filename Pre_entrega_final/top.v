@@ -13,7 +13,7 @@ module top(
 );
 
 // Control del led y el pir
-//reg [7:0] duty_cycle = 8'd20; 
+
 reg [7:0] counter = 0;
 
 

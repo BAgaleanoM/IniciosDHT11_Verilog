@@ -1,7 +1,7 @@
 # Opciones de configuración para port--pin
 # set_io [-nowarn] [-pullup yes|no] [-pullup_resistor 3P3K|6P8K|10K|100K] port pin
 
-set_io hwclk 60 # Señal de reloj del hardware 25 MHz
+set_io clk 60 # Señal de reloj del hardware 25 MHz
 set_io rst 49
 
 ## set_io -pullup yes a 52

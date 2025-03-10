@@ -1,16 +1,16 @@
-Info: constrained 'hwclk' to bel 'X24/Y0/io1'
+Info: constrained 'clk' to bel 'X24/Y0/io1'
 Info: constrained 'rst' to bel 'X16/Y0/io1'
 Info: constrained 'dht11_io' to bel 'X0/Y25/io1'
 
 Info: Packing constants..
 Info: Packing IOs..
 Info: Packing LUT-FFs..
-Info:      160 LCs used as LUT4 only
-Info:      103 LCs used as LUT4 and DFF
+Info:       62 LCs used as LUT4 only
+Info:      101 LCs used as LUT4 and DFF
 Info: Packing non-LUT FFs..
-Info:        3 LCs used as DFF only
+Info:        5 LCs used as DFF only
 Info: Packing carries..
-Info:        3 LCs used as CARRY only
+Info:        2 LCs used as CARRY only
 Info: Packing indirect carry+LUT pairs...
 Info:        0 LUTs merged into carry LCs
 Info: Packing RAMs..
@@ -18,16 +18,16 @@ Info: Placing PLLs..
 Info: Packing special functions..
 Info: Packing PLLs..
 Info: Promoting globals..
-Info: promoting clk (fanout 101)
-Info: promoting rst$SB_IO_IN [reset] (fanout 101)
-Info: promoting next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_O [cen] (fanout 40)
-Info: promoting hwclk$SB_IO_IN (fanout 5)
+Info: promoting clk$SB_IO_IN (fanout 106)
+Info: promoting rst$SB_IO_IN [reset] (fanout 106)
+Info: promoting dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O [cen] (fanout 25)
+Info: promoting dht11_out_SB_LUT4_O_I3_SB_DFFESR_Q_D_SB_LUT4_I3_O [cen] (fanout 22)
 Info: Constraining chains...
-Info:        9 LCs used to legalise carry chains.
-Info: Checksum: 0x301a7f6b
+Info:        6 LCs used to legalise carry chains.
+Info: Checksum: 0xfb9c73a8
 
 Info: Device utilisation:
-Info: 	         ICESTORM_LC:   280/ 7680     3%
+Info: 	         ICESTORM_LC:   178/ 7680     2%
 Info: 	        ICESTORM_RAM:     0/   32     0%
 Info: 	               SB_IO:     3/  256     1%
 Info: 	               SB_GB:     4/    8    50%
@@ -35,148 +35,180 @@ Info: 	        ICESTORM_PLL:     0/    2     0%
 Info: 	         SB_WARMBOOT:     0/    1     0%
 
 Info: Placed 3 cells based on constraints.
-Info: Creating initial analytic placement for 217 cells, random placement wirelen = 8153.
-Info:     at initial placer iter 0, wirelen = 63
-Info:     at initial placer iter 1, wirelen = 61
-Info:     at initial placer iter 2, wirelen = 61
-Info:     at initial placer iter 3, wirelen = 61
-Info: Running main analytical placer, max placement attempts per cell = 10296.
-Info:     at iteration #1, type ALL: wirelen solved = 61, spread = 1194, legal = 1295; time = 0.01s
-Info:     at iteration #2, type ALL: wirelen solved = 68, spread = 956, legal = 1012; time = 0.01s
-Info:     at iteration #3, type ALL: wirelen solved = 92, spread = 866, legal = 878; time = 0.01s
-Info:     at iteration #4, type ALL: wirelen solved = 93, spread = 759, legal = 836; time = 0.01s
-Info:     at iteration #5, type ALL: wirelen solved = 123, spread = 763, legal = 791; time = 0.01s
-Info:     at iteration #6, type ALL: wirelen solved = 169, spread = 655, legal = 713; time = 0.01s
-Info:     at iteration #7, type ALL: wirelen solved = 113, spread = 679, legal = 730; time = 0.01s
-Info:     at iteration #8, type ALL: wirelen solved = 149, spread = 621, legal = 718; time = 0.01s
-Info:     at iteration #9, type ALL: wirelen solved = 177, spread = 560, legal = 646; time = 0.01s
-Info:     at iteration #10, type ALL: wirelen solved = 182, spread = 632, legal = 649; time = 0.01s
-Info:     at iteration #11, type ALL: wirelen solved = 206, spread = 588, legal = 613; time = 0.01s
-Info:     at iteration #12, type ALL: wirelen solved = 215, spread = 587, legal = 629; time = 0.01s
-Info:     at iteration #13, type ALL: wirelen solved = 198, spread = 563, legal = 602; time = 0.01s
-Info:     at iteration #14, type ALL: wirelen solved = 238, spread = 555, legal = 626; time = 0.01s
-Info:     at iteration #15, type ALL: wirelen solved = 203, spread = 520, legal = 638; time = 0.01s
-Info:     at iteration #16, type ALL: wirelen solved = 268, spread = 575, legal = 642; time = 0.01s
-Info:     at iteration #17, type ALL: wirelen solved = 267, spread = 637, legal = 680; time = 0.01s
-Info:     at iteration #18, type ALL: wirelen solved = 305, spread = 553, legal = 672; time = 0.01s
-Info: HeAP Placer Time: 0.17s
-Info:   of which solving equations: 0.12s
+Info: Creating initial analytic placement for 85 cells, random placement wirelen = 4336.
+Info:     at initial placer iter 0, wirelen = 111
+Info:     at initial placer iter 1, wirelen = 101
+Info:     at initial placer iter 2, wirelen = 101
+Info:     at initial placer iter 3, wirelen = 101
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type ICESTORM_LC: wirelen solved = 110, spread = 672, legal = 779; time = 0.00s
+Info:     at iteration #1, type SB_GB: wirelen solved = 777, spread = 794, legal = 824; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 108, spread = 724, legal = 800; time = 0.00s
+Info:     at iteration #2, type ICESTORM_LC: wirelen solved = 216, spread = 632, legal = 696; time = 0.00s
+Info:     at iteration #2, type SB_GB: wirelen solved = 651, spread = 669, legal = 704; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 117, spread = 848, legal = 974; time = 0.00s
+Info:     at iteration #3, type ICESTORM_LC: wirelen solved = 202, spread = 664, legal = 726; time = 0.00s
+Info:     at iteration #3, type SB_GB: wirelen solved = 681, spread = 683, legal = 745; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 128, spread = 765, legal = 813; time = 0.01s
+Info:     at iteration #4, type ICESTORM_LC: wirelen solved = 203, spread = 648, legal = 666; time = 0.00s
+Info:     at iteration #4, type SB_GB: wirelen solved = 619, spread = 628, legal = 665; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 127, spread = 732, legal = 783; time = 0.00s
+Info:     at iteration #5, type ICESTORM_LC: wirelen solved = 203, spread = 913, legal = 919; time = 0.00s
+Info:     at iteration #5, type SB_GB: wirelen solved = 866, spread = 912, legal = 952; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 148, spread = 625, legal = 662; time = 0.01s
+Info:     at iteration #6, type ICESTORM_LC: wirelen solved = 189, spread = 678, legal = 703; time = 0.00s
+Info:     at iteration #6, type SB_GB: wirelen solved = 674, spread = 693, legal = 736; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 144, spread = 581, legal = 641; time = 0.00s
+Info:     at iteration #7, type ICESTORM_LC: wirelen solved = 181, spread = 671, legal = 721; time = 0.00s
+Info:     at iteration #7, type SB_GB: wirelen solved = 693, spread = 713, legal = 722; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 152, spread = 570, legal = 649; time = 0.00s
+Info:     at iteration #8, type ICESTORM_LC: wirelen solved = 209, spread = 493, legal = 554; time = 0.01s
+Info:     at iteration #8, type SB_GB: wirelen solved = 507, spread = 517, legal = 551; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 148, spread = 430, legal = 518; time = 0.00s
+Info:     at iteration #9, type ICESTORM_LC: wirelen solved = 202, spread = 633, legal = 648; time = 0.00s
+Info:     at iteration #9, type SB_GB: wirelen solved = 603, spread = 619, legal = 632; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 150, spread = 608, legal = 647; time = 0.01s
+Info:     at iteration #10, type ICESTORM_LC: wirelen solved = 200, spread = 588, legal = 589; time = 0.00s
+Info:     at iteration #10, type SB_GB: wirelen solved = 565, spread = 584, legal = 588; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 174, spread = 687, legal = 762; time = 0.00s
+Info:     at iteration #11, type ICESTORM_LC: wirelen solved = 204, spread = 680, legal = 694; time = 0.00s
+Info:     at iteration #11, type SB_GB: wirelen solved = 670, spread = 690, legal = 694; time = 0.00s
+Info:     at iteration #11, type ALL: wirelen solved = 154, spread = 721, legal = 732; time = 0.00s
+Info:     at iteration #12, type ICESTORM_LC: wirelen solved = 211, spread = 568, legal = 613; time = 0.00s
+Info:     at iteration #12, type SB_GB: wirelen solved = 588, spread = 607, legal = 613; time = 0.00s
+Info:     at iteration #12, type ALL: wirelen solved = 167, spread = 526, legal = 559; time = 0.00s
+Info:     at iteration #13, type ICESTORM_LC: wirelen solved = 188, spread = 452, legal = 482; time = 0.00s
+Info:     at iteration #13, type SB_GB: wirelen solved = 457, spread = 478, legal = 482; time = 0.00s
+Info:     at iteration #13, type ALL: wirelen solved = 152, spread = 489, legal = 528; time = 0.00s
+Info: HeAP Placer Time: 0.15s
+Info:   of which solving equations: 0.11s
 Info:   of which spreading cells: 0.01s
 Info:   of which strict legalisation: 0.01s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 60, wirelen = 602
-Info:   at iteration #5: temp = 0.000000, timing cost = 78, wirelen = 507
-Info:   at iteration #10: temp = 0.000000, timing cost = 54, wirelen = 484
-Info:   at iteration #13: temp = 0.000000, timing cost = 53, wirelen = 473 
-Info: SA placement time 0.12s
+Info:   at iteration #1: temp = 0.000000, timing cost = 73, wirelen = 518
+Info:   at iteration #5: temp = 0.000000, timing cost = 66, wirelen = 342
+Info:   at iteration #10: temp = 0.000000, timing cost = 67, wirelen = 318
+Info:   at iteration #15: temp = 0.000000, timing cost = 67, wirelen = 318
+Info:   at iteration #16: temp = 0.000000, timing cost = 67, wirelen = 315 
+Info: SA placement time 0.08s
 
-Info: Max frequency for clock 'hwclk$SB_IO_IN_$glb_clk': 441.70 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock            'clk_$glb_clk': 102.13 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 85.59 MHz (PASS at 12.00 MHz)
 
-Info: Max delay <async>              -> posedge clk_$glb_clk: 7.31 ns
-Info: Max delay posedge clk_$glb_clk -> <async>             : 2.94 ns
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 11.15 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 2.81 ns
 
-Info: Checksum: 0xb35f5962
+Info: Checksum: 0x91b50a6f
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 957 arcs.
+Info: Routing 606 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:       1000 |      102        843 |  102   843 |        76|       0.11       0.11|
-Info:       1092 |      117        921 |   15    78 |         0|       0.05       0.16|
+Info:        658 |       46        531 |   46   531 |         0|       0.08       0.08|
 Info: Routing complete.
-Info: Router1 time 0.16s
-Info: Checksum: 0x84113ace
+Info: Router1 time 0.08s
+Info: Checksum: 0xbdbf5598
 
-Info: Critical path report for clock 'hwclk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info: Critical path report for clock 'clk$SB_IO_IN_$glb_clk' (posedge -> posedge):
 Info: curr total
-Info:  0.5  0.5  Source frequencyDivider.count_SB_DFFSR_Q_D_SB_LUT4_O_1_LC.O
-Info:  0.6  1.1    Net frequencyDivider.count[2] (2,1) -> (2,1)
-Info:                Sink frequencyDivider.count_SB_DFFSR_Q_R_SB_LUT4_O_LC.I0
+Info:  0.5  0.5  Source timer_start_down_SB_DFFESR_Q_D_SB_LUT4_O_15_LC.O
+Info:  0.6  1.1    Net timer_start_down[15] (4,30) -> (4,31)
+Info:                Sink next_state_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_1_LC.I0
 Info:                Defined in:
-Info:                  top.v:27.5-30.4
-Info:                  ./freqDiv.v:25.16-25.25
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.23-33.24
-Info:  0.4  1.6  Source frequencyDivider.count_SB_DFFSR_Q_R_SB_LUT4_O_LC.O
-Info:  1.6  3.2    Net frequencyDivider.count_SB_DFFSR_Q_R (2,1) -> (3,1)
-Info:                Sink frequencyDivider.CLK_OUT_SB_DFFE_Q_D_SB_LUT4_O_LC.CEN
-Info:  0.1  3.3  Setup frequencyDivider.CLK_OUT_SB_DFFE_Q_D_SB_LUT4_O_LC.CEN
-Info: 1.1 ns logic, 2.2 ns routing
+Info:                  top.v:24.39-24.55
+Info:  0.4  1.6  Source next_state_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_1_LC.O
+Info:  0.6  2.2    Net next_state_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_1_I2[0] (4,31) -> (5,30)
+Info:                Sink next_state_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I2
+Info:                Defined in:
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.4  2.5  Source next_state_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
+Info:  1.3  3.8    Net next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_I3[1] (5,30) -> (3,29)
+Info:                Sink next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_LC.I1
+Info:                Defined in:
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.4  4.2  Source next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_LC.O
+Info:  0.6  4.8    Net next_state_SB_LUT4_O_2_I0[0] (3,29) -> (3,28)
+Info:                Sink next_state_SB_LUT4_O_2_LC.I0
+Info:                Defined in:
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.4  5.3  Source next_state_SB_LUT4_O_2_LC.O
+Info:  0.6  5.8    Net next_state[0] (3,28) -> (3,28)
+Info:                Sink dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_O_LC.I2
+Info:                Defined in:
+Info:                  top.v:19.15-19.25
+Info:  0.4  6.2  Source dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_O_LC.O
+Info:  0.6  6.8    Net dht11_io_SB_LUT4_I0_1_I1[1] (3,28) -> (2,27)
+Info:                Sink dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_LC.I2
+Info:                Defined in:
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.4  7.2  Source dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_LC.O
+Info:  1.7  8.9    Net dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O (2,27) -> (0,17)
+Info:                Sink $gbuf_dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O_$glb_ce.USER_SIGNAL_TO_GLOBAL_BUFFER
+Info:  0.6  9.5  Source $gbuf_dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O_$glb_ce.GLOBAL_BUFFER_OUTPUT
+Info:  0.6 10.1    Net dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O_$glb_ce (0,17) -> (4,26)
+Info:                Sink timer_init_SB_DFFESR_Q_D_SB_LUT4_O_LC.CEN
+Info:  0.1 10.2  Setup timer_init_SB_DFFESR_Q_D_SB_LUT4_O_LC.CEN
+Info: 3.7 ns logic, 6.5 ns routing
 
-Info: Critical path report for clock 'clk_$glb_clk' (posedge -> posedge):
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk$SB_IO_IN_$glb_clk':
 Info: curr total
-Info:  0.5  0.5  Source timer_start_down_SB_DFFESR_Q_D_SB_LUT4_O_4_LC.O
-Info:  0.6  1.1    Net timer_start_down[5] (1,22) -> (1,23)
-Info:                Sink next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.I0
-Info:                Defined in:
-Info:                  top.v:45.39-45.55
-Info:  0.4  1.6  Source next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.O
-Info:  0.6  2.2    Net next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_I0[0] (1,23) -> (2,23)
-Info:                Sink next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_LC.I0
+Info:  0.0  0.0  Source dht11_io$sb_io.D_IN_0
+Info:  1.3  1.3    Net dht11_io$SB_IO_IN (0,25) -> (2,28)
+Info:                Sink dht11_io_SB_LUT4_I0_2_LC.I0
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  2.6  Source next_state_SB_LUT4_O_2_I0_SB_LUT4_O_2_LC.O
-Info:  1.0  3.6    Net next_state_SB_LUT4_O_2_I0[1] (2,23) -> (2,21)
-Info:                Sink next_state_SB_LUT4_O_2_LC.I1
+Info:  0.4  1.7  Source dht11_io_SB_LUT4_I0_2_LC.O
+Info:  0.6  2.3    Net next_state_SB_LUT4_O_1_I0_SB_LUT4_O_I0[1] (2,28) -> (2,28)
+Info:                Sink next_state_SB_LUT4_O_1_I0_SB_LUT4_O_LC.I1
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  4.0  Source next_state_SB_LUT4_O_2_LC.O
-Info:  0.6  4.6    Net next_state[1] (2,21) -> (2,20)
-Info:                Sink next_state_SB_LUT4_O_I3_SB_LUT4_I2_LC.I1
+Info:  0.4  2.7  Source next_state_SB_LUT4_O_1_I0_SB_LUT4_O_LC.O
+Info:  0.6  3.3    Net next_state_SB_LUT4_O_1_I0[0] (2,28) -> (2,29)
+Info:                Sink next_state_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I0
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  5.0  Source next_state_SB_LUT4_O_I3_SB_LUT4_I2_LC.O
-Info:  0.6  5.5    Net next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0[1] (2,20) -> (1,19)
-Info:                Sink next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_LC.I2
+Info:  0.4  3.8  Source next_state_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
+Info:  0.6  4.3    Net next_state_SB_LUT4_O_I1[2] (2,29) -> (2,29)
+Info:                Sink next_state_SB_LUT4_O_LC.I3
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  5.9  Source next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_LC.O
-Info:  1.3  7.3    Net next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_O (1,19) -> (0,17)
-Info:                Sink $gbuf_next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_O_$glb_ce.USER_SIGNAL_TO_GLOBAL_BUFFER
-Info:  0.6  7.9  Source $gbuf_next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_O_$glb_ce.GLOBAL_BUFFER_OUTPUT
-Info:  0.6  8.5    Net next_state_SB_LUT4_O_1_I3_SB_LUT4_I2_I0_SB_LUT4_I1_O_$glb_ce (0,17) -> (4,22)
-Info:                Sink shift_reg_SB_DFFESR_Q_10_D_SB_LUT4_O_LC.CEN
-Info:  0.1  8.6  Setup shift_reg_SB_DFFESR_Q_10_D_SB_LUT4_O_LC.CEN
-Info: 3.3 ns logic, 5.3 ns routing
+Info:  0.3  4.7  Source next_state_SB_LUT4_O_LC.O
+Info:  0.6  5.2    Net next_state[1] (2,29) -> (3,28)
+Info:                Sink dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  top.v:19.15-19.25
+Info:  0.3  5.6  Source dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_O_LC.O
+Info:  0.6  6.1    Net dht11_io_SB_LUT4_I0_1_I1[1] (3,28) -> (2,27)
+Info:                Sink dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_LC.I2
+Info:                Defined in:
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.4  6.5  Source dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_LC.O
+Info:  1.7  8.2    Net dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O (2,27) -> (0,17)
+Info:                Sink $gbuf_dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O_$glb_ce.USER_SIGNAL_TO_GLOBAL_BUFFER
+Info:  0.6  8.8  Source $gbuf_dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O_$glb_ce.GLOBAL_BUFFER_OUTPUT
+Info:  0.6  9.4    Net dht11_io_SB_LUT4_I0_1_I1_SB_LUT4_I2_O_$glb_ce (0,17) -> (4,26)
+Info:                Sink timer_init_SB_DFFESR_Q_D_SB_LUT4_O_LC.CEN
+Info:  0.1  9.5  Setup timer_init_SB_DFFESR_Q_D_SB_LUT4_O_LC.CEN
+Info: 3.0 ns logic, 6.5 ns routing
 
-Info: Critical path report for cross-domain path '<async>' -> 'posedge clk_$glb_clk':
-Info: curr total
-Info:  0.0  0.0  Source rst$sb_io.D_IN_0
-Info:  3.9  3.9    Net rst$SB_IO_IN (16,0) -> (2,20)
-Info:                Sink timer_response_SB_DFFESR_Q_E_SB_LUT4_O_LC.I3
-Info:                Defined in:
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.3  4.2  Source timer_response_SB_DFFESR_Q_E_SB_LUT4_O_LC.O
-Info:  1.0  5.1    Net timer_response_SB_DFFESR_Q_E[1] (2,20) -> (2,17)
-Info:                Sink timer_bits_SB_DFFESR_Q_E_SB_LUT4_O_LC.I3
-Info:                Defined in:
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.3  5.4  Source timer_bits_SB_DFFESR_Q_E_SB_LUT4_O_LC.O
-Info:  1.6  7.1    Net timer_bits_SB_DFFESR_Q_E (2,17) -> (1,15)
-Info:                Sink timer_bits_SB_DFFESR_Q_4_D_SB_LUT4_O_LC.CEN
-Info:  0.1  7.2  Setup timer_bits_SB_DFFESR_Q_4_D_SB_LUT4_O_LC.CEN
-Info: 0.7 ns logic, 6.4 ns routing
-
-Info: Critical path report for cross-domain path 'posedge clk_$glb_clk' -> '<async>':
+Info: Critical path report for cross-domain path 'posedge clk$SB_IO_IN_$glb_clk' -> '<async>':
 Info: curr total
 Info:  0.5  0.5  Source fsm_state_SB_DFFSR_Q_DFFLC.O
-Info:  0.6  1.1    Net fsm_state[2] (3,21) -> (3,22)
+Info:  0.6  1.1    Net bit_done_SB_LUT4_I0_O_SB_LUT4_O_2_I3[0] (2,28) -> (2,27)
 Info:                Sink dht11_dir_SB_LUT4_O_LC.I1
 Info:                Defined in:
-Info:                  top.v:35.15-35.20
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:  0.4  1.5  Source dht11_dir_SB_LUT4_O_LC.O
-Info:  1.3  2.9    Net dht11_dir (3,22) -> (0,25)
+Info:  1.5  3.0    Net dht11_dir (2,27) -> (0,25)
 Info:                Sink dht11_io$sb_io.OUTPUT_ENABLE
 Info:                Defined in:
-Info:                  top.v:59.10-59.19
-Info: 0.9 ns logic, 1.9 ns routing
+Info:                  top.v:31.10-31.19
+Info: 0.9 ns logic, 2.1 ns routing
 
-Info: Max frequency for clock 'hwclk$SB_IO_IN_$glb_clk': 302.94 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock            'clk_$glb_clk': 116.55 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 98.13 MHz (PASS at 12.00 MHz)
 
-Info: Max delay <async>              -> posedge clk_$glb_clk: 7.16 ns
-Info: Max delay posedge clk_$glb_clk -> <async>             : 2.86 ns
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 9.53 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 3.02 ns
 
 Info: Program finished normally.
