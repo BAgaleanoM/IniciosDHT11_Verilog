@@ -5,9 +5,10 @@
 module top(
     
     input wire hclk,
-    // Pinouts led y pir
+    // Pinouts led y pir y LDR
     input wire pir_in,
     output wire led_out,
+    input wire LDR_in,
 
     //pinouts de la pantalla
     output RS, RW, E,
@@ -29,9 +30,11 @@ always @(posedge hclk) begin
 
 end
 
-// 20% duty cycle
-assign led_out = pir_in ? 1 : (counter < 20);
+// //Control anterior de PWM
+// assign led_out = pir_in ? 1 : (counter < 20);
 
+// 20% duty cycle, apaga si no hay demasiada luz (LDR_in = 0)
+assign led_out = (LDR_in) ? ((pir_in) ? 1'b1 : (counter < 20)) : 1'b0;
 
 //Top de la LCD
 reg [7:0] humedad;

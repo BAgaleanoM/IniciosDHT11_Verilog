@@ -1,8 +1,9 @@
 set_io hclk 60
 
-##Pines de led y PIR
+##Pines de led y PIR y LDR
 set_io pir_in  26
 set_io led_out 24
+set_io LDR_in 25
 
 ##Pines LCD
 set_io  D0 143

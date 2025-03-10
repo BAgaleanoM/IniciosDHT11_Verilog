@@ -1,6 +1,6 @@
 Info: constrained 'hclk' to bel 'X24/Y0/io1'
 Info: constrained 'pir_in' to bel 'X0/Y11/io0'
-Info: constrained 'led_out' to bel 'X0/Y12/io0'
+Info: constrained 'led_out' to bel 'X16/Y0/io1'
 Info: constrained 'D0' to bel 'X4/Y33/io0'
 Info: constrained 'D1' to bel 'X0/Y30/io1'
 Info: constrained 'D2' to bel 'X3/Y33/io1'
@@ -34,7 +34,7 @@ Info: promoting E$SB_IO_OUT (fanout 14)
 Info: promoting hclk$SB_IO_IN (fanout 11)
 Info: Constraining chains...
 Info:        7 LCs used to legalise carry chains.
-Info: Checksum: 0xd5c3b9f6
+Info: Checksum: 0x0faf1f91
 
 Info: Device utilisation:
 Info: 	         ICESTORM_LC:   178/ 7680     2%
@@ -45,301 +45,285 @@ Info: 	        ICESTORM_PLL:     0/    2     0%
 Info: 	         SB_WARMBOOT:     0/    1     0%
 
 Info: Placed 14 cells based on constraints.
-Info: Creating initial analytic placement for 136 cells, random placement wirelen = 5020.
-Info:     at initial placer iter 0, wirelen = 85
-Info:     at initial placer iter 1, wirelen = 88
-Info:     at initial placer iter 2, wirelen = 85
-Info:     at initial placer iter 3, wirelen = 83
+Info: Creating initial analytic placement for 136 cells, random placement wirelen = 5002.
+Info:     at initial placer iter 0, wirelen = 139
+Info:     at initial placer iter 1, wirelen = 108
+Info:     at initial placer iter 2, wirelen = 117
+Info:     at initial placer iter 3, wirelen = 118
 Info: Running main analytical placer, max placement attempts per cell = 10000.
-Info:     at iteration #1, type ICESTORM_LC: wirelen solved = 64, spread = 484, legal = 464; time = 0.00s
-Info:     at iteration #1, type SB_GB: wirelen solved = 464, spread = 499, legal = 507; time = 0.00s
-Info:     at iteration #1, type ALL: wirelen solved = 88, spread = 531, legal = 552; time = 0.00s
-Info:     at iteration #2, type ICESTORM_LC: wirelen solved = 125, spread = 426, legal = 453; time = 0.00s
-Info:     at iteration #2, type SB_GB: wirelen solved = 428, spread = 428, legal = 447; time = 0.00s
-Info:     at iteration #2, type ALL: wirelen solved = 87, spread = 439, legal = 470; time = 0.00s
-Info:     at iteration #3, type ICESTORM_LC: wirelen solved = 111, spread = 436, legal = 456; time = 0.00s
-Info:     at iteration #3, type SB_GB: wirelen solved = 426, spread = 441, legal = 456; time = 0.00s
-Info:     at iteration #3, type ALL: wirelen solved = 81, spread = 448, legal = 510; time = 0.00s
-Info:     at iteration #4, type ICESTORM_LC: wirelen solved = 163, spread = 491, legal = 503; time = 0.00s
-Info:     at iteration #4, type SB_GB: wirelen solved = 434, spread = 465, legal = 472; time = 0.00s
-Info:     at iteration #4, type ALL: wirelen solved = 92, spread = 456, legal = 493; time = 0.00s
-Info:     at iteration #5, type ICESTORM_LC: wirelen solved = 149, spread = 466, legal = 492; time = 0.00s
-Info:     at iteration #5, type SB_GB: wirelen solved = 448, spread = 482, legal = 492; time = 0.00s
-Info:     at iteration #5, type ALL: wirelen solved = 102, spread = 450, legal = 493; time = 0.00s
-Info:     at iteration #6, type ICESTORM_LC: wirelen solved = 158, spread = 451, legal = 470; time = 0.00s
-Info:     at iteration #6, type SB_GB: wirelen solved = 425, spread = 460, legal = 496; time = 0.00s
-Info:     at iteration #6, type ALL: wirelen solved = 111, spread = 439, legal = 483; time = 0.00s
-Info:     at iteration #7, type ICESTORM_LC: wirelen solved = 173, spread = 472, legal = 504; time = 0.00s
-Info:     at iteration #7, type SB_GB: wirelen solved = 459, spread = 494, legal = 497; time = 0.00s
-Info:     at iteration #7, type ALL: wirelen solved = 129, spread = 460, legal = 531; time = 0.00s
-Info: HeAP Placer Time: 0.09s
-Info:   of which solving equations: 0.07s
+Info:     at iteration #1, type ICESTORM_LC: wirelen solved = 100, spread = 495, legal = 504; time = 0.00s
+Info:     at iteration #1, type SB_GB: wirelen solved = 504, spread = 539, legal = 552; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 115, spread = 575, legal = 590; time = 0.01s
+Info:     at iteration #2, type ICESTORM_LC: wirelen solved = 143, spread = 426, legal = 484; time = 0.00s
+Info:     at iteration #2, type SB_GB: wirelen solved = 465, spread = 477, legal = 485; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 121, spread = 436, legal = 480; time = 0.00s
+Info:     at iteration #3, type ICESTORM_LC: wirelen solved = 141, spread = 445, legal = 481; time = 0.00s
+Info:     at iteration #3, type SB_GB: wirelen solved = 451, spread = 464, legal = 482; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 110, spread = 448, legal = 500; time = 0.00s
+Info:     at iteration #4, type ICESTORM_LC: wirelen solved = 167, spread = 471, legal = 500; time = 0.00s
+Info:     at iteration #4, type SB_GB: wirelen solved = 460, spread = 469, legal = 494; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 125, spread = 463, legal = 516; time = 0.00s
+Info:     at iteration #5, type ICESTORM_LC: wirelen solved = 174, spread = 477, legal = 510; time = 0.01s
+Info:     at iteration #5, type SB_GB: wirelen solved = 468, spread = 502, legal = 515; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 130, spread = 467, legal = 527; time = 0.00s
+Info:     at iteration #6, type ICESTORM_LC: wirelen solved = 189, spread = 490, legal = 519; time = 0.00s
+Info:     at iteration #6, type SB_GB: wirelen solved = 475, spread = 509, legal = 519; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 138, spread = 481, legal = 519; time = 0.01s
+Info:     at iteration #7, type ICESTORM_LC: wirelen solved = 202, spread = 593, legal = 612; time = 0.00s
+Info:     at iteration #7, type SB_GB: wirelen solved = 567, spread = 601, legal = 612; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 159, spread = 577, legal = 601; time = 0.00s
+Info: HeAP Placer Time: 0.08s
+Info:   of which solving equations: 0.06s
 Info:   of which spreading cells: 0.01s
 Info:   of which strict legalisation: 0.00s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 82, wirelen = 470
-Info:   at iteration #5: temp = 0.000000, timing cost = 90, wirelen = 362
-Info:   at iteration #10: temp = 0.000000, timing cost = 77, wirelen = 351
-Info:   at iteration #15: temp = 0.000000, timing cost = 100, wirelen = 348
-Info:   at iteration #15: temp = 0.000000, timing cost = 97, wirelen = 348 
-Info: SA placement time 0.08s
+Info:   at iteration #1: temp = 0.000000, timing cost = 90, wirelen = 480
+Info:   at iteration #5: temp = 0.000000, timing cost = 64, wirelen = 417
+Info:   at iteration #10: temp = 0.000000, timing cost = 76, wirelen = 389
+Info:   at iteration #15: temp = 0.000000, timing cost = 108, wirelen = 370
+Info:   at iteration #18: temp = 0.000000, timing cost = 102, wirelen = 358 
+Info: SA placement time 0.09s
 
-Info: Max frequency for clock   'E$SB_IO_OUT_$glb_clk': 169.38 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock   'E$SB_IO_OUT_$glb_clk': 171.44 MHz (PASS at 12.00 MHz)
 Info: Max frequency for clock     'clk_count_$glb_clk': 159.41 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock 'hclk$SB_IO_IN_$glb_clk': 198.06 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'hclk$SB_IO_IN_$glb_clk': 215.38 MHz (PASS at 12.00 MHz)
 
-Info: Max delay <async>                        -> <async>: 1.49 ns
+Info: Max delay <async>                        -> <async>: 4.16 ns
 Info: Max delay posedge E$SB_IO_OUT_$glb_clk   -> <async>: 2.02 ns
 Info: Max delay posedge clk_count_$glb_clk     -> <async>: 1.13 ns
-Info: Max delay posedge hclk$SB_IO_IN_$glb_clk -> <async>: 5.85 ns
+Info: Max delay posedge hclk$SB_IO_IN_$glb_clk -> <async>: 7.55 ns
 
-Info: Checksum: 0x6769ba44
+Info: Checksum: 0x80265abf
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 532 arcs.
+Info: Routing 529 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:        766 |      207        522 |  207   522 |         0|       0.08       0.08|
+Info:        640 |       95        508 |   95   508 |         0|       0.11       0.11|
 Info: Routing complete.
-Info: Router1 time 0.08s
-Info: Checksum: 0xfa6c019d
+Info: Router1 time 0.11s
+Info: Checksum: 0x7d1ac715
 
 Info: Critical path report for clock 'E$SB_IO_OUT_$glb_clk' (posedge -> posedge):
 Info: curr total
-Info:  0.5  0.5  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_2_LC.O
-Info:  0.6  1.1    Net lcd_inst.next[2] (2,26) -> (2,26)
-Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.I2
+Info:  0.5  0.5  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_3_LC.O
+Info:  0.6  1.1    Net lcd_inst.next[3] (2,27) -> (1,26)
+Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I1_SB_LUT4_O_1_LC.I0
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  1.5  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.O
-Info:  0.6  2.1    Net lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O_I2_SB_LUT4_O_I2[3] (2,26) -> (2,25)
-Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I0
+Info:  0.4  1.6  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I1_SB_LUT4_O_1_LC.O
+Info:  1.3  2.8    Net lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I1[2] (1,26) -> (3,27)
+Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I3
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  2.5  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
-Info:  0.6  3.1    Net lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1[0] (2,25) -> (3,26)
-Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_I0_LC.I0
+Info:  0.3  3.2  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:  0.6  3.8    Net lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1[1] (3,27) -> (2,27)
+Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_I0_LC.I1
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.4  3.6  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_I0_LC.O
-Info:  1.0  4.5    Net lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_I0_O[2] (3,26) -> (2,28)
+Info:  0.4  4.2  Source lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_I0_LC.O
+Info:  0.6  4.7    Net lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_I0_O[2] (2,27) -> (2,28)
 Info:                Sink D7_SB_DFFESR_Q_E_SB_LUT4_O_LC.I3
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.3  4.9  Source D7_SB_DFFESR_Q_E_SB_LUT4_O_LC.O
-Info:  1.8  6.7    Net D7_SB_DFFESR_Q_E (2,28) -> (1,29)
-Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_3_LC.CEN
-Info:  0.1  6.8  Setup lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_3_LC.CEN
-Info: 2.2 ns logic, 4.6 ns routing
+Info:  0.3  5.1  Source D7_SB_DFFESR_Q_E_SB_LUT4_O_LC.O
+Info:  1.8  6.9    Net D7_SB_DFFESR_Q_E (2,28) -> (1,29)
+Info:                Sink lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.CEN
+Info:  0.1  7.0  Setup lcd_inst.next_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.CEN
+Info: 2.1 ns logic, 4.9 ns routing
 
 Info: Critical path report for clock 'clk_count_$glb_clk' (posedge -> posedge):
 Info: curr total
 Info:  0.5  0.5  Source lcd_inst.counter_SB_LUT4_I3_LC.O
-Info:  0.6  1.1    Net lcd_inst.counter[0] (3,31) -> (2,31)
+Info:  0.6  1.1    Net lcd_inst.counter[0] (3,30) -> (4,30)
 Info:                Sink $nextpnr_ICESTORM_LC_2.I1
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.3  1.4  Source $nextpnr_ICESTORM_LC_2.COUT
-Info:  0.0  1.4    Net $nextpnr_ICESTORM_LC_2$O (2,31) -> (2,31)
+Info:  0.0  1.4    Net $nextpnr_ICESTORM_LC_2$O (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_8_LC.CIN
 Info:  0.1  1.5  Source lcd_inst.counter_SB_LUT4_I2_8_LC.COUT
-Info:  0.0  1.5    Net lcd_inst.counter_SB_CARRY_CI_CO[2] (2,31) -> (2,31)
+Info:  0.0  1.5    Net lcd_inst.counter_SB_CARRY_CI_CO[2] (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_7_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  1.6  Source lcd_inst.counter_SB_LUT4_I2_7_LC.COUT
-Info:  0.0  1.6    Net lcd_inst.counter_SB_CARRY_CI_CO[3] (2,31) -> (2,31)
+Info:  0.0  1.6    Net lcd_inst.counter_SB_CARRY_CI_CO[3] (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_6_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  1.8  Source lcd_inst.counter_SB_LUT4_I2_6_LC.COUT
-Info:  0.0  1.8    Net lcd_inst.counter_SB_CARRY_CI_CO[4] (2,31) -> (2,31)
+Info:  0.0  1.8    Net lcd_inst.counter_SB_CARRY_CI_CO[4] (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_5_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  1.9  Source lcd_inst.counter_SB_LUT4_I2_5_LC.COUT
-Info:  0.0  1.9    Net lcd_inst.counter_SB_CARRY_CI_CO[5] (2,31) -> (2,31)
+Info:  0.0  1.9    Net lcd_inst.counter_SB_CARRY_CI_CO[5] (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_4_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  2.0  Source lcd_inst.counter_SB_LUT4_I2_4_LC.COUT
-Info:  0.0  2.0    Net lcd_inst.counter_SB_CARRY_CI_CO[6] (2,31) -> (2,31)
+Info:  0.0  2.0    Net lcd_inst.counter_SB_CARRY_CI_CO[6] (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_3_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  2.1  Source lcd_inst.counter_SB_LUT4_I2_3_LC.COUT
-Info:  0.0  2.1    Net lcd_inst.counter_SB_CARRY_CI_CO[7] (2,31) -> (2,31)
+Info:  0.0  2.1    Net lcd_inst.counter_SB_CARRY_CI_CO[7] (4,30) -> (4,30)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_2_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  2.3  Source lcd_inst.counter_SB_LUT4_I2_2_LC.COUT
-Info:  0.2  2.5    Net lcd_inst.counter_SB_CARRY_CI_CO[8] (2,31) -> (2,32)
+Info:  0.2  2.5    Net lcd_inst.counter_SB_CARRY_CI_CO[8] (4,30) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_1_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  2.6  Source lcd_inst.counter_SB_LUT4_I2_1_LC.COUT
-Info:  0.0  2.6    Net lcd_inst.counter_SB_CARRY_CI_CO[9] (2,32) -> (2,32)
+Info:  0.0  2.6    Net lcd_inst.counter_SB_CARRY_CI_CO[9] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  2.7  Source lcd_inst.counter_SB_LUT4_I2_LC.COUT
-Info:  0.0  2.7    Net lcd_inst.counter_SB_CARRY_CI_CO[10] (2,32) -> (2,32)
+Info:  0.0  2.7    Net lcd_inst.counter_SB_CARRY_CI_CO[10] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_14_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  2.8  Source lcd_inst.counter_SB_LUT4_I2_14_LC.COUT
-Info:  0.0  2.8    Net lcd_inst.counter_SB_CARRY_CI_CO[11] (2,32) -> (2,32)
+Info:  0.0  2.8    Net lcd_inst.counter_SB_CARRY_CI_CO[11] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_13_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  3.0  Source lcd_inst.counter_SB_LUT4_I2_13_LC.COUT
-Info:  0.0  3.0    Net lcd_inst.counter_SB_CARRY_CI_CO[12] (2,32) -> (2,32)
+Info:  0.0  3.0    Net lcd_inst.counter_SB_CARRY_CI_CO[12] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_12_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  3.1  Source lcd_inst.counter_SB_LUT4_I2_12_LC.COUT
-Info:  0.0  3.1    Net lcd_inst.counter_SB_CARRY_CI_CO[13] (2,32) -> (2,32)
+Info:  0.0  3.1    Net lcd_inst.counter_SB_CARRY_CI_CO[13] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_11_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  3.2  Source lcd_inst.counter_SB_LUT4_I2_11_LC.COUT
-Info:  0.0  3.2    Net lcd_inst.counter_SB_CARRY_CI_CO[14] (2,32) -> (2,32)
+Info:  0.0  3.2    Net lcd_inst.counter_SB_CARRY_CI_CO[14] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_10_LC.CIN
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  3.3  Source lcd_inst.counter_SB_LUT4_I2_10_LC.COUT
-Info:  0.3  3.6    Net lcd_inst.counter_SB_CARRY_CI_CO[15] (2,32) -> (2,32)
+Info:  0.3  3.6    Net lcd_inst.counter_SB_CARRY_CI_CO[15] (4,31) -> (4,31)
 Info:                Sink lcd_inst.counter_SB_LUT4_I2_9_LC.I3
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.3  3.9  Source lcd_inst.counter_SB_LUT4_I2_9_LC.O
-Info:  0.6  4.5    Net lcd_inst.counter_SB_DFF_Q_D[15] (2,32) -> (3,32)
+Info:  0.6  4.5    Net lcd_inst.counter_SB_DFF_Q_D[15] (4,31) -> (3,31)
 Info:                Sink lcd_inst.clkR_SB_DFFE_Q_E_SB_LUT4_O_I0_SB_LUT4_O_1_LC.I3
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:150.19-150.30
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:29.19-29.30
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27
 Info:  0.3  4.8  Source lcd_inst.clkR_SB_DFFE_Q_E_SB_LUT4_O_I0_SB_LUT4_O_1_LC.O
-Info:  0.6  5.4    Net lcd_inst.clkR_SB_DFFE_Q_E_SB_LUT4_O_I0[2] (3,32) -> (3,32)
+Info:  0.6  5.4    Net lcd_inst.clkR_SB_DFFE_Q_E_SB_LUT4_O_I0[2] (3,31) -> (3,31)
 Info:                Sink lcd_inst.clkR_SB_DFFE_Q_E_SB_LUT4_O_LC.I2
 Info:                Defined in:
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:  0.4  5.8  Source lcd_inst.clkR_SB_DFFE_Q_E_SB_LUT4_O_LC.O
-Info:  0.9  6.7    Net lcd_inst.clkR_SB_DFFE_Q_E (3,32) -> (4,32)
+Info:  1.6  7.4    Net lcd_inst.clkR_SB_DFFE_Q_E (3,31) -> (4,32)
 Info:                Sink lcd_inst.clkR_SB_DFFE_Q_D_SB_LUT4_O_LC.CEN
-Info:  0.1  6.8  Setup lcd_inst.clkR_SB_DFFE_Q_D_SB_LUT4_O_LC.CEN
-Info: 3.7 ns logic, 3.2 ns routing
+Info:  0.1  7.5  Setup lcd_inst.clkR_SB_DFFE_Q_D_SB_LUT4_O_LC.CEN
+Info: 3.7 ns logic, 3.8 ns routing
 
 Info: Critical path report for clock 'hclk$SB_IO_IN_$glb_clk' (posedge -> posedge):
 Info: curr total
-Info:  0.5  0.5  Source counter_SB_DFFSR_Q_7_DFFLC.O
-Info:  0.6  1.1    Net counter[0] (2,9) -> (2,9)
-Info:                Sink counter_SB_DFFSR_Q_7_D_SB_LUT4_O_7_LC.I3
+Info:  0.5  0.5  Source counter_SB_DFFSR_Q_D_SB_LUT4_O_4_LC.O
+Info:  1.3  1.8    Net counter[3] (3,9) -> (1,8)
+Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.I3
 Info:                Defined in:
-Info:                  top.v:23.20-23.29
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.3  1.4  Source counter_SB_DFFSR_Q_7_D_SB_LUT4_O_7_LC.O
-Info:  0.6  2.0    Net counter_SB_DFFSR_Q_7_D[0] (2,9) -> (1,10)
-Info:                Sink $nextpnr_ICESTORM_LC_5.I1
+Info:                  top.v:19.11-19.18
+Info:  0.3  2.1  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.O
+Info:  0.6  2.7    Net counter_SB_DFFSR_Q_7_D[3] (1,8) -> (2,8)
+Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.I2
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.3  2.3  Source $nextpnr_ICESTORM_LC_5.COUT
-Info:  0.0  2.3    Net $nextpnr_ICESTORM_LC_5$O (1,10) -> (1,10)
-Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_5$CARRY.CIN
-Info:  0.1  2.4  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_5$CARRY.COUT
-Info:  0.0  2.4    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[1] (1,10) -> (1,10)
-Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_4$CARRY.CIN
-Info:                Defined in:
-Info:                  top.v:22.9-22.22
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  2.5  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_4$CARRY.COUT
-Info:  0.0  2.5    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[2] (1,10) -> (1,10)
-Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.CIN
-Info:                Defined in:
-Info:                  top.v:22.9-22.22
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  2.7  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.COUT
-Info:  0.0  2.7    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[3] (1,10) -> (1,10)
+Info:                  top.v:33.32-33.44
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:49.21-49.23
+Info:  0.2  2.9  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.COUT
+Info:  0.0  2.9    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[3] (2,8) -> (2,8)
 Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:22.9-22.22
+Info:                  top.v:24.9-24.22
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  2.8  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.COUT
-Info:  0.0  2.8    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[4] (1,10) -> (1,10)
+Info:  0.1  3.1  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.COUT
+Info:  0.0  3.1    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[4] (2,8) -> (2,8)
 Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:22.9-22.22
+Info:                  top.v:24.9-24.22
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  2.9  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.COUT
-Info:  0.0  2.9    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[5] (1,10) -> (1,10)
+Info:  0.1  3.2  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.COUT
+Info:  0.0  3.2    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[5] (2,8) -> (2,8)
 Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:22.9-22.22
+Info:                  top.v:24.9-24.22
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  3.0  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
-Info:  0.0  3.0    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[6] (1,10) -> (1,10)
+Info:  0.1  3.3  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
+Info:  0.0  3.3    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I3[6] (2,8) -> (2,8)
 Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:22.9-22.22
+Info:                  top.v:24.9-24.22
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  3.2  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.COUT
-Info:  0.5  3.6    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I1[2] (1,10) -> (1,11)
+Info:  0.1  3.5  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.COUT
+Info:  0.5  3.9    Net counter_SB_DFFSR_Q_R_SB_LUT4_O_I1[2] (2,8) -> (2,9)
 Info:                Sink counter_SB_DFFSR_Q_R_SB_LUT4_O_LC.I3
 Info:                Defined in:
-Info:                  top.v:22.9-22.22
+Info:                  top.v:24.9-24.22
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25
-Info:  0.3  3.9  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_LC.O
-Info:  1.5  5.4    Net counter_SB_DFFSR_Q_R (1,11) -> (2,9)
+Info:  0.3  4.2  Source counter_SB_DFFSR_Q_R_SB_LUT4_O_LC.O
+Info:  1.5  5.7    Net counter_SB_DFFSR_Q_R (2,9) -> (2,9)
 Info:                Sink counter_SB_DFFSR_Q_7_DFFLC.SR
-Info:  0.1  5.5  Setup counter_SB_DFFSR_Q_7_DFFLC.SR
-Info: 2.4 ns logic, 3.1 ns routing
+Info:  0.1  5.8  Setup counter_SB_DFFSR_Q_7_DFFLC.SR
+Info: 2.0 ns logic, 3.8 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> '<async>':
 Info: curr total
 Info:  0.0  0.0  Source pir_in$sb_io.D_IN_0
-Info:  0.6  0.6    Net pir_in$SB_IO_IN (0,11) -> (1,11)
+Info:  1.3  1.3    Net pir_in$SB_IO_IN (0,11) -> (1,9)
 Info:                Sink led_out_SB_LUT4_O_LC.I3
 Info:                Defined in:
-Info:                  top.v:7.16-7.22
-Info:  0.3  0.9  Source led_out_SB_LUT4_O_LC.O
-Info:  0.6  1.5    Net led_out$SB_IO_OUT (1,11) -> (0,12)
+Info:                  top.v:9.16-9.22
+Info:  0.3  1.6  Source led_out_SB_LUT4_O_LC.O
+Info:  3.0  4.6    Net led_out$SB_IO_OUT (1,9) -> (16,0)
 Info:                Sink led_out$sb_io.D_OUT_0
 Info:                Defined in:
-Info:                  top.v:8.17-8.24
-Info: 0.3 ns logic, 1.2 ns routing
+Info:                  top.v:10.17-10.24
+Info: 0.3 ns logic, 4.2 ns routing
 
 Info: Critical path report for cross-domain path 'posedge E$SB_IO_OUT_$glb_clk' -> '<async>':
 Info: curr total
@@ -347,8 +331,8 @@ Info:  0.5  0.5  Source lcd_inst.rs_SB_DFFE_Q_D_SB_LUT4_O_LC.O
 Info:  1.7  2.2    Net RS$SB_IO_OUT (3,28) -> (5,33)
 Info:                Sink RS$sb_io.D_OUT_0
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:130.12-130.14
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:9.12-9.14
 Info: 0.5 ns logic, 1.7 ns routing
 
 Info: Critical path report for cross-domain path 'posedge clk_count_$glb_clk' -> '<async>':
@@ -357,86 +341,70 @@ Info:  0.5  0.5  Source lcd_inst.clkR_SB_DFFE_Q_D_SB_LUT4_O_LC.O
 Info:  0.6  1.1    Net E$SB_IO_OUT (4,32) -> (4,33)
 Info:                Sink E$sb_io.D_OUT_0
 Info:                Defined in:
-Info:                  top.v:66.9-78.6
-Info:                  top.v:130.16-130.18
+Info:                  top.v:68.9-80.6
+Info:                  ./LCD.v:9.16-9.18
 Info: 0.5 ns logic, 0.6 ns routing
 
 Info: Critical path report for cross-domain path 'posedge hclk$SB_IO_IN_$glb_clk' -> '<async>':
 Info: curr total
-Info:  0.5  0.5  Source counter_SB_DFFSR_Q_7_DFFLC.O
-Info:  0.6  1.1    Net counter[0] (2,9) -> (2,9)
-Info:                Sink counter_SB_DFFSR_Q_7_D_SB_LUT4_O_7_LC.I3
+Info:  0.5  0.5  Source counter_SB_DFFSR_Q_D_SB_LUT4_O_4_LC.O
+Info:  1.3  1.8    Net counter[3] (3,9) -> (1,8)
+Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.I3
 Info:                Defined in:
-Info:                  top.v:23.20-23.29
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.3  1.4  Source counter_SB_DFFSR_Q_7_D_SB_LUT4_O_7_LC.O
-Info:  1.0  2.4    Net counter_SB_DFFSR_Q_7_D[0] (2,9) -> (2,11)
-Info:                Sink $nextpnr_ICESTORM_LC_3.I1
+Info:                  top.v:19.11-19.18
+Info:  0.3  2.1  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.O
+Info:  0.6  2.7    Net counter_SB_DFFSR_Q_7_D[3] (1,8) -> (1,8)
+Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.I2
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.3  2.7  Source $nextpnr_ICESTORM_LC_3.COUT
-Info:  0.0  2.7    Net $nextpnr_ICESTORM_LC_3$O (2,11) -> (2,11)
-Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_5$CARRY.CIN
-Info:  0.1  2.8  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_5$CARRY.COUT
-Info:  0.0  2.8    Net led_out_SB_LUT4_O_I2[1] (2,11) -> (2,11)
-Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_4$CARRY.CIN
-Info:                Defined in:
-Info:                  top.v:31.32-31.44
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  2.9  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_4$CARRY.COUT
-Info:  0.0  2.9    Net led_out_SB_LUT4_O_I2[2] (2,11) -> (2,11)
-Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.CIN
-Info:                Defined in:
-Info:                  top.v:31.32-31.44
-Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  3.0  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.COUT
-Info:  0.0  3.0    Net led_out_SB_LUT4_O_I2[3] (2,11) -> (2,11)
+Info:                  top.v:33.32-33.44
+Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:49.21-49.23
+Info:  0.2  2.9  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.COUT
+Info:  0.0  2.9    Net led_out_SB_LUT4_O_I2[3] (1,8) -> (1,8)
 Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
+Info:                  top.v:33.32-33.44
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  3.2  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.COUT
-Info:  0.0  3.2    Net led_out_SB_LUT4_O_I2[4] (2,11) -> (2,11)
+Info:  0.1  3.1  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.COUT
+Info:  0.0  3.1    Net led_out_SB_LUT4_O_I2[4] (1,8) -> (1,8)
 Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
+Info:                  top.v:33.32-33.44
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  3.3  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.COUT
-Info:  0.0  3.3    Net led_out_SB_LUT4_O_I2[5] (2,11) -> (2,11)
+Info:  0.1  3.2  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.COUT
+Info:  0.0  3.2    Net led_out_SB_LUT4_O_I2[5] (1,8) -> (1,8)
 Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
+Info:                  top.v:33.32-33.44
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
-Info:  0.1  3.4  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
-Info:  0.0  3.4    Net led_out_SB_LUT4_O_I2[6] (2,11) -> (2,11)
+Info:  0.1  3.3  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
+Info:  0.0  3.3    Net led_out_SB_LUT4_O_I2[6] (1,8) -> (1,8)
 Info:                Sink led_out_SB_LUT4_O_I2_SB_CARRY_CO$CARRY.CIN
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
+Info:                  top.v:33.32-33.44
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
 Info:  0.1  3.5  Source led_out_SB_LUT4_O_I2_SB_CARRY_CO$CARRY.COUT
-Info:  0.5  4.0    Net $nextpnr_ICESTORM_LC_4$I3 (2,11) -> (2,12)
+Info:  0.5  3.9    Net $nextpnr_ICESTORM_LC_4$I3 (1,8) -> (1,9)
 Info:                Sink $nextpnr_ICESTORM_LC_4.I3
-Info:  0.3  4.3  Source $nextpnr_ICESTORM_LC_4.O
-Info:  0.6  4.9    Net led_out_SB_LUT4_O_I0[2] (2,12) -> (1,11)
+Info:  0.3  4.2  Source $nextpnr_ICESTORM_LC_4.O
+Info:  0.6  4.8    Net led_out_SB_LUT4_O_I0[2] (1,9) -> (1,9)
 Info:                Sink led_out_SB_LUT4_O_LC.I2
 Info:                Defined in:
-Info:                  top.v:31.32-31.44
+Info:                  top.v:33.32-33.44
 Info:                  /home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25
-Info:  0.4  5.3  Source led_out_SB_LUT4_O_LC.O
-Info:  0.6  5.9    Net led_out$SB_IO_OUT (1,11) -> (0,12)
+Info:  0.4  5.2  Source led_out_SB_LUT4_O_LC.O
+Info:  3.0  8.2    Net led_out$SB_IO_OUT (1,9) -> (16,0)
 Info:                Sink led_out$sb_io.D_OUT_0
 Info:                Defined in:
-Info:                  top.v:8.17-8.24
-Info: 2.7 ns logic, 3.2 ns routing
+Info:                  top.v:10.17-10.24
+Info: 2.3 ns logic, 5.9 ns routing
 
-Info: Max frequency for clock   'E$SB_IO_OUT_$glb_clk': 147.34 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock     'clk_count_$glb_clk': 146.58 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock 'hclk$SB_IO_IN_$glb_clk': 181.19 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock   'E$SB_IO_OUT_$glb_clk': 143.06 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock     'clk_count_$glb_clk': 133.19 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'hclk$SB_IO_IN_$glb_clk': 172.44 MHz (PASS at 12.00 MHz)
 
-Info: Max delay <async>                        -> <async>: 1.49 ns
+Info: Max delay <async>                        -> <async>: 4.56 ns
 Info: Max delay posedge E$SB_IO_OUT_$glb_clk   -> <async>: 2.19 ns
 Info: Max delay posedge clk_count_$glb_clk     -> <async>: 1.13 ns
-Info: Max delay posedge hclk$SB_IO_IN_$glb_clk -> <async>: 5.87 ns
+Info: Max delay posedge hclk$SB_IO_IN_$glb_clk -> <async>: 8.16 ns
 
 Info: Program finished normally.
