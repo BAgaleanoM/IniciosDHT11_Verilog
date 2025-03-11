@@ -31,7 +31,7 @@ always @(posedge hclk) begin
 end
 
 // //Control anterior de PWM
-// assign led_out = pir_in ? 1 : (counter < 20);
+//assign led_out = pir_in ? 1 : (counter < 20);
 
 // 20% duty cycle, apaga si no hay demasiada luz (LDR_in = 0)
 assign led_out = (LDR_in) ? ((pir_in) ? 1'b1 : (counter < 20)) : 1'b0;

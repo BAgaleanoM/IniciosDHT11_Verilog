@@ -64,7 +64,7 @@
         }
       },
       "cells": {
-        "$specify$126": {
+        "$specify$127": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -95,7 +95,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$127": {
+        "$specify$128": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -126,7 +126,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$128": {
+        "$specify$129": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -157,7 +157,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$129": {
+        "$specify$130": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -188,7 +188,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$130": {
+        "$specify$131": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -219,7 +219,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$131": {
+        "$specify$132": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -250,7 +250,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$132": {
+        "$specify$133": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -281,7 +281,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$133": {
+        "$specify$134": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -312,7 +312,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$134": {
+        "$specify$135": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -343,7 +343,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$135": {
+        "$specify$136": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -374,7 +374,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$136": {
+        "$specify$137": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -405,7 +405,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$137": {
+        "$specify$138": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -442,7 +442,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$138": {
+        "$specify$139": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -473,7 +473,7 @@
             "SRC": [ 9 ]
           }
         },
-        "$specify$139": {
+        "$specify$140": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -508,7 +508,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$140": {
+        "$specify$141": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -543,7 +543,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$141": {
+        "$specify$142": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -578,7 +578,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$142": {
+        "$specify$143": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -613,7 +613,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$143": {
+        "$specify$144": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -648,7 +648,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$144": {
+        "$specify$145": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -683,7 +683,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$145": {
+        "$specify$146": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -718,7 +718,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$146": {
+        "$specify$147": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -753,7 +753,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$147": {
+        "$specify$148": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -788,7 +788,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$148": {
+        "$specify$149": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -823,7 +823,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$149": {
+        "$specify$150": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -858,7 +858,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$150": {
+        "$specify$151": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -893,7 +893,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$151": {
+        "$specify$152": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -928,7 +928,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$152": {
+        "$specify$153": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -963,7 +963,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$153": {
+        "$specify$154": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -998,7 +998,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$154": {
+        "$specify$155": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1033,7 +1033,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$155": {
+        "$specify$156": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1068,7 +1068,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$156": {
+        "$specify$157": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1103,7 +1103,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$157": {
+        "$specify$158": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1138,7 +1138,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$158": {
+        "$specify$159": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1173,7 +1173,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$159": {
+        "$specify$160": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1208,7 +1208,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$160": {
+        "$specify$161": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6381,7 +6381,7 @@
         }
       },
       "cells": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1661$245": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1661$246": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6405,7 +6405,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1663$246": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1663$247": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6429,7 +6429,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1669$247": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1669$248": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6453,7 +6453,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1673$248": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1673$249": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6477,7 +6477,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$90": {
+        "$specify$91": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6512,7 +6512,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$91": {
+        "$specify$92": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6547,7 +6547,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$92": {
+        "$specify$93": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6582,7 +6582,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$93": {
+        "$specify$94": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6617,7 +6617,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$94": {
+        "$specify$95": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6652,7 +6652,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$95": {
+        "$specify$96": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6687,7 +6687,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$96": {
+        "$specify$97": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6722,7 +6722,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$97": {
+        "$specify$98": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6757,7 +6757,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$98": {
+        "$specify$99": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -6796,28 +6796,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1661$245_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1661$246_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1661.33-1661.44"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1663$246_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1663$247_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1663.34-1663.45"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1669$247_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1669$248_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1669.34-1669.45"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1673$248_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1673$249_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -6982,7 +6982,7 @@
         }
       },
       "cells": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797$249": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797$250": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7006,7 +7006,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1799$250": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1799$251": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7030,7 +7030,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1805$251": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1805$252": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7054,7 +7054,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1809$252": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1809$253": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7079,6 +7079,41 @@
           }
         },
         "$specify$100": {
+          "hide_name": 1,
+          "type": "$specrule",
+          "parameters": {
+            "DST_PEN": "1",
+            "DST_POL": "1",
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "SRC_PEN": "0",
+            "SRC_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000010000",
+            "TYPE": "$setup",
+            "T_LIMIT2_MAX": "00000000000000000000000000000000",
+            "T_LIMIT2_MIN": "00000000000000000000000000000000",
+            "T_LIMIT2_TYP": "00000000000000000000000000000000",
+            "T_LIMIT_MAX": "00000000000000000000000100010010",
+            "T_LIMIT_MIN": "00000000000000000000000100010010",
+            "T_LIMIT_TYP": "00000000000000000000000100010010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797.3-1797.51"
+          },
+          "port_directions": {
+            "DST": "input",
+            "DST_EN": "output",
+            "SRC": "input",
+            "SRC_EN": "output"
+          },
+          "connections": {
+            "DST": [ 32 ],
+            "DST_EN": [ 78 ],
+            "SRC": [ 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ],
+            "SRC_EN": [ "1" ]
+          }
+        },
+        "$specify$101": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7113,7 +7148,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$101": {
+        "$specify$102": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7148,7 +7183,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$102": {
+        "$specify$103": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7183,7 +7218,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$103": {
+        "$specify$104": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7218,7 +7253,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$104": {
+        "$specify$105": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7253,7 +7288,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$105": {
+        "$specify$106": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7288,7 +7323,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$106": {
+        "$specify$107": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7323,7 +7358,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$107": {
+        "$specify$108": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -7359,66 +7394,31 @@
             "EN": [ "1" ],
             "SRC": [ 18 ]
           }
-        },
-        "$specify$99": {
-          "hide_name": 1,
-          "type": "$specrule",
-          "parameters": {
-            "DST_PEN": "1",
-            "DST_POL": "1",
-            "DST_WIDTH": "00000000000000000000000000000001",
-            "SRC_PEN": "0",
-            "SRC_POL": "0",
-            "SRC_WIDTH": "00000000000000000000000000010000",
-            "TYPE": "$setup",
-            "T_LIMIT2_MAX": "00000000000000000000000000000000",
-            "T_LIMIT2_MIN": "00000000000000000000000000000000",
-            "T_LIMIT2_TYP": "00000000000000000000000000000000",
-            "T_LIMIT_MAX": "00000000000000000000000100010010",
-            "T_LIMIT_MIN": "00000000000000000000000100010010",
-            "T_LIMIT_TYP": "00000000000000000000000100010010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797.3-1797.51"
-          },
-          "port_directions": {
-            "DST": "input",
-            "DST_EN": "output",
-            "SRC": "input",
-            "SRC_EN": "output"
-          },
-          "connections": {
-            "DST": [ 32 ],
-            "DST_EN": [ 78 ],
-            "SRC": [ 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ],
-            "SRC_EN": [ "1" ]
-          }
         }
       },
       "netnames": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797$249_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797$250_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1797.33-1797.44"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1799$250_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1799$251_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1799.35-1799.46"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1805$251_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1805$252_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1805.34-1805.45"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1809$252_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1809$253_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -7583,7 +7583,7 @@
         }
       },
       "cells": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2069$257": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2069$258": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7607,7 +7607,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2071$258": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2071$259": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7631,7 +7631,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2077$259": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2077$260": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7655,7 +7655,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2081$260": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2081$261": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7679,7 +7679,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$117": {
+        "$specify$118": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7714,7 +7714,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$118": {
+        "$specify$119": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7749,7 +7749,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$119": {
+        "$specify$120": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7784,7 +7784,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$120": {
+        "$specify$121": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7819,7 +7819,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$121": {
+        "$specify$122": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7854,7 +7854,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$122": {
+        "$specify$123": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7889,7 +7889,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$123": {
+        "$specify$124": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7924,7 +7924,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$124": {
+        "$specify$125": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7959,7 +7959,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$125": {
+        "$specify$126": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -7998,28 +7998,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2069$257_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2069$258_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2069.34-2069.45"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2071$258_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2071$259_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2071.35-2071.46"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2077$259_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2077$260_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2077.35-2077.46"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2081$260_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:2081$261_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -8184,7 +8184,7 @@
         }
       },
       "cells": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1933$253": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1933$254": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8208,7 +8208,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1935$254": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1935$255": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8232,7 +8232,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1941$255": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1941$256": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8256,7 +8256,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1945$256": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1945$257": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8280,7 +8280,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$108": {
+        "$specify$109": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8315,7 +8315,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$109": {
+        "$specify$110": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8350,7 +8350,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$110": {
+        "$specify$111": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8385,7 +8385,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$111": {
+        "$specify$112": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8420,7 +8420,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$112": {
+        "$specify$113": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8455,7 +8455,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$113": {
+        "$specify$114": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8490,7 +8490,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$114": {
+        "$specify$115": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8525,7 +8525,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$115": {
+        "$specify$116": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8560,7 +8560,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$116": {
+        "$specify$117": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -8599,28 +8599,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1933$253_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1933$254_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1933.34-1933.45"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1935$254_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1935$255_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1935.34-1935.45"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1941$255_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1941$256_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1941.35-1941.46"
           }
         },
-        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1945$256_Y": {
+        "$logic_and$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1945$257_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -9643,7 +9643,7 @@
       "attributes": {
         "hdlname": "\\top",
         "top": "00000000000000000000000000000001",
-        "src": "top.v:1.1-29.10"
+        "src": "top.v:5.1-90.10"
       },
       "ports": {
         "hclk": {
@@ -9671,7 +9671,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9693,7 +9693,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9715,7 +9715,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9737,7 +9737,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9759,7 +9759,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9781,7 +9781,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9803,7 +9803,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9825,7 +9825,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:16.1-24.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "top.v:20.1-28.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10048,7 +10048,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10073,7 +10073,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10098,7 +10098,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10123,7 +10123,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10148,7 +10148,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10173,7 +10173,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10198,7 +10198,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10221,7 +10221,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10242,7 +10242,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10263,7 +10263,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10284,7 +10284,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10305,7 +10305,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10326,7 +10326,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10397,7 +10397,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10418,7 +10418,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10439,7 +10439,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10460,7 +10460,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10481,7 +10481,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10502,7 +10502,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10523,7 +10523,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10632,8 +10632,8 @@
           },
           "connections": {
             "I0": [ 22 ],
-            "I1": [ 16 ],
-            "I2": [ 20 ],
+            "I1": [ 20 ],
+            "I2": [ 16 ],
             "I3": [ 18 ],
             "O": [ 37 ]
           }
@@ -10644,7 +10644,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10665,7 +10665,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10686,7 +10686,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10707,7 +10707,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10728,7 +10728,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10749,7 +10749,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10770,7 +10770,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10791,14 +10791,29 @@
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "top.v:6.16-6.22"
+            "src": "top.v:10.16-10.22"
+          }
+        },
+        "RW": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "top.v:75.13-75.15"
+          }
+        },
+        "clk1.CLK_IN": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "clk1 CLK_IN",
+            "src": "top.v:45.13-48.6|./freqDiv.v:8.11-8.17"
           }
         },
         "counter": {
           "hide_name": 0,
           "bits": [ 22, 20, 18, 16, 14, 12, 10, 7 ],
           "attributes": {
-            "src": "top.v:13.11-13.18"
+            "src": "top.v:17.11-17.18"
           }
         },
         "counter_SB_DFFSR_Q_7_D": {
@@ -10806,7 +10821,7 @@
           "bits": [ 21, 27, 23, 26, 29, 25, 24, 28 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:49.21-49.23"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:49.21-49.23"
           }
         },
         "counter_SB_DFFSR_Q_D": {
@@ -10814,7 +10829,7 @@
           "bits": [ 21, 19, 17, 15, 13, 11, 9, 6 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
           }
         },
         "counter_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
@@ -10822,7 +10837,7 @@
           "bits": [ "0", 22, 35, 34, 33, 32, 31, 30 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:19.20-19.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "top.v:23.20-23.29|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "counter_SB_DFFSR_Q_R": {
@@ -10844,7 +10859,7 @@
           "bits": [ 21, 44, 43, 42, 41, 40, 39, 38 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
           }
         },
         "counter_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI": {
@@ -10852,21 +10867,38 @@
           "bits": [ "1", 21, 44, 43, 42, 41, 40, 39 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:18.9-18.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "top.v:22.9-22.22|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "hclk": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "top.v:3.16-3.20"
+            "src": "top.v:7.16-7.20"
+          }
+        },
+        "hum_bcd.i": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "signed": 1,
+          "attributes": {
+            "hdlname": "hum_bcd i",
+            "src": "top.v:50.10-55.6|./bin2bcd.v:9.13-9.14"
+          }
+        },
+        "lcd_inst.rw": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "lcd_inst rw",
+            "src": "top.v:65.9-77.6|./LCD.v:10.20-10.22"
           }
         },
         "led_out": {
           "hide_name": 0,
           "bits": [ 5 ],
           "attributes": {
-            "src": "top.v:7.17-7.24"
+            "src": "top.v:11.17-11.24"
           }
         },
         "led_out_SB_LUT4_O_I0": {
@@ -10890,7 +10922,7 @@
           "bits": [ 21, 53, 52, 51, 50, 49, 48, 46 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
           }
         },
         "led_out_SB_LUT4_O_I1_SB_CARRY_CO_CI": {
@@ -10898,14 +10930,23 @@
           "bits": [ "1", 21, 53, 52, 51, 50, 49, 48 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.v:27.49-27.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "top.v:31.49-31.61|/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "pir_in": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "top.v:5.16-5.22"
+            "src": "top.v:9.16-9.22"
+          }
+        },
+        "temp_bcd.i": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "signed": 1,
+          "attributes": {
+            "hdlname": "temp_bcd i",
+            "src": "top.v:57.10-62.6|./bin2bcd.v:9.13-9.14"
           }
         }
       }

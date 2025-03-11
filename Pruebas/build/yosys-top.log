@@ -26,6 +26,9 @@
 
 1. Executing Verilog-2005 frontend: top.v
 Parsing Verilog input from `top.v' to AST representation.
+Storing AST representation for module `$abstract\freqDiv'.
+Storing AST representation for module `$abstract\bin2bcd'.
+Storing AST representation for module `$abstract\LCD'.
 Storing AST representation for module `$abstract\top'.
 Successfully finished Verilog frontend.
 
@@ -91,14 +94,46 @@ Successfully finished Verilog frontend.
 
 2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\top'.
 Generating RTLIL representation for module `\top'.
+top.v:73: Warning: Identifier `\RS' is implicitly declared.
+top.v:74: Warning: Identifier `\E' is implicitly declared.
+top.v:75: Warning: Identifier `\RW' is implicitly declared.
+top.v:80: Warning: Identifier `\D0' is implicitly declared.
+top.v:81: Warning: Identifier `\D1' is implicitly declared.
+top.v:82: Warning: Identifier `\D2' is implicitly declared.
+top.v:83: Warning: Identifier `\D3' is implicitly declared.
+top.v:84: Warning: Identifier `\D4' is implicitly declared.
+top.v:85: Warning: Identifier `\D5' is implicitly declared.
+top.v:86: Warning: Identifier `\D6' is implicitly declared.
+top.v:87: Warning: Identifier `\D7' is implicitly declared.
 
 2.3.1. Analyzing design hierarchy..
 Top module:  \top
 
-2.3.2. Analyzing design hierarchy..
+2.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\LCD'.
+Generating RTLIL representation for module `\LCD'.
+
+2.3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\bin2bcd'.
+Generating RTLIL representation for module `\bin2bcd'.
+
+2.3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\freqDiv'.
+Generating RTLIL representation for module `\freqDiv'.
+
+2.3.5. Analyzing design hierarchy..
 Top module:  \top
+Used module:     \LCD
+Used module:     \bin2bcd
+Used module:     \freqDiv
+
+2.3.6. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \LCD
+Used module:     \bin2bcd
+Used module:     \freqDiv
 Removing unused module `$abstract\top'.
-Removed 1 unused modules.
+Removing unused module `$abstract\LCD'.
+Removing unused module `$abstract\bin2bcd'.
+Removing unused module `$abstract\freqDiv'.
+Removed 4 unused modules.
 
 2.4. Executing PROC pass (convert processes to netlists).
 
@@ -106,261 +141,393 @@ Removed 1 unused modules.
 Cleaned up 0 empty switches.
 
 2.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241 in module SB_DFFNES.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$234 in module SB_DFFNESS.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230 in module SB_DFFNER.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$223 in module SB_DFFNESR.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$220 in module SB_DFFNS.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$217 in module SB_DFFNSS.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$214 in module SB_DFFNR.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$211 in module SB_DFFNSR.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203 in module SB_DFFES.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$196 in module SB_DFFESS.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192 in module SB_DFFER.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$185 in module SB_DFFESR.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182 in module SB_DFFS.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179 in module SB_DFFSS.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176 in module SB_DFFR.
-Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173 in module SB_DFFSR.
-Marked 1 switch rules as full_case in process $proc$top.v:16$381 in module top.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$242 in module SB_DFFNES.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$235 in module SB_DFFNESS.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$231 in module SB_DFFNER.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$224 in module SB_DFFNESR.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$221 in module SB_DFFNS.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$218 in module SB_DFFNSS.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$215 in module SB_DFFNR.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$212 in module SB_DFFNSR.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$204 in module SB_DFFES.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$197 in module SB_DFFESS.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$193 in module SB_DFFER.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$186 in module SB_DFFESR.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$183 in module SB_DFFS.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$180 in module SB_DFFSS.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$177 in module SB_DFFR.
+Marked 1 switch rules as full_case in process $proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$174 in module SB_DFFSR.
+Marked 1 switch rules as full_case in process $proc$./freqDiv.v:20$492 in module freqDiv.
+Marked 24 switch rules as full_case in process $proc$./bin2bcd.v:12$443 in module bin2bcd.
+Marked 9 switch rules as full_case in process $proc$./LCD.v:47$399 in module LCD.
+Marked 1 switch rules as full_case in process $proc$./LCD.v:28$395 in module LCD.
+Marked 1 switch rules as full_case in process $proc$top.v:20$382 in module top.
 Removed a total of 0 dead cases.
 
 2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 9 redundant assignments.
-Promoted 23 assignments to connections.
+Removed 12 redundant assignments.
+Promoted 58 assignments to connections.
 
 2.4.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$244'.
+Found init rule in `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$245'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$240'.
+Found init rule in `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$241'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$233'.
+Found init rule in `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$234'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$229'.
+Found init rule in `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$230'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$222'.
+Found init rule in `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$223'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$219'.
+Found init rule in `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$220'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$216'.
+Found init rule in `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$217'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$213'.
+Found init rule in `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$214'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$210'.
+Found init rule in `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$211'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$208'.
+Found init rule in `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$209'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$206'.
+Found init rule in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$207'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$202'.
+Found init rule in `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$203'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$195'.
+Found init rule in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$196'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$191'.
+Found init rule in `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$192'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$184'.
+Found init rule in `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$185'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$181'.
+Found init rule in `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$182'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$178'.
+Found init rule in `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$179'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$175'.
+Found init rule in `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$176'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$172'.
+Found init rule in `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$173'.
   Set init value: \Q = 1'0
-Found init rule in `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$170'.
+Found init rule in `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$171'.
   Set init value: \Q = 1'0
-Found init rule in `\top.$proc$top.v:13$387'.
+Found init rule in `\freqDiv.$proc$./freqDiv.v:17$497'.
+  Set init value: \count = 2'00
+Found init rule in `\freqDiv.$proc$./freqDiv.v:0$496'.
+  Set init value: \CLK_OUT = 1'0
+Found init rule in `\LCD.$proc$./LCD.v:0$442'.
+  Set init value: \counter = 16'0000000000000000
+  Set init value: \dat = 8'00000000
+  Set init value: \rs = 1'0
+  Set init value: \current = 6'000000
+  Set init value: \next = 6'000000
+  Set init value: \clkR = 1'0
+Found init rule in `\top.$proc$top.v:17$388'.
   Set init value: \counter = 8'00000000
 
 2.4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \S in `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241'.
-Found async reset \R in `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230'.
-Found async reset \S in `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$220'.
-Found async reset \R in `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$214'.
-Found async reset \S in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203'.
-Found async reset \R in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
-Found async reset \S in `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182'.
-Found async reset \R in `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176'.
+Found async reset \S in `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$242'.
+Found async reset \R in `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$231'.
+Found async reset \S in `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$221'.
+Found async reset \R in `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$215'.
+Found async reset \S in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$204'.
+Found async reset \R in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$193'.
+Found async reset \S in `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$183'.
+Found async reset \R in `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$177'.
 
 2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 
 2.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$244'.
-Creating decoders for process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241'.
+Creating decoders for process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$245'.
+Creating decoders for process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$242'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$240'.
-Creating decoders for process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$234'.
+Creating decoders for process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$241'.
+Creating decoders for process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$235'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$233'.
-Creating decoders for process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230'.
+Creating decoders for process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$234'.
+Creating decoders for process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$231'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$229'.
-Creating decoders for process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$223'.
+Creating decoders for process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$230'.
+Creating decoders for process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$224'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$222'.
-Creating decoders for process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$220'.
+Creating decoders for process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$223'.
+Creating decoders for process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$221'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$219'.
-Creating decoders for process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$217'.
+Creating decoders for process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$220'.
+Creating decoders for process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$218'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$216'.
-Creating decoders for process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$214'.
+Creating decoders for process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$217'.
+Creating decoders for process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$215'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$213'.
-Creating decoders for process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$211'.
+Creating decoders for process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$214'.
+Creating decoders for process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$212'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$210'.
-Creating decoders for process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$209'.
+Creating decoders for process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$211'.
+Creating decoders for process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$210'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$208'.
-Creating decoders for process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$207'.
-Creating decoders for process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$206'.
-Creating decoders for process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203'.
+Creating decoders for process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$209'.
+Creating decoders for process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$208'.
+Creating decoders for process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$207'.
+Creating decoders for process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$204'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$202'.
-Creating decoders for process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$196'.
+Creating decoders for process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$203'.
+Creating decoders for process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$197'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$195'.
-Creating decoders for process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
+Creating decoders for process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$196'.
+Creating decoders for process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$193'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$191'.
-Creating decoders for process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$185'.
+Creating decoders for process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$192'.
+Creating decoders for process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$186'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$184'.
-Creating decoders for process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182'.
+Creating decoders for process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$185'.
+Creating decoders for process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$183'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$181'.
-Creating decoders for process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179'.
+Creating decoders for process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$182'.
+Creating decoders for process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$180'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$178'.
-Creating decoders for process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176'.
+Creating decoders for process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$179'.
+Creating decoders for process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$177'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$175'.
-Creating decoders for process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173'.
+Creating decoders for process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$176'.
+Creating decoders for process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$174'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$172'.
-Creating decoders for process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$171'.
+Creating decoders for process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$173'.
+Creating decoders for process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$172'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$170'.
-Creating decoders for process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$169'.
-Creating decoders for process `\top.$proc$top.v:13$387'.
-Creating decoders for process `\top.$proc$top.v:16$381'.
+Creating decoders for process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$171'.
+Creating decoders for process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$170'.
+Creating decoders for process `\freqDiv.$proc$./freqDiv.v:17$497'.
+Creating decoders for process `\freqDiv.$proc$./freqDiv.v:0$496'.
+Creating decoders for process `\freqDiv.$proc$./freqDiv.v:20$492'.
+     1/2: $0\count[1:0]
+     2/2: $0\CLK_OUT[0:0]
+Creating decoders for process `\bin2bcd.$proc$./bin2bcd.v:12$443'.
+     1/24: $24\bcd[11:8]
+     2/24: $23\bcd[7:4]
+     3/24: $22\bcd[3:0]
+     4/24: $21\bcd[11:8]
+     5/24: $20\bcd[7:4]
+     6/24: $19\bcd[3:0]
+     7/24: $18\bcd[11:8]
+     8/24: $17\bcd[7:4]
+     9/24: $16\bcd[3:0]
+    10/24: $15\bcd[11:8]
+    11/24: $14\bcd[7:4]
+    12/24: $13\bcd[3:0]
+    13/24: $12\bcd[11:8]
+    14/24: $11\bcd[7:4]
+    15/24: $10\bcd[3:0]
+    16/24: $9\bcd[11:8]
+    17/24: $8\bcd[7:4]
+    18/24: $7\bcd[3:0]
+    19/24: $6\bcd[11:8]
+    20/24: $5\bcd[7:4]
+    21/24: $4\bcd[3:0]
+    22/24: $3\bcd[11:8]
+    23/24: $2\bcd[7:4]
+    24/24: $1\bcd[3:0]
+Creating decoders for process `\LCD.$proc$./LCD.v:0$442'.
+Creating decoders for process `\LCD.$proc$./LCD.v:47$399'.
+     1/9: $1\next[5:0]
+     2/9: $1\bin_to_ascii$func$./LCD.v:54$394.$result[7:0]$438
+     3/9: $1\bin_to_ascii$func$./LCD.v:53$393.$result[7:0]$433
+     4/9: $1\bin_to_ascii$func$./LCD.v:52$392.$result[7:0]$428
+     5/9: $1\bin_to_ascii$func$./LCD.v:51$391.$result[7:0]$423
+     6/9: $1\bin_to_ascii$func$./LCD.v:50$390.$result[7:0]$418
+     7/9: $1\bin_to_ascii$func$./LCD.v:49$389.$result[7:0]$413
+     8/9: $0\rs[0:0]
+     9/9: $0\dat[7:0]
+Creating decoders for process `\LCD.$proc$./LCD.v:28$395'.
+     1/1: $1\clkR[0:0]
+Creating decoders for process `\top.$proc$top.v:17$388'.
+Creating decoders for process `\top.$proc$top.v:20$382'.
      1/1: $0\counter[7:0]
 
 2.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\bin2bcd.\hundreds' from process `\bin2bcd.$proc$./bin2bcd.v:12$443'.
+No latch inferred for signal `\bin2bcd.\tens' from process `\bin2bcd.$proc$./bin2bcd.v:12$443'.
+No latch inferred for signal `\bin2bcd.\units' from process `\bin2bcd.$proc$./bin2bcd.v:12$443'.
+No latch inferred for signal `\bin2bcd.\i' from process `\bin2bcd.$proc$./bin2bcd.v:12$443'.
+No latch inferred for signal `\bin2bcd.\bcd' from process `\bin2bcd.$proc$./bin2bcd.v:12$443'.
 
 2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\SB_DFFNES.\Q' using process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241'.
-  created $adff cell `$procdff$435' with negative edge clock and positive level reset.
-Creating register for signal `\SB_DFFNESS.\Q' using process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$234'.
-  created $dff cell `$procdff$436' with negative edge clock.
-Creating register for signal `\SB_DFFNER.\Q' using process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230'.
-  created $adff cell `$procdff$437' with negative edge clock and positive level reset.
-Creating register for signal `\SB_DFFNESR.\Q' using process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$223'.
-  created $dff cell `$procdff$438' with negative edge clock.
-Creating register for signal `\SB_DFFNS.\Q' using process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$220'.
-  created $adff cell `$procdff$439' with negative edge clock and positive level reset.
-Creating register for signal `\SB_DFFNSS.\Q' using process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$217'.
-  created $dff cell `$procdff$440' with negative edge clock.
-Creating register for signal `\SB_DFFNR.\Q' using process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$214'.
-  created $adff cell `$procdff$441' with negative edge clock and positive level reset.
-Creating register for signal `\SB_DFFNSR.\Q' using process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$211'.
-  created $dff cell `$procdff$442' with negative edge clock.
-Creating register for signal `\SB_DFFNE.\Q' using process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$209'.
-  created $dff cell `$procdff$443' with negative edge clock.
-Creating register for signal `\SB_DFFN.\Q' using process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$207'.
-  created $dff cell `$procdff$444' with negative edge clock.
-Creating register for signal `\SB_DFFES.\Q' using process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203'.
-  created $adff cell `$procdff$445' with positive edge clock and positive level reset.
-Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$196'.
-  created $dff cell `$procdff$446' with positive edge clock.
-Creating register for signal `\SB_DFFER.\Q' using process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
-  created $adff cell `$procdff$447' with positive edge clock and positive level reset.
-Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$185'.
-  created $dff cell `$procdff$448' with positive edge clock.
-Creating register for signal `\SB_DFFS.\Q' using process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182'.
-  created $adff cell `$procdff$449' with positive edge clock and positive level reset.
-Creating register for signal `\SB_DFFSS.\Q' using process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179'.
-  created $dff cell `$procdff$450' with positive edge clock.
-Creating register for signal `\SB_DFFR.\Q' using process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176'.
-  created $adff cell `$procdff$451' with positive edge clock and positive level reset.
-Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173'.
-  created $dff cell `$procdff$452' with positive edge clock.
-Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$171'.
-  created $dff cell `$procdff$453' with positive edge clock.
-Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$169'.
-  created $dff cell `$procdff$454' with positive edge clock.
-Creating register for signal `\top.\counter' using process `\top.$proc$top.v:16$381'.
-  created $dff cell `$procdff$455' with positive edge clock.
+Creating register for signal `\SB_DFFNES.\Q' using process `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$242'.
+  created $adff cell `$procdff$721' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNESS.\Q' using process `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$235'.
+  created $dff cell `$procdff$722' with negative edge clock.
+Creating register for signal `\SB_DFFNER.\Q' using process `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$231'.
+  created $adff cell `$procdff$723' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNESR.\Q' using process `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$224'.
+  created $dff cell `$procdff$724' with negative edge clock.
+Creating register for signal `\SB_DFFNS.\Q' using process `\SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$221'.
+  created $adff cell `$procdff$725' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNSS.\Q' using process `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$218'.
+  created $dff cell `$procdff$726' with negative edge clock.
+Creating register for signal `\SB_DFFNR.\Q' using process `\SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$215'.
+  created $adff cell `$procdff$727' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNSR.\Q' using process `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$212'.
+  created $dff cell `$procdff$728' with negative edge clock.
+Creating register for signal `\SB_DFFNE.\Q' using process `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$210'.
+  created $dff cell `$procdff$729' with negative edge clock.
+Creating register for signal `\SB_DFFN.\Q' using process `\SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$208'.
+  created $dff cell `$procdff$730' with negative edge clock.
+Creating register for signal `\SB_DFFES.\Q' using process `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$204'.
+  created $adff cell `$procdff$731' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$197'.
+  created $dff cell `$procdff$732' with positive edge clock.
+Creating register for signal `\SB_DFFER.\Q' using process `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$193'.
+  created $adff cell `$procdff$733' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$186'.
+  created $dff cell `$procdff$734' with positive edge clock.
+Creating register for signal `\SB_DFFS.\Q' using process `\SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$183'.
+  created $adff cell `$procdff$735' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFSS.\Q' using process `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$180'.
+  created $dff cell `$procdff$736' with positive edge clock.
+Creating register for signal `\SB_DFFR.\Q' using process `\SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$177'.
+  created $adff cell `$procdff$737' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$174'.
+  created $dff cell `$procdff$738' with positive edge clock.
+Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$172'.
+  created $dff cell `$procdff$739' with positive edge clock.
+Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$170'.
+  created $dff cell `$procdff$740' with positive edge clock.
+Creating register for signal `\freqDiv.\CLK_OUT' using process `\freqDiv.$proc$./freqDiv.v:20$492'.
+  created $dff cell `$procdff$741' with positive edge clock.
+Creating register for signal `\freqDiv.\count' using process `\freqDiv.$proc$./freqDiv.v:20$492'.
+  created $dff cell `$procdff$742' with positive edge clock.
+Creating register for signal `\LCD.\dat' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$743' with positive edge clock.
+Creating register for signal `\LCD.\rs' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$744' with positive edge clock.
+Creating register for signal `\LCD.\current' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$745' with positive edge clock.
+Creating register for signal `\LCD.\next' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$746' with positive edge clock.
+Creating register for signal `\LCD.\hum_hundreds_ASCII' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$747' with positive edge clock.
+Creating register for signal `\LCD.\hum_tens_ASCII' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$748' with positive edge clock.
+Creating register for signal `\LCD.\hum_units_ASCII' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$749' with positive edge clock.
+Creating register for signal `\LCD.\tem_hundreds_ASCII' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$750' with positive edge clock.
+Creating register for signal `\LCD.\tem_tens_ASCII' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$751' with positive edge clock.
+Creating register for signal `\LCD.\tem_units_ASCII' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$752' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:49$389.$result' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$753' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:49$389.bin' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$754' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:50$390.$result' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$755' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:50$390.bin' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$756' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:51$391.$result' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$757' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:51$391.bin' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$758' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:52$392.$result' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$759' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:52$392.bin' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$760' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:53$393.$result' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$761' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:53$393.bin' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$762' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:54$394.$result' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$763' with positive edge clock.
+Creating register for signal `\LCD.\bin_to_ascii$func$./LCD.v:54$394.bin' using process `\LCD.$proc$./LCD.v:47$399'.
+  created $dff cell `$procdff$764' with positive edge clock.
+Creating register for signal `\LCD.\counter' using process `\LCD.$proc$./LCD.v:28$395'.
+  created $dff cell `$procdff$765' with positive edge clock.
+Creating register for signal `\LCD.\clkR' using process `\LCD.$proc$./LCD.v:28$395'.
+  created $dff cell `$procdff$766' with positive edge clock.
+Creating register for signal `\top.\counter' using process `\top.$proc$top.v:20$382'.
+  created $dff cell `$procdff$767' with positive edge clock.
 
 2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 2.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$244'.
-Found and cleaned up 1 empty switch in `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241'.
-Removing empty process `SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$241'.
-Removing empty process `SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$240'.
-Found and cleaned up 2 empty switches in `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$234'.
-Removing empty process `SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$234'.
-Removing empty process `SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$233'.
-Found and cleaned up 1 empty switch in `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230'.
-Removing empty process `SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$230'.
-Removing empty process `SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$229'.
-Found and cleaned up 2 empty switches in `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$223'.
-Removing empty process `SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$223'.
-Removing empty process `SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$222'.
-Removing empty process `SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$220'.
-Removing empty process `SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$219'.
-Found and cleaned up 1 empty switch in `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$217'.
-Removing empty process `SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$217'.
-Removing empty process `SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$216'.
-Removing empty process `SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$214'.
-Removing empty process `SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$213'.
-Found and cleaned up 1 empty switch in `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$211'.
-Removing empty process `SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$211'.
-Removing empty process `SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$210'.
-Found and cleaned up 1 empty switch in `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$209'.
-Removing empty process `SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$209'.
-Removing empty process `SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$208'.
-Removing empty process `SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$207'.
-Removing empty process `SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$206'.
-Found and cleaned up 1 empty switch in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203'.
-Removing empty process `SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$203'.
-Removing empty process `SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$202'.
-Found and cleaned up 2 empty switches in `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$196'.
-Removing empty process `SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$196'.
-Removing empty process `SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$195'.
-Found and cleaned up 1 empty switch in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
-Removing empty process `SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$192'.
-Removing empty process `SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$191'.
-Found and cleaned up 2 empty switches in `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$185'.
-Removing empty process `SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$185'.
-Removing empty process `SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$184'.
-Removing empty process `SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$182'.
-Removing empty process `SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$181'.
-Found and cleaned up 1 empty switch in `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179'.
-Removing empty process `SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$179'.
-Removing empty process `SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$178'.
-Removing empty process `SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$176'.
-Removing empty process `SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$175'.
-Found and cleaned up 1 empty switch in `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173'.
-Removing empty process `SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$173'.
-Removing empty process `SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$172'.
-Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$171'.
-Removing empty process `SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$171'.
-Removing empty process `SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$170'.
-Removing empty process `SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$169'.
-Removing empty process `top.$proc$top.v:13$387'.
-Found and cleaned up 1 empty switch in `\top.$proc$top.v:16$381'.
-Removing empty process `top.$proc$top.v:16$381'.
-Cleaned up 19 empty switches.
+Removing empty process `SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$245'.
+Found and cleaned up 1 empty switch in `\SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$242'.
+Removing empty process `SB_DFFNES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1414$242'.
+Removing empty process `SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$241'.
+Found and cleaned up 2 empty switches in `\SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$235'.
+Removing empty process `SB_DFFNESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1353$235'.
+Removing empty process `SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$234'.
+Found and cleaned up 1 empty switch in `\SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$231'.
+Removing empty process `SB_DFFNER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1273$231'.
+Removing empty process `SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$230'.
+Found and cleaned up 2 empty switches in `\SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$224'.
+Removing empty process `SB_DFFNESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1212$224'.
+Removing empty process `SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$223'.
+Removing empty process `SB_DFFNS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1138$221'.
+Removing empty process `SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$220'.
+Found and cleaned up 1 empty switch in `\SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$218'.
+Removing empty process `SB_DFFNSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1088$218'.
+Removing empty process `SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$217'.
+Removing empty process `SB_DFFNR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:1017$215'.
+Removing empty process `SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$214'.
+Found and cleaned up 1 empty switch in `\SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$212'.
+Removing empty process `SB_DFFNSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:967$212'.
+Removing empty process `SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$211'.
+Found and cleaned up 1 empty switch in `\SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$210'.
+Removing empty process `SB_DFFNE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:922$210'.
+Removing empty process `SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$209'.
+Removing empty process `SB_DFFN.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:882$208'.
+Removing empty process `SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$207'.
+Found and cleaned up 1 empty switch in `\SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$204'.
+Removing empty process `SB_DFFES.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:803$204'.
+Removing empty process `SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$203'.
+Found and cleaned up 2 empty switches in `\SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$197'.
+Removing empty process `SB_DFFESS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:742$197'.
+Removing empty process `SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$196'.
+Found and cleaned up 1 empty switch in `\SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$193'.
+Removing empty process `SB_DFFER.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:662$193'.
+Removing empty process `SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$192'.
+Found and cleaned up 2 empty switches in `\SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$186'.
+Removing empty process `SB_DFFESR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:601$186'.
+Removing empty process `SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$185'.
+Removing empty process `SB_DFFS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:527$183'.
+Removing empty process `SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$182'.
+Found and cleaned up 1 empty switch in `\SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$180'.
+Removing empty process `SB_DFFSS.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:477$180'.
+Removing empty process `SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$179'.
+Removing empty process `SB_DFFR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:406$177'.
+Removing empty process `SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$176'.
+Found and cleaned up 1 empty switch in `\SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$174'.
+Removing empty process `SB_DFFSR.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:356$174'.
+Removing empty process `SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$173'.
+Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$172'.
+Removing empty process `SB_DFFE.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:311$172'.
+Removing empty process `SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:0$171'.
+Removing empty process `SB_DFF.$proc$/home/brandon/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_sim.v:271$170'.
+Removing empty process `freqDiv.$proc$./freqDiv.v:17$497'.
+Removing empty process `freqDiv.$proc$./freqDiv.v:0$496'.
+Found and cleaned up 1 empty switch in `\freqDiv.$proc$./freqDiv.v:20$492'.
+Removing empty process `freqDiv.$proc$./freqDiv.v:20$492'.
+Found and cleaned up 24 empty switches in `\bin2bcd.$proc$./bin2bcd.v:12$443'.
+Removing empty process `bin2bcd.$proc$./bin2bcd.v:12$443'.
+Removing empty process `LCD.$proc$./LCD.v:0$442'.
+Found and cleaned up 9 empty switches in `\LCD.$proc$./LCD.v:47$399'.
+Removing empty process `LCD.$proc$./LCD.v:47$399'.
+Found and cleaned up 1 empty switch in `\LCD.$proc$./LCD.v:28$395'.
+Removing empty process `LCD.$proc$./LCD.v:28$395'.
+Removing empty process `top.$proc$top.v:17$388'.
+Found and cleaned up 1 empty switch in `\top.$proc$top.v:20$382'.
+Removing empty process `top.$proc$top.v:20$382'.
+Cleaned up 54 empty switches.
 
 2.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module freqDiv.
+Optimizing module bin2bcd.
+Optimizing module LCD.
 Optimizing module top.
 
 2.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module freqDiv.
+Deleting now unused module bin2bcd.
+Deleting now unused module LCD.
 
 2.6. Executing TRIBUF pass.
 
@@ -371,7 +538,7 @@ Optimizing module top.
 
 2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
-Removed 0 unused cells and 4 unused wires.
+Removed 243 unused cells and 469 unused wires.
 
 2.10. Executing CHECK pass (checking for obvious problems).
 Checking module top...
@@ -405,11 +572,37 @@ Removed a total of 0 cells.
 
 2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
+Removed 0 unused cells and 12 unused wires.
 
 2.11.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
 
-2.11.9. Finished OPT passes. (There is nothing left to do.)
+2.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.11.16. Finished OPT passes. (There is nothing left to do.)
 
 2.12. Executing FSM pass (extract and optimize FSM).
 
@@ -455,7 +648,7 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$455 ($dff) from module top (D = $add$top.v:19$383_Y [7:0], Q = \counter, rval = 8'00000000).
+Adding SRST signal on $procdff$767 ($dff) from module top (D = $add$top.v:23$384_Y [7:0], Q = \counter, rval = 8'00000000).
 
 2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -492,11 +685,11 @@ Optimizing module top.
 2.13.16. Finished OPT passes. (There is nothing left to do.)
 
 2.14. Executing WREDUCE pass (reducing word size of cells).
-Removed top 25 bits (of 32) from port B of cell top.$lt$top.v:18$382 ($lt).
-Removed top 31 bits (of 32) from port B of cell top.$add$top.v:19$383 ($add).
-Removed top 24 bits (of 32) from port Y of cell top.$add$top.v:19$383 ($add).
-Removed top 27 bits (of 32) from port B of cell top.$lt$top.v:27$384 ($lt).
-Removed top 24 bits (of 32) from wire top.$add$top.v:19$383_Y.
+Removed top 25 bits (of 32) from port B of cell top.$lt$top.v:22$383 ($lt).
+Removed top 31 bits (of 32) from port B of cell top.$add$top.v:23$384 ($add).
+Removed top 24 bits (of 32) from port Y of cell top.$add$top.v:23$384 ($add).
+Removed top 27 bits (of 32) from port B of cell top.$lt$top.v:31$385 ($lt).
+Removed top 24 bits (of 32) from wire top.$add$top.v:23$384_Y.
 
 2.15. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -524,13 +717,13 @@ Finding unused cells or wires in module \top..
 
 2.21. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module top:
-  creating $macc model for $add$top.v:19$383 ($add).
-  creating $alu model for $macc $add$top.v:19$383.
-  creating $alu model for $lt$top.v:18$382 ($lt): new $alu
-  creating $alu model for $lt$top.v:27$384 ($lt): new $alu
-  creating $alu cell for $lt$top.v:27$384: $auto$alumacc.cc:485:replace_alu$461
-  creating $alu cell for $lt$top.v:18$382: $auto$alumacc.cc:485:replace_alu$472
-  creating $alu cell for $add$top.v:19$383: $auto$alumacc.cc:485:replace_alu$483
+  creating $macc model for $add$top.v:23$384 ($add).
+  creating $alu model for $macc $add$top.v:23$384.
+  creating $alu model for $lt$top.v:22$383 ($lt): new $alu
+  creating $alu model for $lt$top.v:31$385 ($lt): new $alu
+  creating $alu cell for $lt$top.v:31$385: $auto$alumacc.cc:485:replace_alu$773
+  creating $alu cell for $lt$top.v:22$383: $auto$alumacc.cc:485:replace_alu$784
+  creating $alu cell for $add$top.v:23$384: $auto$alumacc.cc:485:replace_alu$795
   created 3 $alu and 0 $macc cells.
 
 2.22. Executing OPT pass (performing simple optimizations).
@@ -732,14 +925,14 @@ Generating RTLIL representation for module `\_80_ice40_alu'.
 Successfully finished Verilog frontend.
 
 2.32.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $reduce_and.
 Using extmapper simplemap for cells of type $not.
 Using extmapper simplemap for cells of type $or.
-Using extmapper simplemap for cells of type $reduce_and.
 Using template $paramod$c3cd1564c35d873179656addd6052d7ea8b6d991\_80_ice40_alu for cells of type $alu.
 Using template $paramod$dfca81329cbbac01700318224209a5f2318c7128\_80_ice40_alu for cells of type $alu.
 Using extmapper simplemap for cells of type $mux.
 Using template $paramod$cc48387a3f2cae79a81035f3d5a9b4758cb77854\_80_ice40_alu for cells of type $alu.
-Using extmapper simplemap for cells of type $sdff.
 Using extmapper simplemap for cells of type $xor.
 Using extmapper simplemap for cells of type $pos.
 No more expansions possible.
@@ -764,9 +957,9 @@ Removed 0 unused cells and 55 unused wires.
 2.34. Executing ICE40_OPT pass (performing simple optimizations).
 
 2.34.1. Running ICE40 specific optimizations.
-Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$461.slice[0].carry: CO=$auto$alumacc.cc:485:replace_alu$461.BB [0]
-Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$472.slice[0].carry: CO=$auto$alumacc.cc:485:replace_alu$461.BB [0]
-Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$483.slice[0].carry: CO=\counter [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$773.slice[0].carry: CO=$auto$alumacc.cc:485:replace_alu$773.BB [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$784.slice[0].carry: CO=$auto$alumacc.cc:485:replace_alu$773.BB [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$795.slice[0].carry: CO=\counter [0]
 
 2.34.2. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
@@ -835,7 +1028,7 @@ No more expansions possible.
 Optimizing module top.
 
 2.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
-Mapping top.$auto$alumacc.cc:485:replace_alu$483.slice[0].carry ($lut).
+Mapping top.$auto$alumacc.cc:485:replace_alu$795.slice[0].carry ($lut).
 
 2.39. Executing ICE40_OPT pass (performing simple optimizations).
 
@@ -914,7 +1107,7 @@ ABC: Participating nodes from the first network   =      14. (  93.33 % of nodes
 ABC: Participating nodes from the second network  =      14. (  93.33 % of nodes)
 ABC: Node pairs (any polarity)                    =      14. (  93.33 % of names can be moved)
 ABC: Node pairs (same polarity)                   =      14. (  93.33 % of names can be moved)
-ABC: Total runtime =     0.01 sec
+ABC: Total runtime =     0.02 sec
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 2.41.1.2. Re-integrating ABC results.
@@ -1021,10 +1214,10 @@ Removed 0 unused modules.
 
 === top ===
 
-   Number of wires:                 16
-   Number of wire bits:             78
-   Number of public wires:          16
-   Number of public wire bits:      78
+   Number of wires:                 21
+   Number of wire bits:            145
+   Number of public wires:          21
+   Number of public wire bits:     145
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -1039,6 +1232,7 @@ Found and reported 0 problems.
 
 2.50. Executing JSON backend.
 
-End of script. Logfile hash: 46c516c5ce, CPU: user 0.62s system 0.01s, MEM: 21.00 MB peak
+Warnings: 11 unique messages, 11 total
+End of script. Logfile hash: 68f0567758, CPU: user 0.80s system 0.03s, MEM: 21.12 MB peak
 Yosys 0.33+6 (git sha1 41b34a193, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1694128612374/work=/usr/local/src/conda/yosys-0.33_7_g41b34a193 -fdebug-prefix-map=/home/brandon/miniconda3/envs/digital=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
-Time spent: 64% 13x read_verilog (0 sec), 13% 1x abc (0 sec), ...
+Time spent: 55% 13x read_verilog (0 sec), 13% 1x abc (0 sec), ...

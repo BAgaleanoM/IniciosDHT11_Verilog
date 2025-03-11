@@ -1,3 +1,7 @@
+`include "./freqDiv.v"
+`include "./bin2bcd.v"
+`include "./LCD.v"
+
 module top(
     
     input wire hclk,
@@ -25,5 +29,62 @@ end
 
 // 20% duty cycle, apaga si no hay demasiada luz (LDR_in = 0)
 assign led_out = (LDR_in) ? ((pir_in) ? 1'b1 : (counter < 20)) : 1'b0;
+
+//Top de la LCD
+reg [7:0] humedad;
+    reg [7:0] temperatura;
+
+
+    wire clk_count;
+    wire [7:0] dat;
+    wire [3:0] hum_hundreds, hum_tens, hum_units;
+    wire [3:0] temp_hundreds, temp_tens, temp_units;
+
+
+
+    freqDiv clk1 (
+        .CLK_IN(hclk),
+        .CLK_OUT(clk_count)
+    );
+
+ bin2bcd hum_bcd (
+        .bin(humedad),
+        .hundreds(hum_hundreds),
+        .tens(hum_tens),
+        .units(hum_units)
+    );
+
+ bin2bcd temp_bcd (
+        .bin(temperatura),
+        .hundreds(temp_hundreds),
+        .tens(temp_tens),
+        .units(temp_units)
+    );
+
+
+    LCD lcd_inst (
+        .hum_hundreds(hum_hundreds),
+        .hum_tens(hum_tens),
+        .hum_units(hum_units),
+        .temp_hundreds(temp_hundreds),
+        .temp_tens(temp_tens),
+        .temp_units(temp_units),
+        .clk(clk_count),
+        .rs(RS),
+        .en(E),
+        .rw(RW),
+        .dat(dat)
+    );
+
+
+    assign D0 = dat[0];
+    assign D1 = dat[1];
+    assign D2 = dat[2];
+    assign D3 = dat[3];
+    assign D4 = dat[4];
+    assign D5 = dat[5];
+    assign D6 = dat[6];
+    assign D7 = dat[7];
+
 
 endmodule
